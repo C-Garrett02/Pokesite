@@ -42,8 +42,24 @@ function App() {
     }
   }
 
-  function entry(num, name){
-    
+  function Entry({id}){
+    if(id > -1 && id < items.length){
+      return (
+        <>
+          <h2>{id+1}: {items[id].name}</h2>
+        </>
+      )
+    }
+  }
+
+  function VisibleEntries({num}){
+    return(
+      <>
+        <Entry id={num-1}/>
+        <Entry id={num}/>
+        <Entry id={num+1}/>
+      </>
+    )
   }
 
 
@@ -55,9 +71,7 @@ function App() {
       <button onClick={DecrementDex}>
         Decrement
       </button>
-      <h2>{dexnum}: {name}</h2>
-      <h1>    {dexnum}: {name}</h1>
-      <h2>{dexnum}: {name}</h2>
+      <VisibleEntries num={dexnum}/>
       <button onClick={IncrementDex}>
         Increment
       </button>
