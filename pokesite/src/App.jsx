@@ -6,31 +6,20 @@ import venusaur from '/Venusaur.png'
 import './Temp.css'
 
 function App() {
-  let items = [{ //currently only keeping this here because otherwise react yells at me since the DOM tries to load things that dont yet exist
-    id: 1,
-    name: "Bulbasaur",
-    image: bulbasaur
-  }, {
-    id: 2,
-    name: "Ivysaur",
-    image: ivysaur
-  }, {
-    id: 3,
-    name: "Venusaur",
-    image: venusaur
-  }];
-
-  useLayoutEffect(() => { //The problem area
-    async function fetchData() {
-      const response = await fetch('./pokedex.json');
-      items = await response.json();
-    }
-    fetchData();
-  }, []);
-
+  const [items, setItems] = useState([new Array(10).fill({id: 1, name: "bulbasaur", image:bulbasaur})])
   const [dexnum, setDexnum] = useState(0)
   const [name, setName] = useState(items[dexnum].name)
   const [image, setImage] = useState(items[dexnum].image)
+
+  useLayoutEffect(() => { 
+    async function fetchData() {
+      const response = await fetch('./pokedex.json');
+      const body = await response.json();
+      setItems(body)
+      setImage(body[0].image)
+    }
+    fetchData();
+  }, []);
 
   function IncrementDex() {
     if(dexnum < items.length - 1){
@@ -74,7 +63,7 @@ function App() {
   return (
     <>
       <div>
-        <img className='pokeImage' src={image}/>
+        <img className='pokeImage' src={image} />
       </div>
       <button onClick={DecrementDex}>
         Decrement

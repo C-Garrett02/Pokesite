@@ -1,5 +1,6 @@
 
   .pokeImage {
-    max-height: 60vh;
+    height: 60vh;
+    image-rendering: pixelated;
   }
   
