@@ -10,9 +10,10 @@ async function GetPokemon2(dex) {
 async function GetFormData2(varieties) {
     const response = await fetch(varieties[0].pokemon.url); //later when dealing with alt forms, consider slicing the varieties array to handle the others. Plan to nest them into that forms category.
     const body = await response.json();
+    const uppercaseName = body.name.charAt(0).toUpperCase() + body.name.slice(1)
     return {
         id: body.id,
-        name: body.name,
+        name: uppercaseName,
         image: body.sprites.front_default,
         forms: []
     };

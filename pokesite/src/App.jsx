@@ -21,7 +21,7 @@ function App() {
     fetchData();
   }, []);
 
-  function IncrementDex() {
+  function IncrementDex() { 
     if(dexnum < items.length - 1){
       let updatedDex = dexnum + 1;
       setDexnum(updatedDex)
@@ -80,10 +80,14 @@ function App() {
       <div>
           <img className='pokeImage' src={image} />
       </div>
-      <div>
-        <button onClick={DecrementDex}>Decrement</button>
+      <div className='wheel'>
+        <div className="decrementButton">
+          <button onClick={DecrementDex}>Decrement</button>
+        </div>
         <VisibleEntries num={dexnum} />
-        <button onClick={IncrementDex}>Increment</button>
+        <div className="decrementButton">
+          <button onClick={IncrementDex}>Increment</button>
+        </div>
       </div>
     </div>
     </>
