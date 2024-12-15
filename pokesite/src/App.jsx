@@ -6,7 +6,7 @@ import venusaur from '/Venusaur.png'
 import './Temp.css'
 
 function App() {
-  const [items, setItems] = useState([new Array(10).fill({id: 1, name: "bulbasaur", image:bulbasaur})])
+  const [items, setItems] = useState([new Array(10).fill({index: 1, name: "bulbasaur", image:bulbasaur})])
   const [dexnum, setDexnum] = useState(0)
   const [name, setName] = useState(items[dexnum].name)
   const [image, setImage] = useState(items[dexnum].image)
@@ -39,12 +39,20 @@ function App() {
     }
   }
 
-  function Entry({id}){
-    if(id > -1 && id < items.length){
+  function Entry({index}){
+    let id_string = 'entry' + (index-dexnum);
+    if(index > -1 && index < items.length){
       return (
         <>
-          <h2>{id+1}: {items[id].name}</h2>
+          <div className="entry" id={id_string}>{index+1}: {items[index].name}</div>
         </>
+      )
+    }
+    else {
+      return (
+      <>
+        <div className="invisibleEntry"></div>
+      </>
       )
     }
   }
@@ -52,9 +60,15 @@ function App() {
   function VisibleEntries({num}){
     return(
       <>
-        <Entry id={num-1}/>
-        <Entry id={num}/>
-        <Entry id={num+1}/>
+        <div className="entries" >
+          <Entry index={num-3}/>
+          <Entry index={num-2}/>
+          <Entry index={num-1}/>
+          <Entry index={num}/>
+          <Entry index={num+1}/>
+          <Entry index={num+2}/>
+          <Entry index={num+3}/>
+        </div>
       </>
     )
   }
@@ -62,16 +76,16 @@ function App() {
 
   return (
     <>
+    <div className='imageAndWheel'>
       <div>
-        <img className='pokeImage' src={image} />
+          <img className='pokeImage' src={image} />
       </div>
-      <button onClick={DecrementDex}>
-        Decrement
-      </button>
-      <VisibleEntries num={dexnum}/>
-      <button onClick={IncrementDex}>
-        Increment
-      </button>
+      <div>
+        <button onClick={DecrementDex}>Decrement</button>
+        <VisibleEntries num={dexnum} />
+        <button onClick={IncrementDex}>Increment</button>
+      </div>
+    </div>
     </>
   )
 }

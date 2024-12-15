@@ -3,4 +3,39 @@
     height: 60vh;
     image-rendering: pixelated;
   }
-  
+
+  .imageAndWheel {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .entry {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius:3vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+  }
+
+  .invisibleEntry {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-radius:3vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+  }
+
+  .entries {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #entry0 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
