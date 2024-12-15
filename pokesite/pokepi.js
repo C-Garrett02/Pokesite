@@ -13,7 +13,7 @@ async function GetFormData2(varieties) {
     return {
         id: body.id,
         name: body.name,
-        imageurl: body.sprites.front_default,
+        image: body.sprites.front_default,
         forms: []
     };
 }
@@ -28,7 +28,7 @@ function SaveToFile(array) {
     const fs = require('fs');
     const jsonDex = JSON.stringify(array, null, 4);
 
-    fs.writeFile("./pokedex.json", jsonDex, 'utf8', function (err) {
+    fs.writeFile("./public/pokedex.json", jsonDex, 'utf8', function (err) {
         if (err) {
             return console.log(err);
         }

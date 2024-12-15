@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
 import bulbasaur from '/Bulbasaur.png'
 import ivysaur from '/Ivysaur.png'
 import venusaur from '/Venusaur.png'
@@ -6,7 +6,7 @@ import venusaur from '/Venusaur.png'
 import './Temp.css'
 
 function App() {
-  const items = [{
+  let items = [{ //currently only keeping this here because otherwise react yells at me since the DOM tries to load things that dont yet exist
     id: 1,
     name: "Bulbasaur",
     image: bulbasaur
@@ -19,6 +19,14 @@ function App() {
     name: "Venusaur",
     image: venusaur
   }];
+
+  useLayoutEffect(() => { //The problem area
+    async function fetchData() {
+      const response = await fetch('./pokedex.json');
+      items = await response.json();
+    }
+    fetchData();
+  }, []);
 
   const [dexnum, setDexnum] = useState(0)
   const [name, setName] = useState(items[dexnum].name)
