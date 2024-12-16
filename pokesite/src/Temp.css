@@ -1,3 +1,8 @@
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
   .pokeImage {
     height: 60vh;
     margin-left: 10vw;
@@ -31,7 +36,7 @@
   }
 
   .entry {
-    height: calc(10vh);
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: lightgrey;
