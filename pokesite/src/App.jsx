@@ -51,7 +51,7 @@ function App() {
     else {
       return (
       <>
-        <div className="invisibleEntry"></div>
+        <div className="invisibleEntry" id={id_string}></div>
       </>
       )
     }
@@ -77,7 +77,7 @@ function App() {
   return (
     <>
     <div className='imageAndWheel'>
-      <div>
+      <div className='information'>
           <img className='pokeImage' src={image} />
       </div>
       <div className='wheel'>
