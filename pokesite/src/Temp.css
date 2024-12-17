@@ -11,9 +11,11 @@
   }
 
   .wheel {
-    justify-content: flex-end;
     font-family: sans-serif;
     flex-grow: 1;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
   }
 
   .imageAndWheel {

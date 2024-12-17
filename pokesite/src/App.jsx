@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useLayoutEffect, useRef } from 'react'
 import bulbasaur from '/Bulbasaur.png'
 import ivysaur from '/Ivysaur.png'
 import venusaur from '/Venusaur.png'
@@ -10,8 +10,10 @@ function App() {
   const [dexnum, setDexnum] = useState(0)
   const [name, setName] = useState(items[dexnum].name)
   const [image, setImage] = useState(items[dexnum].image)
+  const elementRef = useRef(null);
+  const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]
 
-  useLayoutEffect(() => { 
+  useLayoutEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
       const response = await fetch('./pokedex.json');
       const body = await response.json();
@@ -20,6 +22,14 @@ function App() {
     }
     fetchData();
   }, []);
+
+  const moveElement = () => {
+    if (refArray[3].current) {
+      const margin = window.getComputedStyle(refArray[4].current).margin;
+      const zindex = window.getComputedStyle(refArray[4].current).zIndex;
+      refArray[3].current.style.zIndex = zindex;
+    }
+  };
 
   function IncrementDex() { 
     if(dexnum < items.length - 1){
@@ -44,7 +54,7 @@ function App() {
     if(index > -1 && index < items.length){
       return (
         <>
-          <div className="entry" id={id_string}>{index+1}: {items[index].name}</div>
+          <div className="entry" ref={refArray[index-dexnum+3]} id={id_string}>{index+1}: {items[index].name}</div>
         </>
       )
     }
@@ -80,7 +90,7 @@ function App() {
       <div className='information'>
           <img className='pokeImage' src={image} />
       </div>
-      <div className='wheel'>
+      <div className='wheel' ref={elementRef}>
         <div className="decrementButton">
           <button onClick={DecrementDex}>Decrement</button>
         </div>
