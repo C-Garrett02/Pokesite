@@ -37,6 +37,11 @@
     justify-content: center;
   }
 
+  .entries {
+    display: flex;
+    flex-direction: column;
+  }
+
   .entry {
     height: 10vh;
     display: flex;
@@ -47,6 +52,7 @@
     border-bottom-right-radius: 1vh;
     font-size: 2vh;
     padding-left: 0.7vw;
+    position: relative;
   }
 
   .invisibleEntry {
@@ -57,11 +63,6 @@
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     opacity: 0;
-  }
-
-  .entries {
-    display: flex;
-    flex-direction: column;
   }
 
   #entry0 {
