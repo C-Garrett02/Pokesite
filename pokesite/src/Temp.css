@@ -15,18 +15,28 @@
     flex-grow: 1;
     align-content: center;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100vh;
   }
 
   .imageAndWheel {
     align-items: center;
     display: flex;
     flex-direction: row;
+    
   }
 
   .information {
     display:flex;
-    width: 70vw
+    width: 60vw;
+  }
+
+  .directionButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
   }
 
   .incrementButton, .decrementButton {
@@ -39,15 +49,20 @@
 
   .entries {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
+    overflow: hidden;
+    padding-left: 1vw;
+    justify-content: center;
   }
 
-  .entry {
-    height: 10vh;
+  .entry, .invisibleEntry {
+    height: 15%;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     background-color: lightgrey;
-    border-radius:6vh;
+    border-radius: 9vh;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     font-size: 2vh;
@@ -56,18 +71,13 @@
   }
 
   .invisibleEntry {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    border-radius:3vh;
-    border-top-right-radius: 1vh;
-    border-bottom-right-radius: 1vh;
     opacity: 0;
   }
 
   #entry0 {
     margin-top: 1.25vh;
     margin-bottom: 1.25vh;
+    filter: brightness(1.0);
     z-index: 10;
   }
   #entry-1, #entry1 {
@@ -79,13 +89,20 @@
     margin-bottom: -1vh;
     margin-top: -1vh;
     z-index: 8;
-    filter: brightness(0.7);
-    margin-left: 2vw;
+    filter: brightness(0.6);
+    margin-left: 2.5vw;
   }
   #entry-3, #entry3 {
-    margin-bottom: -1vh;
-    margin-top: -1vh;
+    margin-bottom: -1.5vh;
+    margin-top: -1.5vh;
     z-index: 7;
-    filter: brightness(0.5);
-    margin-left: 3vw;
+    filter: brightness(0.4);
+    margin-left: 5vw;
+  }
+  #entry-4, #entry4 {
+    margin-bottom: -2vh;
+    margin-top: -2vh;
+    z-index: 6;
+    filter: brightness(0.3);
+    margin-left: 8vw;
   }
