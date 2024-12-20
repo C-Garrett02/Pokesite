@@ -18,6 +18,7 @@ function App() {
   let animationStep = 1;
   const totalAnimationSteps = 30;
   const intervalRef = useRef(null);
+  let isScrolling = false;
 
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
@@ -100,6 +101,7 @@ function App() {
       animationStep = 1;
       clearInterval(intervalRef.current);
       DecrementDex();
+      isScrolling = true;
     }
   }
 
@@ -111,15 +113,12 @@ function App() {
       refArray[i].current.style.filter = 'brightness(' + +(+backwardsArr[i-1].brightness.start + (+backwardsArr[i-1].brightness.increment)*multiplyBy) + ')';
     }
 
-    //refArray[0].current.style.top = (+backwardsArr[3].top)*multiplyBy + 'px'; 
-    //refArray[0].current.style.marginLeft = +backwardsArr[3].marginLeft.start + (+backwardsArr[3].marginLeft.increment)*multiplyBy + 'px'; //offload the addition here to the calculation function in the future, perhaps.
-    //refArray[0].current.style.filter = 'brightness(' + +(+backwardsArr[3].brightness.start + (+backwardsArr[3].brightness.increment)*multiplyBy) + ')';
-
     animationStep++;
     if(animationStep > totalAnimationSteps - 1){ //last frame will be rendered
       animationStep = 1;
       clearInterval(intervalRef.current);
       IncrementDex();
+      isScrolling = false;
     }
   }
 
@@ -188,14 +187,16 @@ function App() {
         <div className='directionButtons'>
           <div className="decrementButton">
             <button onClick={() => {
-              if(dexnum != 0){
-                intervalRef.current = setInterval(slideEntriesUp, 1000/60);
+              if(dexnum != 0 && isScrolling == false){
+                isScrolling = true;
+                intervalRef.current = setInterval(slideEntriesUp, 10);
               }
             }}>Decrement</button>
           </div>
           <div className="incrementButton">
             <button onClick={() => {
-              if(dexnum < items.length - 1){
+              if(dexnum < items.length - 1 && isScrolling == false){
+                isScrolling = true;
                 intervalRef.current = setInterval(slideEntriesDown, 10);
               }
             }}>Increment</button>
