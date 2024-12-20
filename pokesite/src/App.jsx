@@ -4,28 +4,32 @@ import ivysaur from '/Ivysaur.png'
 import venusaur from '/Venusaur.png'
 //import './App.css'
 import './Temp.css'
+import './Types.css'
 
 const forwardArr = [];
 const backwardsArr = [];
 
 function App() {
-  //console.log("rendering...");
-  const [items, setItems] = useState([new Array(10).fill({index: 1, name: "bulbasaur", image:bulbasaur})]);
+  const [items, setItems] = useState([new Array(10).fill({index: 1, name: "bulbasaur", image: bulbasaur, types: ['grass', 'poison']})]);
   const [dexnum, setDexnum] = useState(0);
   const [name, setName] = useState(items[dexnum].name);
   const [image, setImage] = useState(items[dexnum].image);
+  const [types, setTypes] = useState(items[dexnum].types)
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   let animationStep = 1;
   const totalAnimationSteps = 30;
   const intervalRef = useRef(null);
   let isScrolling = false;
+  
+  console.log(types);
 
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
       const response = await fetch('./pokedex.json');
       const body = await response.json();
-      setItems(body)
-      setImage(body[0].image)
+      setItems(body);
+      setImage(body[0].image);
+      setTypes(body[0].types)
     }
     fetchData();
   }, []);
@@ -57,10 +61,7 @@ function App() {
         }
       };
       forwardArr.push(transformation)
-      console.log(transformation)
     }
-
-    console.log('--------------')
 
     for (let i = 1; i < refArray.length; i++){ //For increments
       const curElement = refArray[i].current;
@@ -82,7 +83,6 @@ function App() {
         }
       };
       backwardsArr.push(transformation)
-      console.log(transformation)
     }
   
   }
@@ -125,18 +125,20 @@ function App() {
   function IncrementDex() { 
     if(dexnum < items.length - 1){
       let updatedDex = dexnum + 1;
-      setDexnum(updatedDex)
-      setName(items[updatedDex].name)
-      setImage(items[updatedDex].image)
+      setDexnum(updatedDex);
+      setName(items[updatedDex].name);
+      setImage(items[updatedDex].image);
+      setTypes(items[updatedDex].types);
     }
   }
 
   function DecrementDex() {
     if(dexnum != 0){
       let updatedDex = dexnum - 1;
-      setDexnum(updatedDex)
-      setName(items[updatedDex].name)
-      setImage(items[updatedDex].image)
+      setDexnum(updatedDex);
+      setName(items[updatedDex].name);
+      setImage(items[updatedDex].image);
+      setTypes(items[updatedDex].types);
     }
   }
 
@@ -176,13 +178,33 @@ function App() {
     )
   }
 
+  function Type({typeName}){
+    console.log(typeName)
+    const classString = typeName + ' type';
+    const typeCaps = typeName.toUpperCase();
+    return(
+      <div className={classString}>{typeCaps}</div>
+    )
+  }
+  /*
+        {types?.map((type) => (
+          <Type key={type} typeName={type} />
+        ))}
+  */
+
 
   return (
     <>
     <div className='imageAndWheel'>
       <div className='information'>
           <img className='pokeImage' src={image} />
+          <div className='typeBox'>
+            {types?.map((type) => (
+              <Type key={type} typeName={type} />
+            ))}
+          </div>
       </div>
+
       <div className='wheel'>
         <div className='directionButtons'>
           <div className="decrementButton">
@@ -204,6 +226,7 @@ function App() {
         </div>
         <VisibleEntries num={dexnum} />
       </div>
+      
     </div>
     </>
   )
