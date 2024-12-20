@@ -4,7 +4,14 @@
 }
 
 .type {
+    font-family: sans-serif;
     border-radius: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 10vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .normal {

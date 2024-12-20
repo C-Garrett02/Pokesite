@@ -5,9 +5,12 @@
   
   .pokeImage {
     height: 60vh;
-    margin-left: 10vw;
     image-rendering: pixelated;
     align-items: center;
+    border: solid 1vh;
+    border-radius: 2vh;
+    background-color: rgb(203, 216, 216);
+    overflow: hidden;
   }
 
   .wheel {
@@ -19,16 +22,14 @@
     height: 100vh;
   }
 
-  .imageAndWheel {
-    align-items: center;
+  .leftAndRight {
     display: flex;
     flex-direction: row;
-    
   }
 
-  .information {
+  .imageAndType {
     display:flex;
-    flex-direction: vertical;
+    flex-direction: column;
     width: 60vw;
   }
 

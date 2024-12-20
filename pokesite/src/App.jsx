@@ -186,23 +186,25 @@ function App() {
       <div className={classString}>{typeCaps}</div>
     )
   }
-  /*
-        {types?.map((type) => (
-          <Type key={type} typeName={type} />
-        ))}
-  */
 
 
   return (
     <>
-    <div className='imageAndWheel'>
-      <div className='information'>
-          <img className='pokeImage' src={image} />
-          <div className='typeBox'>
-            {types?.map((type) => (
-              <Type key={type} typeName={type} />
-            ))}
-          </div>
+    <div className='leftAndRight'>
+      <div className='visuals'>
+        <div className='imageAndType'>
+            <div className='imageContainer'>
+              <img className='pokeImage' src={image} />
+            </div>
+            <div className='typeBox'>
+              {types?.map((type) => (
+                <Type key={type} typeName={type} />
+              ))}
+            </div>
+        </div>
+        <div className="statsChart">
+          
+        </div>
       </div>
 
       <div className='wheel'>
@@ -226,7 +228,6 @@ function App() {
         </div>
         <VisibleEntries num={dexnum} />
       </div>
-      
     </div>
     </>
   )
