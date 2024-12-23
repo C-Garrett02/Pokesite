@@ -2,15 +2,10 @@
     padding: 0;
     margin: 0;
   }
-  
-  .pokeImage {
-    height: 60vh;
-    image-rendering: pixelated;
-    align-items: center;
-    border: solid 1vh;
-    border-radius: 2vh;
-    background-color: rgb(203, 216, 216);
-    overflow: hidden;
+
+  .leftAndRight {
+    display: flex;
+    flex-direction: row;
   }
 
   .wheel {
@@ -22,9 +17,14 @@
     height: 100vh;
   }
 
-  .leftAndRight {
-    display: flex;
-    flex-direction: row;
+  .pokeImage {
+    height: 50vh;
+    image-rendering: pixelated;
+    align-items: center;
+    border: solid 1vh;
+    border-radius: 2vh;
+    background-color: rgb(203, 216, 216);
+    overflow: hidden;
   }
 
   .imageAndType {
