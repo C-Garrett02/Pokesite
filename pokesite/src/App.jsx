@@ -9,6 +9,14 @@ import './Types.css'
 const forwardArr = [];
 const backwardsArr = [];
 
+function debounce(callback, wait) {
+  let timeout = null;
+  return(() => {
+    window.clearTimeout(timeout);
+    timeout = window.setTimeout(callback, wait);
+  })
+}
+
 function App() {
   const [items, setItems] = useState([new Array(10).fill({index: 1, name: "bulbasaur", image: bulbasaur, types: ['grass', 'poison']})]);
   const [dexnum, setDexnum] = useState(0);
@@ -16,29 +24,31 @@ function App() {
   const [image, setImage] = useState(items[dexnum].image);
   const [types, setTypes] = useState(items[dexnum].types)
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+  const windowSizeRef = useWindowSize();
   let animationStep = 1;
   const totalAnimationSteps = 30;
   const intervalRef = useRef(null);
   let isScrolling = false;
   
-  console.log(types);
+  function useWindowSize(){ //custom Hook that listens to window size, though its purpose as a hook is pretty useless at the moment. Should rework this.
+    const windowSizeRef = useRef([0, 0]);
+    useLayoutEffect(() => {
+      const updateSize = debounce (() => {
+        windowSizeRef.current = [window.innerWidth, window.innerHeight];
+        console.log('updating size...')
+        calculateTransformations();
+      }, 100)
+      window.addEventListener('resize', updateSize);
+      updateSize();
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    return windowSizeRef;
+  }
 
-  useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
-    async function fetchData() {
-      const response = await fetch('./pokedex.json');
-      const body = await response.json();
-      setItems(body);
-      setImage(body[0].image);
-      setTypes(body[0].types)
-    }
-    fetchData();
-  }, []);
-
-  useLayoutEffect(calculateTransformations, []); //LayoutEffect as we need to measure components after rendering.
-
-  function calculateTransformations() {  //Find difference between realtive top value, left margin, z index. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every render
-    //console.log("calculating...")
+  function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
+    console.log("calculating... " + Date.now())
     forwardArr.length = 0;
+    backwardsArr.length = 0;
     const matchStr = /\((\d*\.*\d*)\)/;
 
     for (let i = 0; i < refArray.length - 1; i++){ //For decrements
@@ -186,7 +196,21 @@ function App() {
       <div className={classString}>{typeCaps}</div>
     )
   }
+  
+  useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
+    async function fetchData() {
+      const response = await fetch('./pokedex.json');
+      const body = await response.json();
+      setItems(body);
+      setImage(body[0].image);
+      setTypes(body[0].types)
+    }
+    fetchData();
+  }, []);
 
+  useLayoutEffect(calculateTransformations, []);
+  
+  console.log('rendering app ' + Date.now());
 
   return (
     <>
@@ -203,7 +227,7 @@ function App() {
             </div>
         </div>
         <div className="statsChart">
-          
+
         </div>
       </div>
 
