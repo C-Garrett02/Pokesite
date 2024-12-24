@@ -17,7 +17,6 @@ function StatsChart({stats}) {
                     // Border color of each bar
                     //borderColor: ["aqua", "green", "red", "yellow"],
                     //borderWidth: 0.5,
-                    indexAxis: 'y'
                 },
             ],
         }
@@ -25,18 +24,16 @@ function StatsChart({stats}) {
         const options = {
             maintainAspectRatio: false,
             scales: {
-              /*x: {
+              x: {
                 grid: {
                   display: false // This turns off the x-axis gridlines
                 },
               },
-              x: {
+              y: {
                 grid: {
-                  color: 'red',
-                  borderColor: 'grey',
-                  tickColor: 'grey'
-                }
-              }*/
+                  display: false // This turns off the x-axis gridlines
+                },
+              },
             }
         };
 
