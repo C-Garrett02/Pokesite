@@ -6,7 +6,7 @@ function StatsChart({stats}) {
     if(stats){
         const data = {
             // Name of the variables on x-axies for each bar
-            labels: ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"],
+            labels: ["HP " + stats['hp'], "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"],
             datasets: [
                 {
                     // Data or value of your each variable
@@ -22,6 +22,7 @@ function StatsChart({stats}) {
         }
 
         const options = {
+            indexAxis: 'y',
             maintainAspectRatio: false,
             scales: {
               x: {
@@ -34,6 +35,11 @@ function StatsChart({stats}) {
                   display: false // This turns off the x-axis gridlines
                 },
               },
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
             }
         };
 
