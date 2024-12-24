@@ -26,11 +26,22 @@
     background-color: rgb(203, 216, 216);
     overflow: hidden;
   }
+  
+  .visuals {
+    display: flex;
+    flex-direction: flex;
+  }
+
+  .statsChart {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 50vh;
+  }
 
   .imageAndType {
     display:flex;
     flex-direction: column;
-    width: 60vw;
   }
 
   .directionButtons {

@@ -5,6 +5,8 @@ import venusaur from '/Venusaur.png'
 //import './App.css'
 import './Temp.css'
 import './Types.css'
+import StatsChart from './StatsChart.jsx'
+import Chart from 'chart.js/auto';
 
 const forwardArr = [];
 const backwardsArr = [];
@@ -18,11 +20,29 @@ function debounce(callback, wait) {
 }
 
 function App() {
-  const [items, setItems] = useState([new Array(10).fill({index: 1, name: "bulbasaur", image: bulbasaur, types: ['grass', 'poison']})]);
+  const [items, setItems] = useState([new Array(10).fill({
+    "id": 1,
+    "name": "Bulbasaur",
+    "stats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 45
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "forms": []
+  })]);
   const [dexnum, setDexnum] = useState(0);
   const [name, setName] = useState(items[dexnum].name);
   const [image, setImage] = useState(items[dexnum].image);
   const [types, setTypes] = useState(items[dexnum].types)
+  const [stats, setStats] = useState(items[dexnum].stats);
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const windowSizeRef = useWindowSize();
   let animationStep = 1;
@@ -35,7 +55,6 @@ function App() {
     useLayoutEffect(() => {
       const updateSize = debounce (() => {
         windowSizeRef.current = [window.innerWidth, window.innerHeight];
-        console.log('updating size...')
         calculateTransformations();
       }, 100)
       window.addEventListener('resize', updateSize);
@@ -46,7 +65,6 @@ function App() {
   }
 
   function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
-    console.log("calculating... " + Date.now())
     forwardArr.length = 0;
     backwardsArr.length = 0;
     const matchStr = /\((\d*\.*\d*)\)/;
@@ -139,6 +157,7 @@ function App() {
       setName(items[updatedDex].name);
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
+      setStats(items[updatedDex].stats);
     }
   }
 
@@ -149,6 +168,7 @@ function App() {
       setName(items[updatedDex].name);
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
+      setStats(items[updatedDex].stats);
     }
   }
 
@@ -189,7 +209,6 @@ function App() {
   }
 
   function Type({typeName}){
-    console.log(typeName)
     const classString = typeName + ' type';
     const typeCaps = typeName.toUpperCase();
     return(
@@ -203,14 +222,15 @@ function App() {
       const body = await response.json();
       setItems(body);
       setImage(body[0].image);
-      setTypes(body[0].types)
+      setTypes(body[0].types);
+      setStats(body[0].stats);
     }
     fetchData();
   }, []);
 
   useLayoutEffect(calculateTransformations, []);
   
-  console.log('rendering app ' + Date.now());
+  //console.log('rendering app ' + Date.now());
 
   return (
     <>
@@ -226,8 +246,8 @@ function App() {
               ))}
             </div>
         </div>
-        <div className="statsChart">
-
+        <div>
+          <StatsChart stats={stats}/>
         </div>
       </div>
 
