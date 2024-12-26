@@ -20,7 +20,7 @@ function debounce(callback, wait) {
 }
 
 function App() {
-  const [items, setItems] = useState([new Array(10).fill({
+  const [items, setItems] = useState(new Array(10).fill({
     "id": 1,
     "name": "Bulbasaur",
     "stats": {
@@ -37,7 +37,7 @@ function App() {
       "poison"
     ],
     "forms": []
-  })]);
+  }));
   const [dexnum, setDexnum] = useState(0);
   const [name, setName] = useState(items[dexnum].name);
   const [image, setImage] = useState(items[dexnum].image);
@@ -115,6 +115,13 @@ function App() {
   
   }
 
+  function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
+    return(
+      items.filter((pokemon) => pokemon.name.toLowerCase().includes(input.toLowerCase())
+      )
+    )
+  }
+
   function slideEntriesUp() {
     const multiplyBy = animationStep/totalAnimationSteps
 
@@ -128,7 +135,7 @@ function App() {
     if(animationStep > totalAnimationSteps - 1){ //last frame will be rendered
       animationStep = 1;
       clearInterval(intervalRef.current);
-      DecrementDex();
+      decrementDex();
       isScrolling = true;
     }
   }
@@ -145,12 +152,12 @@ function App() {
     if(animationStep > totalAnimationSteps - 1){ //last frame will be rendered
       animationStep = 1;
       clearInterval(intervalRef.current);
-      IncrementDex();
+      incrementDex();
       isScrolling = false;
     }
   }
 
-  function IncrementDex() { 
+  function incrementDex() { 
     if(dexnum < items.length - 1){
       let updatedDex = dexnum + 1;
       setDexnum(updatedDex);
@@ -161,7 +168,7 @@ function App() {
     }
   }
 
-  function DecrementDex() {
+  function decrementDex() {
     if(dexnum != 0){
       let updatedDex = dexnum - 1;
       setDexnum(updatedDex);
@@ -169,6 +176,22 @@ function App() {
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
+    }
+  }
+
+  function FilteredDex({input}) {
+    console.log(filterByInput(input));
+    if (input.length >= 3){
+      return( 
+        filterByInput(input).map(pokemon => 
+          <div className='listedMon'>
+            {pokemon.name}
+          </div>
+        )
+      )
+    }
+    else{
+      return <></>
     }
   }
 
