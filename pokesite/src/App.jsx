@@ -234,6 +234,9 @@ function App() {
 
   return (
     <>
+    <div className='searchBar'>
+
+    </div>
     <div className='leftAndRight'>
       <div className='visuals'>
         <div className='imageAndType'>

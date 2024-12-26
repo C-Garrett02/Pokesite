@@ -44,18 +44,23 @@ function StatsChart({stats}) {
             events: [],
             scales: {
               x: {
-                //display: false,
                 grid: {
                   display: false // This turns off the x-axis gridlines
                 },
-                max: 150
-                //ticks : {
-                //  display: false
-                //}
+                max: 150,
+                ticks : {
+                  display: false
+                },
+                border: {
+                  width: 0
+                }
               },
               y: {
                 grid: {
                   display: false // This turns off the x-axis gridlines
+                },
+                border: {
+                  width: 0
                 }
               }
             },

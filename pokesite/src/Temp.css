@@ -15,6 +15,7 @@
     display:flex;
     flex-direction: row;
     height: 100vh;
+    margin-left: 5vw;
   }
 
   .pokeImage {
@@ -37,6 +38,8 @@
     flex-direction: row;
     height: 50vh;
     width: 50vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 
   .imageAndType {
