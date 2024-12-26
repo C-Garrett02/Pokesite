@@ -115,13 +115,6 @@ function App() {
   
   }
 
-  function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
-    return(
-      items.filter((pokemon) => pokemon.name.toLowerCase().includes(input.toLowerCase())
-      )
-    )
-  }
-
   function slideEntriesUp() {
     const multiplyBy = animationStep/totalAnimationSteps
 
@@ -179,20 +172,51 @@ function App() {
     }
   }
 
-  function FilteredDex({input}) {
-    console.log(filterByInput(input));
-    if (input.length >= 3){
-      return( 
-        filterByInput(input).map(pokemon => 
-          <div className='listedMon'>
-            {pokemon.name}
-          </div>
-        )
+  function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
+    return(
+      items.filter((pokemon) => pokemon.name.toLowerCase().includes(input.toLowerCase())
       )
+    )
+  }
+
+  function FilteredDex({input}){ //returns list of divs that provide matches. Does not exist in dom unless there are results to be returned.
+    const jumpToMon = (e) => {
+      const updatedDex = parseInt(e.target.getAttribute('number'))-1;
+      setDexnum(updatedDex);
+      setName(items[updatedDex].name);
+      setImage(items[updatedDex].image);
+      setTypes(items[updatedDex].types);
+      setStats(items[updatedDex].stats);
+    }
+    let filteredList = <></>
+
+    if (input.length >= 3){
+        filteredList = filterByInput(input).map(pokemon => 
+          <button key={pokemon.name} number={pokemon.id} className='monButton' onClick={jumpToMon}>{pokemon.name}</button>
+        )
+    }
+
+    if(filteredList.length){
+      return <div className='listedMon'>{filteredList}</div>
     }
     else{
-      return <></>
+      return null;
     }
+  }
+
+  function SearchBar(){ //The search bar for pokemon and the search results
+    const [inputStr, setInputStr] = useState('');
+
+    const handleState = (e) => {
+      setInputStr(e.target.value);
+    };
+
+    return (
+      <div className='searchBar'>
+        <input className='monInput' value={inputStr} onChange={handleState}></input>
+        <FilteredDex input={inputStr} />
+      </div>
+    )
   }
 
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
@@ -257,8 +281,8 @@ function App() {
 
   return (
     <>
-    <div className='searchBar'>
-
+    <div className='topBar'>
+      <SearchBar />
     </div>
     <div className='leftAndRight'>
       <div className='visuals'>
