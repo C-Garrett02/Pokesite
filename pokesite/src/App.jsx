@@ -46,7 +46,7 @@ function App() {
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const windowSizeRef = useWindowSize();
   let animationStep = 1;
-  const totalAnimationSteps = 30;
+  //const totalAnimationSteps = 30;
   const intervalRef = useRef(null);
   let isScrolling = false;
   
@@ -115,7 +115,7 @@ function App() {
   
   }
 
-  function slideEntriesUp() {
+  function slideEntriesUp(totalAnimationSteps = 30) {
     const multiplyBy = animationStep/totalAnimationSteps
 
     for (let i = 0; i < refArray.length - 1; i++){ //loop through 
@@ -133,7 +133,7 @@ function App() {
     }
   }
 
-  function slideEntriesDown() {
+  function slideEntriesDown(totalAnimationSteps = 30) {
     const multiplyBy = animationStep/totalAnimationSteps
     for (let i = 1; i < refArray.length; i++){ //loop through 
       refArray[i].current.style.top = (+backwardsArr[i-1].top)*multiplyBy + 'px'; 
@@ -213,7 +213,7 @@ function App() {
 
     return (
       <div className='searchBar'>
-        <input className='monInput' value={inputStr} onChange={handleState}></input>
+        <input name='Pokemon Search Bar' className='monInput' value={inputStr} onChange={handleState}></input>
         <FilteredDex input={inputStr} />
       </div>
     )

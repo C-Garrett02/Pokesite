@@ -7,17 +7,57 @@ async function GetPokemon2(dex) {
     return body.varieties;
 }
 
+async function GetAbility(ability) {
+    const response = await fetch(ability.url);
+    const body = await response.json();
+    let description = "";
+    let ability_name = "";
+    for (let name of body.names) {
+        if(name.language.name == "en"){
+            ability_name = name.name;
+        }
+    }
+    if(body.effect_entries.length > 0){
+        for (let entry of body.effect_entries) {
+            if(entry.language.name == "en"){
+                description = entry.effect;
+                description = description.replace(/ \n/g, ' ');
+                description = description.replace(/\n/g, '');
+            }
+        }
+    }
+    else {
+        for (let i = body.flavor_text_entries.length - 1; i >= 0; i--){ //Want to get the most recent entry, start from back
+            if(body.flavor_text_entries[i].language.name == "en"){
+                description = body.flavor_text_entries[i].flavor_text;
+                description = description.replace(/ \n/g, '');
+                description = description.replace(/\n/g, ' ');
+            }
+        }
+    }
+    return {
+        name: ability_name,
+        effect: description
+    }
+}
+
 async function GetFormData2(varieties) {
     const response = await fetch(varieties[0].pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
     const uppercaseName = body.name.charAt(0).toUpperCase() + body.name.slice(1);
     let base_stats = {};
     let type_array = [];
+    let ability_list = [];
     for (let stat of body.stats){ 
-        base_stats[stat.stat.name] = stat.base_stat
+        base_stats[stat.stat.name] = stat.base_stat;
     }
     for (let type of body.types){
-        type_array.push(type.type.name)
+        type_array.push(type.type.name);
+    }
+    for (let ability of body.abilities){
+        let currentAbilityDescription = await GetAbility(ability.ability);
+        currentAbilityDescription.hidden = ability.is_hidden;
+        ability_list.push(currentAbilityDescription);
     }
     return {
         id: body.id,
@@ -25,6 +65,7 @@ async function GetFormData2(varieties) {
         stats: base_stats,
         image: body.sprites.front_default,
         types: type_array,
+        abilities: ability_list,
         forms: []
     };
 }
@@ -32,7 +73,7 @@ async function GetFormData2(varieties) {
 async function PushPokemon(dex) {
     const varieties = await GetPokemon2(dex);
     const pokemon = await GetFormData2(varieties);
-    console.log(pokemon)
+    //console.log(pokemon)
     pokedex.push(pokemon)
 }
 
@@ -52,7 +93,7 @@ let promises = [];
 let pokedex = [];
 
 for (let i = 1; i <= 151; i++) {
-    promises.push(PushPokemon(i))
+    promises.push(PushPokemon(i));
 }
 
 Promise.all(promises)
