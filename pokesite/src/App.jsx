@@ -36,6 +36,18 @@ function App() {
       "grass",
       "poison"
     ],
+    "abilities": [
+      {
+          "name": "Overgrow",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage.",
+          "hidden": false
+      },
+      {
+          "name": "Chlorophyll",
+          "effect": "This Pokémon's Speed is doubled during strong sunlight.This bonus does not count as a stat modifier.",
+          "hidden": true
+      }
+    ],
     "forms": []
   }));
   const [dexnum, setDexnum] = useState(0);
@@ -43,6 +55,7 @@ function App() {
   const [image, setImage] = useState(items[dexnum].image);
   const [types, setTypes] = useState(items[dexnum].types)
   const [stats, setStats] = useState(items[dexnum].stats);
+  const [abilities, setAbilities] = useState(items[dexnum].abilities)
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const windowSizeRef = useWindowSize();
   let animationStep = 1;
@@ -158,6 +171,7 @@ function App() {
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
+      setAbilities(items[updatedDex].abilities);
     }
   }
 
@@ -169,6 +183,7 @@ function App() {
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
+      setAbilities(items[updatedDex].abilities);
     }
   }
 
@@ -187,6 +202,7 @@ function App() {
       setImage(items[updatedDex].image);
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
+      setAbilities(items[updatedDex].abilities);
     }
     let filteredList = <></>
 
@@ -215,6 +231,20 @@ function App() {
       <div className='searchBar'>
         <input name='Pokemon Search Bar' className='monInput' value={inputStr} onChange={handleState}></input>
         <FilteredDex input={inputStr} />
+      </div>
+    )
+  }
+
+  function Abilities(){
+    const [abilityIndex, setAbilityIndex] = useState(0);
+    return (
+      <div className='abilityBox'>
+        <div className='abilityName'>
+          {abilities[abilityIndex].name}
+        </div>
+        <div className='abilityDescription'>
+          {abilities[abilityIndex].effect}
+        </div>
       </div>
     )
   }
@@ -271,6 +301,7 @@ function App() {
       setImage(body[0].image);
       setTypes(body[0].types);
       setStats(body[0].stats);
+      setAbilities(body[0].abilities)
     }
     fetchData();
   }, []);
