@@ -240,7 +240,7 @@ function App() {
     return (
       <div className='abilityBox'>
         <div className='abilityName'>
-          {abilities[abilityIndex].name}
+          <b>{abilities[abilityIndex].name}</b>
         </div>
         <div className='abilityDescription'>
           {abilities[abilityIndex].effect}
@@ -316,20 +316,23 @@ function App() {
       <SearchBar />
     </div>
     <div className='leftAndRight'>
-      <div className='visuals'>
-        <div className='imageAndType'>
-            <div className='imageContainer'>
-              <img className='pokeImage' src={image} />
-            </div>
-            <div className='typeBox'>
-              {types?.map((type) => (
-                <Type key={type} typeName={type} />
-              ))}
-            </div>
+      <div className='left'>
+        <div className='visuals'>
+          <div className='imageAndType'>
+              <div className='imageContainer'>
+                <img className='pokeImage' src={image} />
+              </div>
+              <div className='typeBox'>
+                {types?.map((type) => (
+                  <Type key={type} typeName={type} />
+                ))}
+              </div>
+          </div>
+          <div>
+            <StatsChart stats={stats}/>
+          </div>
         </div>
-        <div>
-          <StatsChart stats={stats}/>
-        </div>
+        <Abilities />
       </div>
 
       <div className='wheel'>
