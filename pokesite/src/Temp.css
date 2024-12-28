@@ -115,13 +115,47 @@
     border: solid 1px;
   }
 
+  .abilityName {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .abilityDescription {
     height: 15vh;
     overflow-y: scroll;
   }
 
-  .abilityName {
+  .abilityHeader {
+    display: flex;
     border-bottom: solid 1px;
+    align-items: center;
+    height: 4vh;
+  }
+
+  .abilityBtn {
+    display: flex;
+    border: 1px solid;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .directionBtns {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #leftArrow {
+    height: 1000%;
+    transform: rotate(-90deg);
+  }
+
+  #rightArrow {
+    height: 1000%;
+    transform: rotate(90deg);
   }
 
   .directionButtons {
