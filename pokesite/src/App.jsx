@@ -237,23 +237,25 @@ function App() {
 
   function Abilities(){
     const [abilityIndex, setAbilityIndex] = useState(0);
-    const [textEnd, setTextEnd] = useState("Ability 1");
+    const [textEnd, setTextEnd] = useState(generateTextEnd(0));
     function incrementAbility(){
       if (abilityIndex+1 < abilities.length){
+        setTextEnd(generateTextEnd(abilityIndex+1));
         setAbilityIndex(abilityIndex+1);
       }
     }
     function decrementAbility(){
       if (abilityIndex-1 > -1){
+        setTextEnd(generateTextEnd(abilityIndex-1));
         setAbilityIndex(abilityIndex-1);
       }
     }
-    function generateTextEnd(){
-      if(abilities[abilityIndex].hidden){
+    function generateTextEnd(index){
+      if(abilities[index].hidden){
         return "(Hidden)";
       }
       else{
-        return "(Ability " + (abilityIndex + 1) + ")";
+        return "(Ability " + (index+1) + ")";
       }
     }
 
@@ -261,7 +263,7 @@ function App() {
       <div className='abilityBox'>
         <div className='abilityHeader'>
           <div className='abilityName'>
-            <strong>{abilities[abilityIndex].name}</strong> <span>{textEnd}</span>
+            <strong>{abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
           </div>
           <div className='directionBtns'>
             <button className='abilityBtn' onClick={decrementAbility}>
@@ -358,8 +360,11 @@ function App() {
                 ))}
               </div>
           </div>
-          <div>
+          <div className='statsChartBox'>
             <StatsChart stats={stats}/>
+            <div className='baseStatTotal'>
+              {stats.total}
+            </div>
           </div>
         </div>
         <Abilities />

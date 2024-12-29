@@ -90,16 +90,28 @@
   
   .visuals {
     display: flex;
-    flex-direction: flex;
+    flex-direction: row;
+  }
+
+  .statsChartBox {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 
   .statsChart {
     display: flex;
     flex-direction: row;
-    height: 50vh;
-    width: 50vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    height: 100%;
+    width: 100;
+  }
+
+  .baseStatTotal {
+    display: flex;
+    height: 2vh;
   }
 
   .imageAndType {
@@ -115,6 +127,17 @@
     border: solid 1px;
   }
 
+  .abilityHeader {
+    display: flex;
+    border-bottom: solid 1px;
+    align-items: center;
+    height: 4vh;
+  }
+
+  #abilityTextEnd {
+    margin-left: 2%;
+  }
+
   .abilityName {
     display: flex;
     flex-direction: row;
@@ -123,20 +146,13 @@
 
   .abilityDescription {
     height: 15vh;
-    overflow-y: scroll;
-  }
-
-  .abilityHeader {
-    display: flex;
-    border-bottom: solid 1px;
-    align-items: center;
-    height: 4vh;
+    overflow-y: auto;
   }
 
   .abilityBtn {
     display: flex;
     border: 1px solid;
-    height: 90%;
+    height: 3.6vh;
     align-items: center;
     justify-content: center;
   }
@@ -149,13 +165,17 @@
   }
 
   #leftArrow {
-    height: 1000%;
+    width: 2.5vh;
+    height: 2.5vh;
     transform: rotate(-90deg);
+    object-fit: contain;
   }
 
   #rightArrow {
-    height: 1000%;
+    width: 2.5vh;
+    height: 2.5vh;
     transform: rotate(90deg);
+    object-fit: contain;
   }
 
   .directionButtons {

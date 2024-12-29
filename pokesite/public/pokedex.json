@@ -8,7 +8,8 @@
             "defense": 49,
             "special-attack": 65,
             "special-defense": 65,
-            "speed": 45
+            "speed": 45,
+            "total": 318
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
         "types": [
@@ -38,7 +39,8 @@
             "defense": 63,
             "special-attack": 80,
             "special-defense": 80,
-            "speed": 60
+            "speed": 60,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
         "types": [
@@ -68,7 +70,8 @@
             "defense": 83,
             "special-attack": 100,
             "special-defense": 100,
-            "speed": 80
+            "speed": 80,
+            "total": 525
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
         "types": [
@@ -98,7 +101,8 @@
             "defense": 43,
             "special-attack": 60,
             "special-defense": 50,
-            "speed": 65
+            "speed": 65,
+            "total": 309
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
         "types": [
@@ -127,7 +131,8 @@
             "defense": 58,
             "special-attack": 80,
             "special-defense": 65,
-            "speed": 80
+            "speed": 80,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
         "types": [
@@ -156,7 +161,8 @@
             "defense": 78,
             "special-attack": 109,
             "special-defense": 85,
-            "speed": 100
+            "speed": 100,
+            "total": 534
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
         "types": [
@@ -186,7 +192,8 @@
             "defense": 65,
             "special-attack": 50,
             "special-defense": 64,
-            "speed": 43
+            "speed": 43,
+            "total": 314
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
         "types": [
@@ -215,7 +222,8 @@
             "defense": 80,
             "special-attack": 65,
             "special-defense": 80,
-            "speed": 58
+            "speed": 58,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
         "types": [
@@ -244,7 +252,8 @@
             "defense": 100,
             "special-attack": 85,
             "special-defense": 105,
-            "speed": 78
+            "speed": 78,
+            "total": 530
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
         "types": [
@@ -273,7 +282,8 @@
             "defense": 35,
             "special-attack": 20,
             "special-defense": 20,
-            "speed": 45
+            "speed": 45,
+            "total": 195
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
         "types": [
@@ -302,7 +312,8 @@
             "defense": 55,
             "special-attack": 25,
             "special-defense": 25,
-            "speed": 30
+            "speed": 30,
+            "total": 205
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
         "types": [
@@ -326,7 +337,8 @@
             "defense": 50,
             "special-attack": 90,
             "special-defense": 80,
-            "speed": 70
+            "speed": 70,
+            "total": 395
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
         "types": [
@@ -356,7 +368,8 @@
             "defense": 30,
             "special-attack": 20,
             "special-defense": 20,
-            "speed": 50
+            "speed": 50,
+            "total": 195
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
         "types": [
@@ -386,7 +399,8 @@
             "defense": 50,
             "special-attack": 25,
             "special-defense": 25,
-            "speed": 35
+            "speed": 35,
+            "total": 205
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
         "types": [
@@ -411,7 +425,8 @@
             "defense": 40,
             "special-attack": 45,
             "special-defense": 80,
-            "speed": 75
+            "speed": 75,
+            "total": 395
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
         "types": [
@@ -441,7 +456,8 @@
             "defense": 40,
             "special-attack": 35,
             "special-defense": 35,
-            "speed": 56
+            "speed": 56,
+            "total": 251
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
         "types": [
@@ -476,7 +492,8 @@
             "defense": 55,
             "special-attack": 50,
             "special-defense": 50,
-            "speed": 71
+            "speed": 71,
+            "total": 349
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
         "types": [
@@ -511,7 +528,8 @@
             "defense": 75,
             "special-attack": 70,
             "special-defense": 70,
-            "speed": 101
+            "speed": 101,
+            "total": 479
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
         "types": [
@@ -546,7 +564,8 @@
             "defense": 35,
             "special-attack": 25,
             "special-defense": 35,
-            "speed": 72
+            "speed": 72,
+            "total": 253
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
         "types": [
@@ -580,7 +599,8 @@
             "defense": 60,
             "special-attack": 50,
             "special-defense": 70,
-            "speed": 97
+            "speed": 97,
+            "total": 413
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
         "types": [
@@ -614,7 +634,8 @@
             "defense": 30,
             "special-attack": 31,
             "special-defense": 31,
-            "speed": 70
+            "speed": 70,
+            "total": 262
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
         "types": [
@@ -644,7 +665,8 @@
             "defense": 65,
             "special-attack": 61,
             "special-defense": 61,
-            "speed": 100
+            "speed": 100,
+            "total": 442
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
         "types": [
@@ -674,7 +696,8 @@
             "defense": 44,
             "special-attack": 40,
             "special-defense": 54,
-            "speed": 55
+            "speed": 55,
+            "total": 288
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
         "types": [
@@ -708,7 +731,8 @@
             "defense": 69,
             "special-attack": 65,
             "special-defense": 79,
-            "speed": 80
+            "speed": 80,
+            "total": 448
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
         "types": [
@@ -742,7 +766,8 @@
             "defense": 40,
             "special-attack": 50,
             "special-defense": 50,
-            "speed": 90
+            "speed": 90,
+            "total": 320
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
         "types": [
@@ -771,7 +796,8 @@
             "defense": 55,
             "special-attack": 90,
             "special-defense": 80,
-            "speed": 110
+            "speed": 110,
+            "total": 485
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
         "types": [
@@ -800,7 +826,8 @@
             "defense": 85,
             "special-attack": 20,
             "special-defense": 30,
-            "speed": 40
+            "speed": 40,
+            "total": 300
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
         "types": [
@@ -829,7 +856,8 @@
             "defense": 110,
             "special-attack": 45,
             "special-defense": 55,
-            "speed": 65
+            "speed": 65,
+            "total": 450
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
         "types": [
@@ -858,7 +886,8 @@
             "defense": 52,
             "special-attack": 40,
             "special-defense": 40,
-            "speed": 41
+            "speed": 41,
+            "total": 275
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
         "types": [
@@ -892,7 +921,8 @@
             "defense": 67,
             "special-attack": 55,
             "special-defense": 55,
-            "speed": 56
+            "speed": 56,
+            "total": 365
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
         "types": [
@@ -926,7 +956,8 @@
             "defense": 87,
             "special-attack": 75,
             "special-defense": 85,
-            "speed": 76
+            "speed": 76,
+            "total": 505
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
         "types": [
@@ -961,7 +992,8 @@
             "defense": 40,
             "special-attack": 40,
             "special-defense": 40,
-            "speed": 50
+            "speed": 50,
+            "total": 273
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
         "types": [
@@ -995,7 +1027,8 @@
             "defense": 57,
             "special-attack": 55,
             "special-defense": 55,
-            "speed": 65
+            "speed": 65,
+            "total": 365
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
         "types": [
@@ -1029,7 +1062,8 @@
             "defense": 77,
             "special-attack": 85,
             "special-defense": 75,
-            "speed": 85
+            "speed": 85,
+            "total": 505
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
         "types": [
@@ -1064,7 +1098,8 @@
             "defense": 48,
             "special-attack": 60,
             "special-defense": 65,
-            "speed": 35
+            "speed": 35,
+            "total": 323
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
         "types": [
@@ -1098,7 +1133,8 @@
             "defense": 73,
             "special-attack": 95,
             "special-defense": 90,
-            "speed": 60
+            "speed": 60,
+            "total": 483
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
         "types": [
@@ -1132,7 +1168,8 @@
             "defense": 40,
             "special-attack": 50,
             "special-defense": 65,
-            "speed": 65
+            "speed": 65,
+            "total": 299
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
         "types": [
@@ -1161,7 +1198,8 @@
             "defense": 75,
             "special-attack": 81,
             "special-defense": 100,
-            "speed": 100
+            "speed": 100,
+            "total": 505
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
         "types": [
@@ -1190,7 +1228,8 @@
             "defense": 20,
             "special-attack": 45,
             "special-defense": 25,
-            "speed": 20
+            "speed": 20,
+            "total": 270
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
         "types": [
@@ -1225,7 +1264,8 @@
             "defense": 45,
             "special-attack": 85,
             "special-defense": 50,
-            "speed": 45
+            "speed": 45,
+            "total": 435
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
         "types": [
@@ -1260,7 +1300,8 @@
             "defense": 35,
             "special-attack": 30,
             "special-defense": 40,
-            "speed": 55
+            "speed": 55,
+            "total": 245
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
         "types": [
@@ -1290,7 +1331,8 @@
             "defense": 70,
             "special-attack": 65,
             "special-defense": 75,
-            "speed": 90
+            "speed": 90,
+            "total": 455
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
         "types": [
@@ -1320,7 +1362,8 @@
             "defense": 55,
             "special-attack": 75,
             "special-defense": 65,
-            "speed": 30
+            "speed": 30,
+            "total": 320
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
         "types": [
@@ -1350,7 +1393,8 @@
             "defense": 70,
             "special-attack": 85,
             "special-defense": 75,
-            "speed": 40
+            "speed": 40,
+            "total": 395
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
         "types": [
@@ -1380,7 +1424,8 @@
             "defense": 85,
             "special-attack": 110,
             "special-defense": 90,
-            "speed": 50
+            "speed": 50,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
         "types": [
@@ -1410,7 +1455,8 @@
             "defense": 55,
             "special-attack": 45,
             "special-defense": 55,
-            "speed": 25
+            "speed": 25,
+            "total": 285
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
         "types": [
@@ -1445,7 +1491,8 @@
             "defense": 80,
             "special-attack": 60,
             "special-defense": 80,
-            "speed": 30
+            "speed": 30,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
         "types": [
@@ -1480,7 +1527,8 @@
             "defense": 50,
             "special-attack": 40,
             "special-defense": 55,
-            "speed": 45
+            "speed": 45,
+            "total": 305
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
         "types": [
@@ -1515,7 +1563,8 @@
             "defense": 60,
             "special-attack": 90,
             "special-defense": 75,
-            "speed": 90
+            "speed": 90,
+            "total": 450
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
         "types": [
@@ -1550,7 +1599,8 @@
             "defense": 25,
             "special-attack": 35,
             "special-defense": 45,
-            "speed": 95
+            "speed": 95,
+            "total": 265
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
         "types": [
@@ -1584,7 +1634,8 @@
             "defense": 50,
             "special-attack": 50,
             "special-defense": 70,
-            "speed": 120
+            "speed": 120,
+            "total": 425
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
         "types": [
@@ -1618,7 +1669,8 @@
             "defense": 35,
             "special-attack": 40,
             "special-defense": 40,
-            "speed": 90
+            "speed": 90,
+            "total": 290
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
         "types": [
@@ -1652,7 +1704,8 @@
             "defense": 60,
             "special-attack": 65,
             "special-defense": 65,
-            "speed": 115
+            "speed": 115,
+            "total": 440
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
         "types": [
@@ -1686,7 +1739,8 @@
             "defense": 48,
             "special-attack": 65,
             "special-defense": 50,
-            "speed": 55
+            "speed": 55,
+            "total": 320
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
         "types": [
@@ -1720,7 +1774,8 @@
             "defense": 78,
             "special-attack": 95,
             "special-defense": 80,
-            "speed": 85
+            "speed": 85,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
         "types": [
@@ -1754,7 +1809,8 @@
             "defense": 35,
             "special-attack": 35,
             "special-defense": 45,
-            "speed": 70
+            "speed": 70,
+            "total": 305
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
         "types": [
@@ -1788,7 +1844,8 @@
             "defense": 60,
             "special-attack": 60,
             "special-defense": 70,
-            "speed": 95
+            "speed": 95,
+            "total": 455
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
         "types": [
@@ -1822,7 +1879,8 @@
             "defense": 45,
             "special-attack": 70,
             "special-defense": 50,
-            "speed": 60
+            "speed": 60,
+            "total": 350
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
         "types": [
@@ -1856,7 +1914,8 @@
             "defense": 80,
             "special-attack": 100,
             "special-defense": 80,
-            "speed": 95
+            "speed": 95,
+            "total": 555
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
         "types": [
@@ -1890,7 +1949,8 @@
             "defense": 40,
             "special-attack": 40,
             "special-defense": 40,
-            "speed": 90
+            "speed": 90,
+            "total": 300
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
         "types": [
@@ -1924,7 +1984,8 @@
             "defense": 65,
             "special-attack": 50,
             "special-defense": 50,
-            "speed": 90
+            "speed": 90,
+            "total": 385
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
         "types": [
@@ -1958,7 +2019,8 @@
             "defense": 95,
             "special-attack": 70,
             "special-defense": 90,
-            "speed": 70
+            "speed": 70,
+            "total": 510
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
         "types": [
@@ -1993,7 +2055,8 @@
             "defense": 15,
             "special-attack": 105,
             "special-defense": 55,
-            "speed": 90
+            "speed": 90,
+            "total": 310
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
         "types": [
@@ -2027,7 +2090,8 @@
             "defense": 30,
             "special-attack": 120,
             "special-defense": 70,
-            "speed": 105
+            "speed": 105,
+            "total": 400
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
         "types": [
@@ -2061,7 +2125,8 @@
             "defense": 45,
             "special-attack": 135,
             "special-defense": 95,
-            "speed": 120
+            "speed": 120,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
         "types": [
@@ -2095,7 +2160,8 @@
             "defense": 50,
             "special-attack": 35,
             "special-defense": 35,
-            "speed": 35
+            "speed": 35,
+            "total": 305
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
         "types": [
@@ -2129,7 +2195,8 @@
             "defense": 70,
             "special-attack": 50,
             "special-defense": 60,
-            "speed": 45
+            "speed": 45,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
         "types": [
@@ -2163,7 +2230,8 @@
             "defense": 80,
             "special-attack": 65,
             "special-defense": 85,
-            "speed": 55
+            "speed": 55,
+            "total": 505
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
         "types": [
@@ -2197,7 +2265,8 @@
             "defense": 35,
             "special-attack": 70,
             "special-defense": 30,
-            "speed": 40
+            "speed": 40,
+            "total": 300
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
         "types": [
@@ -2227,7 +2296,8 @@
             "defense": 50,
             "special-attack": 85,
             "special-defense": 45,
-            "speed": 55
+            "speed": 55,
+            "total": 390
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
         "types": [
@@ -2257,7 +2327,8 @@
             "defense": 65,
             "special-attack": 100,
             "special-defense": 70,
-            "speed": 70
+            "speed": 70,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
         "types": [
@@ -2287,7 +2358,8 @@
             "defense": 35,
             "special-attack": 50,
             "special-defense": 100,
-            "speed": 70
+            "speed": 70,
+            "total": 335
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
         "types": [
@@ -2322,7 +2394,8 @@
             "defense": 65,
             "special-attack": 80,
             "special-defense": 120,
-            "speed": 100
+            "speed": 100,
+            "total": 515
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
         "types": [
@@ -2357,7 +2430,8 @@
             "defense": 100,
             "special-attack": 30,
             "special-defense": 30,
-            "speed": 20
+            "speed": 20,
+            "total": 300
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
         "types": [
@@ -2392,7 +2466,8 @@
             "defense": 115,
             "special-attack": 45,
             "special-defense": 45,
-            "speed": 35
+            "speed": 35,
+            "total": 390
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
         "types": [
@@ -2427,7 +2502,8 @@
             "defense": 130,
             "special-attack": 55,
             "special-defense": 65,
-            "speed": 45
+            "speed": 45,
+            "total": 495
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
         "types": [
@@ -2462,7 +2538,8 @@
             "defense": 55,
             "special-attack": 65,
             "special-defense": 65,
-            "speed": 90
+            "speed": 90,
+            "total": 410
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
         "types": [
@@ -2496,7 +2573,8 @@
             "defense": 70,
             "special-attack": 80,
             "special-defense": 80,
-            "speed": 105
+            "speed": 105,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
         "types": [
@@ -2530,7 +2608,8 @@
             "defense": 65,
             "special-attack": 40,
             "special-defense": 40,
-            "speed": 15
+            "speed": 15,
+            "total": 315
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
         "types": [
@@ -2565,7 +2644,8 @@
             "defense": 110,
             "special-attack": 100,
             "special-defense": 80,
-            "speed": 30
+            "speed": 30,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
         "types": [
@@ -2600,7 +2680,8 @@
             "defense": 70,
             "special-attack": 95,
             "special-defense": 55,
-            "speed": 45
+            "speed": 45,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
         "types": [
@@ -2635,7 +2716,8 @@
             "defense": 95,
             "special-attack": 120,
             "special-defense": 70,
-            "speed": 70
+            "speed": 70,
+            "total": 465
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
         "types": [
@@ -2670,7 +2752,8 @@
             "defense": 55,
             "special-attack": 58,
             "special-defense": 62,
-            "speed": 60
+            "speed": 60,
+            "total": 377
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
         "types": [
@@ -2705,7 +2788,8 @@
             "defense": 45,
             "special-attack": 35,
             "special-defense": 35,
-            "speed": 75
+            "speed": 75,
+            "total": 310
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
         "types": [
@@ -2740,7 +2824,8 @@
             "defense": 70,
             "special-attack": 60,
             "special-defense": 60,
-            "speed": 110
+            "speed": 110,
+            "total": 470
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
         "types": [
@@ -2775,7 +2860,8 @@
             "defense": 55,
             "special-attack": 45,
             "special-defense": 70,
-            "speed": 45
+            "speed": 45,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
         "types": [
@@ -2809,7 +2895,8 @@
             "defense": 80,
             "special-attack": 70,
             "special-defense": 95,
-            "speed": 70
+            "speed": 70,
+            "total": 475
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
         "types": [
@@ -2844,7 +2931,8 @@
             "defense": 50,
             "special-attack": 40,
             "special-defense": 50,
-            "speed": 25
+            "speed": 25,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
         "types": [
@@ -2878,7 +2966,8 @@
             "defense": 75,
             "special-attack": 65,
             "special-defense": 100,
-            "speed": 50
+            "speed": 50,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
         "types": [
@@ -2912,7 +3001,8 @@
             "defense": 100,
             "special-attack": 45,
             "special-defense": 25,
-            "speed": 40
+            "speed": 40,
+            "total": 305
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
         "types": [
@@ -2946,7 +3036,8 @@
             "defense": 180,
             "special-attack": 85,
             "special-defense": 45,
-            "speed": 70
+            "speed": 70,
+            "total": 525
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
         "types": [
@@ -2981,7 +3072,8 @@
             "defense": 30,
             "special-attack": 100,
             "special-defense": 35,
-            "speed": 80
+            "speed": 80,
+            "total": 310
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
         "types": [
@@ -3006,7 +3098,8 @@
             "defense": 45,
             "special-attack": 115,
             "special-defense": 55,
-            "speed": 95
+            "speed": 95,
+            "total": 405
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
         "types": [
@@ -3031,7 +3124,8 @@
             "defense": 60,
             "special-attack": 130,
             "special-defense": 75,
-            "speed": 110
+            "speed": 110,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
         "types": [
@@ -3056,7 +3150,8 @@
             "defense": 160,
             "special-attack": 30,
             "special-defense": 45,
-            "speed": 70
+            "speed": 70,
+            "total": 385
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
         "types": [
@@ -3091,7 +3186,8 @@
             "defense": 45,
             "special-attack": 43,
             "special-defense": 90,
-            "speed": 42
+            "speed": 42,
+            "total": 328
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
         "types": [
@@ -3125,7 +3221,8 @@
             "defense": 70,
             "special-attack": 73,
             "special-defense": 115,
-            "speed": 67
+            "speed": 67,
+            "total": 483
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
         "types": [
@@ -3159,7 +3256,8 @@
             "defense": 90,
             "special-attack": 25,
             "special-defense": 25,
-            "speed": 50
+            "speed": 50,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
         "types": [
@@ -3193,7 +3291,8 @@
             "defense": 115,
             "special-attack": 50,
             "special-defense": 50,
-            "speed": 75
+            "speed": 75,
+            "total": 475
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
         "types": [
@@ -3227,7 +3326,8 @@
             "defense": 50,
             "special-attack": 55,
             "special-defense": 55,
-            "speed": 100
+            "speed": 100,
+            "total": 330
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
         "types": [
@@ -3261,7 +3361,8 @@
             "defense": 70,
             "special-attack": 80,
             "special-defense": 80,
-            "speed": 150
+            "speed": 150,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
         "types": [
@@ -3295,7 +3396,8 @@
             "defense": 80,
             "special-attack": 60,
             "special-defense": 45,
-            "speed": 40
+            "speed": 40,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
         "types": [
@@ -3325,7 +3427,8 @@
             "defense": 85,
             "special-attack": 125,
             "special-defense": 75,
-            "speed": 55
+            "speed": 55,
+            "total": 530
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
         "types": [
@@ -3355,7 +3458,8 @@
             "defense": 95,
             "special-attack": 40,
             "special-defense": 50,
-            "speed": 35
+            "speed": 35,
+            "total": 320
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
         "types": [
@@ -3389,7 +3493,8 @@
             "defense": 110,
             "special-attack": 50,
             "special-defense": 80,
-            "speed": 45
+            "speed": 45,
+            "total": 425
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
         "types": [
@@ -3423,7 +3528,8 @@
             "defense": 53,
             "special-attack": 35,
             "special-defense": 110,
-            "speed": 87
+            "speed": 87,
+            "total": 455
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
         "types": [
@@ -3457,7 +3563,8 @@
             "defense": 79,
             "special-attack": 35,
             "special-defense": 110,
-            "speed": 76
+            "speed": 76,
+            "total": 455
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
         "types": [
@@ -3491,7 +3598,8 @@
             "defense": 75,
             "special-attack": 60,
             "special-defense": 75,
-            "speed": 30
+            "speed": 30,
+            "total": 385
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
         "types": [
@@ -3525,7 +3633,8 @@
             "defense": 95,
             "special-attack": 60,
             "special-defense": 45,
-            "speed": 35
+            "speed": 35,
+            "total": 340
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
         "types": [
@@ -3559,7 +3668,8 @@
             "defense": 120,
             "special-attack": 85,
             "special-defense": 70,
-            "speed": 60
+            "speed": 60,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
         "types": [
@@ -3593,7 +3703,8 @@
             "defense": 95,
             "special-attack": 30,
             "special-defense": 30,
-            "speed": 25
+            "speed": 25,
+            "total": 345
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
         "types": [
@@ -3628,7 +3739,8 @@
             "defense": 120,
             "special-attack": 45,
             "special-defense": 45,
-            "speed": 40
+            "speed": 40,
+            "total": 485
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
         "types": [
@@ -3663,7 +3775,8 @@
             "defense": 5,
             "special-attack": 35,
             "special-defense": 105,
-            "speed": 50
+            "speed": 50,
+            "total": 450
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
         "types": [
@@ -3697,7 +3810,8 @@
             "defense": 115,
             "special-attack": 100,
             "special-defense": 40,
-            "speed": 60
+            "speed": 60,
+            "total": 435
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
         "types": [
@@ -3731,7 +3845,8 @@
             "defense": 80,
             "special-attack": 40,
             "special-defense": 80,
-            "speed": 90
+            "speed": 90,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
         "types": [
@@ -3765,7 +3880,8 @@
             "defense": 70,
             "special-attack": 70,
             "special-defense": 25,
-            "speed": 60
+            "speed": 60,
+            "total": 295
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
         "types": [
@@ -3799,7 +3915,8 @@
             "defense": 95,
             "special-attack": 95,
             "special-defense": 45,
-            "speed": 85
+            "speed": 85,
+            "total": 440
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
         "types": [
@@ -3833,7 +3950,8 @@
             "defense": 60,
             "special-attack": 35,
             "special-defense": 50,
-            "speed": 63
+            "speed": 63,
+            "total": 320
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
         "types": [
@@ -3867,7 +3985,8 @@
             "defense": 65,
             "special-attack": 65,
             "special-defense": 80,
-            "speed": 68
+            "speed": 68,
+            "total": 450
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
         "types": [
@@ -3901,7 +4020,8 @@
             "defense": 55,
             "special-attack": 70,
             "special-defense": 55,
-            "speed": 85
+            "speed": 85,
+            "total": 340
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
         "types": [
@@ -3935,7 +4055,8 @@
             "defense": 85,
             "special-attack": 100,
             "special-defense": 85,
-            "speed": 115
+            "speed": 115,
+            "total": 520
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
         "types": [
@@ -3970,7 +4091,8 @@
             "defense": 65,
             "special-attack": 100,
             "special-defense": 120,
-            "speed": 90
+            "speed": 90,
+            "total": 460
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
         "types": [
@@ -4005,7 +4127,8 @@
             "defense": 80,
             "special-attack": 55,
             "special-defense": 80,
-            "speed": 105
+            "speed": 105,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
         "types": [
@@ -4040,7 +4163,8 @@
             "defense": 35,
             "special-attack": 115,
             "special-defense": 95,
-            "speed": 95
+            "speed": 95,
+            "total": 455
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
         "types": [
@@ -4075,7 +4199,8 @@
             "defense": 57,
             "special-attack": 95,
             "special-defense": 85,
-            "speed": 105
+            "speed": 105,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
         "types": [
@@ -4104,7 +4229,8 @@
             "defense": 57,
             "special-attack": 100,
             "special-defense": 85,
-            "speed": 93
+            "speed": 93,
+            "total": 495
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
         "types": [
@@ -4133,7 +4259,8 @@
             "defense": 100,
             "special-attack": 55,
             "special-defense": 70,
-            "speed": 85
+            "speed": 85,
+            "total": 500
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
         "types": [
@@ -4167,7 +4294,8 @@
             "defense": 95,
             "special-attack": 40,
             "special-defense": 70,
-            "speed": 110
+            "speed": 110,
+            "total": 490
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
         "types": [
@@ -4201,7 +4329,8 @@
             "defense": 55,
             "special-attack": 15,
             "special-defense": 20,
-            "speed": 80
+            "speed": 80,
+            "total": 200
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
         "types": [
@@ -4230,7 +4359,8 @@
             "defense": 79,
             "special-attack": 60,
             "special-defense": 100,
-            "speed": 81
+            "speed": 81,
+            "total": 540
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
         "types": [
@@ -4260,7 +4390,8 @@
             "defense": 80,
             "special-attack": 85,
             "special-defense": 95,
-            "speed": 60
+            "speed": 60,
+            "total": 535
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
         "types": [
@@ -4295,7 +4426,8 @@
             "defense": 48,
             "special-attack": 48,
             "special-defense": 48,
-            "speed": 48
+            "speed": 48,
+            "total": 288
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
         "types": [
@@ -4324,7 +4456,8 @@
             "defense": 50,
             "special-attack": 45,
             "special-defense": 65,
-            "speed": 55
+            "speed": 55,
+            "total": 325
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
         "types": [
@@ -4358,7 +4491,8 @@
             "defense": 60,
             "special-attack": 110,
             "special-defense": 95,
-            "speed": 65
+            "speed": 65,
+            "total": 525
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
         "types": [
@@ -4387,7 +4521,8 @@
             "defense": 60,
             "special-attack": 110,
             "special-defense": 95,
-            "speed": 130
+            "speed": 130,
+            "total": 525
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
         "types": [
@@ -4416,7 +4551,8 @@
             "defense": 60,
             "special-attack": 95,
             "special-defense": 110,
-            "speed": 65
+            "speed": 65,
+            "total": 525
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
         "types": [
@@ -4445,7 +4581,8 @@
             "defense": 70,
             "special-attack": 85,
             "special-defense": 75,
-            "speed": 40
+            "speed": 40,
+            "total": 395
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
         "types": [
@@ -4479,7 +4616,8 @@
             "defense": 100,
             "special-attack": 90,
             "special-defense": 55,
-            "speed": 35
+            "speed": 35,
+            "total": 355
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
         "types": [
@@ -4514,7 +4652,8 @@
             "defense": 125,
             "special-attack": 115,
             "special-defense": 70,
-            "speed": 55
+            "speed": 55,
+            "total": 495
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
         "types": [
@@ -4549,7 +4688,8 @@
             "defense": 90,
             "special-attack": 55,
             "special-defense": 45,
-            "speed": 55
+            "speed": 55,
+            "total": 355
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
         "types": [
@@ -4584,7 +4724,8 @@
             "defense": 105,
             "special-attack": 65,
             "special-defense": 70,
-            "speed": 80
+            "speed": 80,
+            "total": 495
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
         "types": [
@@ -4619,7 +4760,8 @@
             "defense": 65,
             "special-attack": 60,
             "special-defense": 75,
-            "speed": 130
+            "speed": 130,
+            "total": 515
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
         "types": [
@@ -4654,7 +4796,8 @@
             "defense": 65,
             "special-attack": 65,
             "special-defense": 110,
-            "speed": 30
+            "speed": 30,
+            "total": 540
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
         "types": [
@@ -4688,7 +4831,8 @@
             "defense": 100,
             "special-attack": 95,
             "special-defense": 125,
-            "speed": 85
+            "speed": 85,
+            "total": 580
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
         "types": [
@@ -4718,7 +4862,8 @@
             "defense": 85,
             "special-attack": 125,
             "special-defense": 90,
-            "speed": 100
+            "speed": 100,
+            "total": 580
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
         "types": [
@@ -4748,7 +4893,8 @@
             "defense": 90,
             "special-attack": 125,
             "special-defense": 85,
-            "speed": 90
+            "speed": 90,
+            "total": 580
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
         "types": [
@@ -4778,7 +4924,8 @@
             "defense": 45,
             "special-attack": 50,
             "special-defense": 50,
-            "speed": 50
+            "speed": 50,
+            "total": 300
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
         "types": [
@@ -4807,7 +4954,8 @@
             "defense": 65,
             "special-attack": 70,
             "special-defense": 70,
-            "speed": 70
+            "speed": 70,
+            "total": 420
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
         "types": [
@@ -4836,7 +4984,8 @@
             "defense": 95,
             "special-attack": 100,
             "special-defense": 100,
-            "speed": 80
+            "speed": 80,
+            "total": 600
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
         "types": [
@@ -4866,7 +5015,8 @@
             "defense": 90,
             "special-attack": 154,
             "special-defense": 90,
-            "speed": 130
+            "speed": 130,
+            "total": 680
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "types": [
@@ -4895,7 +5045,8 @@
             "defense": 100,
             "special-attack": 100,
             "special-defense": 100,
-            "speed": 100
+            "speed": 100,
+            "total": 600
         },
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
         "types": [

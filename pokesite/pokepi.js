@@ -48,9 +48,12 @@ async function GetFormData2(varieties) {
     let base_stats = {};
     let type_array = [];
     let ability_list = [];
+    let bst = 0;
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
+        bst += stat.base_stat;
     }
+    base_stats['total'] = bst;
     for (let type of body.types){
         type_array.push(type.type.name);
     }

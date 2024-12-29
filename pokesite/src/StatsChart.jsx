@@ -40,6 +40,7 @@ function StatsChart({stats}) {
 
         const options = {
             indexAxis: 'y',
+            responsive: true,
             maintainAspectRatio: false,
             events: [],
             scales: {
@@ -72,14 +73,12 @@ function StatsChart({stats}) {
         };
 
         return (
-            <div>
                 <Bar
                     //height={400}
                     className='statsChart'
                     data={data}
                     options={options}
                 />
-            </div>
         );
     }
 }
