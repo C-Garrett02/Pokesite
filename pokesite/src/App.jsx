@@ -363,7 +363,7 @@ function App() {
           <div className='statsChartBox'>
             <StatsChart stats={stats}/>
             <div className='baseStatTotal'>
-              {stats.total}
+              <strong>Total: {stats.total}</strong>
             </div>
           </div>
         </div>

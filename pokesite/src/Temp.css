@@ -112,6 +112,8 @@
   .baseStatTotal {
     display: flex;
     height: 2vh;
+    color: rgb(102, 102, 102);
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
   .imageAndType {
@@ -147,14 +149,7 @@
   .abilityDescription {
     height: 15vh;
     overflow-y: auto;
-  }
-
-  .abilityBtn {
-    display: flex;
-    border: 1px solid;
-    height: 3.6vh;
-    align-items: center;
-    justify-content: center;
+    white-space: pre-wrap;
   }
 
   .directionBtns {
@@ -162,6 +157,14 @@
     height: 100%;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .abilityBtn {
+    display: flex;
+    border-left: 1px solid;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   #leftArrow {

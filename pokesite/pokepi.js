@@ -21,8 +21,9 @@ async function GetAbility(ability) {
         for (let entry of body.effect_entries) {
             if(entry.language.name == "en"){
                 description = entry.effect;
-                description = description.replace(/\n/g, '');
-                description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace(/\n/g, '');
+                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace('Overworld', '\n\nOverworld');
             }
         }
     }
@@ -30,8 +31,9 @@ async function GetAbility(ability) {
         for (let i = body.flavor_text_entries.length - 1; i >= 0; i--){ //Want to get the most recent entry, start from back
             if(body.flavor_text_entries[i].language.name == "en"){
                 description = body.flavor_text_entries[i].flavor_text;
-                description = description.replace(/\n/g, '');
-                description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace(/\n/g, '');
+                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace('Overworld', '\n\nOverworld');
             }
         }
     }
