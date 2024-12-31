@@ -7,7 +7,57 @@ async function GetPokemon2(dex) {
     return body.varieties;
 }
 
-async function GetAbility(ability) {
+async function GetMoves() { //write to separate file
+    const response = await fetch('https://pokeapi.co/api/v2/move?limit=100000&offset=0');
+    const body = await response.json();
+    let moves = [];
+    for (let move of body.results){
+        const move_response = await fetch(move.url);
+        const details = await move_response.json();
+        let description = "";
+        let move_name = "";
+        const move_key = move.name;
+        const damage_class = details.damage_class.name;
+        const move_accuracy = details.accuracy;
+        const move_power = details.power;
+        const move_pp = details.pp;
+        const move_priority = details.priority;
+        const move_target = details.target.name;
+        for (let name of details.names) {
+            if(name.language.name == "en"){
+                move_name = name.name;
+            }
+        }
+        if(details.effect_entries.length > 0){
+            for (let entry of details.effect_entries) {
+                if(entry.language.name == "en"){
+                    description = entry.effect;
+                }
+            }
+        }
+        else {
+            for (let i = details.flavor_text_entries.length - 1; i >= 0; i--){ //Want to get the most recent entry, start from back
+                if(details.flavor_text_entries[i].language.name == "en"){
+                    description = details.flavor_text_entries[i].flavor_text;
+                }
+            }
+        }
+        moves.push({
+            key: move_key,
+            name: move_name,
+            class: damage_class,
+            accuracy: move_accuracy,
+            power: move_power,
+            pp: move_pp,
+            priority: move_priority,
+            target: move_target,
+            effect: description
+        })
+    }
+    return moves;
+}
+
+async function GetAbility(ability) { //currently writes to pokedex, consider also making own file? Not as big of a deal as moves, though.
     const response = await fetch(ability.url);
     const body = await response.json();
     let description = "";
@@ -50,6 +100,7 @@ async function GetFormData2(varieties) {
     let base_stats = {};
     let type_array = [];
     let ability_list = [];
+    let move_list = [];
     let bst = 0;
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
@@ -64,6 +115,18 @@ async function GetFormData2(varieties) {
         currentAbilityDescription.hidden = ability.is_hidden;
         ability_list.push(currentAbilityDescription);
     }
+    for (let move of body.moves){
+        for (let version of move.version_group_details){
+            if (version.version_group.name = "scarlet-violet"){
+                let current_move = {};
+                current_move.key = move.move.name;
+                current_move.level = version.level_learned_at;
+                current_move.method = version.move_learn_method.name;
+                move_list.push(current_move)
+                break;
+            }
+        }
+    }
     return {
         id: body.id,
         name: uppercaseName,
@@ -71,6 +134,7 @@ async function GetFormData2(varieties) {
         image: body.sprites.front_default,
         types: type_array,
         abilities: ability_list,
+        moves: move_list,
         forms: []
     };
 }
@@ -82,11 +146,11 @@ async function PushPokemon(dex) {
     pokedex.push(pokemon)
 }
 
-function SaveToFile(array) {
+function SaveToFile(array, filename) {
     const fs = require('fs');
-    const jsonDex = JSON.stringify(array, null, 4);
+    const jsonData = JSON.stringify(array, null, 4);
 
-    fs.writeFile("./public/pokedex.json", jsonDex, 'utf8', function (err) {
+    fs.writeFile("./public/"+filename, jsonData, 'utf8', function (err) {
         if (err) {
             return console.log(err);
         }
@@ -101,10 +165,14 @@ for (let i = 1; i <= 151; i++) {
     promises.push(PushPokemon(i));
 }
 
+const moves = await GetMoves();
+
+SaveToFile(moves, 'moves.json');
+
 Promise.all(promises)
     .then(() => {
         pokedex.sort((a, b) => {
             return a.id - b.id
         })
-        SaveToFile(pokedex)
+        SaveToFile(pokedex, 'pokedex.json')
     })
