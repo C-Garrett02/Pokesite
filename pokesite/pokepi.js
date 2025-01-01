@@ -167,6 +167,15 @@ for (let i = 1; i <= 151; i++) {
 
 const moves = await GetMoves();
 
+/*moves.sort((a, b) => { //need to sort by level, then by machine moves, then by egg moves. May need to separate into 3 arrays.
+    aNum = 0;
+    bNum = 0;
+    if (a.level > 0 && b.level > 0){
+        return a.level - b.level;
+    }
+    elif
+})*/
+
 SaveToFile(moves, 'moves.json');
 
 Promise.all(promises)

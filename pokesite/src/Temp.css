@@ -76,6 +76,7 @@
     flex-direction: row;
     margin-left: 10vw;
     height: 100%;
+    width: 20vh;
   }
 
   .pokeImage {
@@ -123,7 +124,7 @@
 
   .abilityBox {
     display: flex;
-    width: 50vh;
+    width: 52vh;
     margin-top: 3vh;
     flex-direction: column;
     border: solid 1px;

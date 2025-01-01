@@ -56,6 +56,7 @@ function App() {
   const [types, setTypes] = useState(items[dexnum].types)
   const [stats, setStats] = useState(items[dexnum].stats);
   const [abilities, setAbilities] = useState(items[dexnum].abilities)
+  const [moves, setMoves] = useState(items[dexnum].moves)
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const windowSizeRef = useWindowSize();
   let animationStep = 1;
@@ -172,6 +173,7 @@ function App() {
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
+      setMoves(items[updatedDex].moves);
     }
   }
 
@@ -184,6 +186,7 @@ function App() {
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
+      setMoves(items[updatedDex].moves);
     }
   }
 
@@ -203,6 +206,7 @@ function App() {
       setTypes(items[updatedDex].types);
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
+      setMoves(items[updatedDex].moves);
     }
     let filteredList = <></>
 
@@ -281,6 +285,10 @@ function App() {
     )
   }
 
+  function Moves(){
+
+  }
+
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
     let id_string = 'entry' + (index-dexnum);
     if(index > -1 && index < items.length){
@@ -333,7 +341,8 @@ function App() {
       setImage(body[0].image);
       setTypes(body[0].types);
       setStats(body[0].stats);
-      setAbilities(body[0].abilities)
+      setAbilities(body[0].abilities);
+      setMoves(body[0].moves);
     }
     fetchData();
   }, []);
