@@ -48,7 +48,13 @@ function App() {
           "hidden": true
       }
     ],
-    "moves": [],
+    "moves": {
+      "level-up": [],
+      machine: [],
+      egg: [],
+      tutor: [],
+      other: []
+    },
     "forms": []
   }));
   const [moveList, setMoveList] = useState([])
@@ -288,15 +294,20 @@ function App() {
   }
 
   function Moves(){
-    for (let move of moves){
+    const moveArray = []
+    for (let move of moves["level-up"]){
       for (let details of moveList){
         if (move.key == details.key){
-          console.log(details.name)
+          moveArray.push(details)
         }
       }
     }
 
-    return <></>
+    return (
+        moveArray?.map((move) => (
+          <div key={move.key} className={move.type + " move"}> {move.name} </div>
+        ))
+    )
   }
 
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
@@ -389,8 +400,12 @@ function App() {
             </div>
           </div>
         </div>
-        <Abilities />
-        <Moves />
+        <div className="abilityAndMove">
+          <Abilities />
+          <div className="moveList">
+            <Moves />
+          </div>
+        </div>
       </div>
 
       <div className='wheel'>

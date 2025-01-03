@@ -102,7 +102,13 @@ async function GetFormData2(varieties) {
     let base_stats = {};
     let type_array = [];
     let ability_list = [];
-    let move_list = [];
+    let move_arrays = {
+        "level-up": [],
+        machine: [],
+        egg: [],
+        tutor: [],
+        other: []
+    };
     let bst = 0;
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
@@ -124,11 +130,19 @@ async function GetFormData2(varieties) {
                 current_move.key = move.move.name;
                 current_move.level = version.level_learned_at;
                 current_move.method = version.move_learn_method.name;
-                move_list.push(current_move)
+                if((current_move.method in move_arrays)){
+                    move_arrays[current_move.method].push(current_move);
+                }
+                else {
+                    move_arrays["other"].push(current_move);
+                }
                 break;
             }
         }
     }
+    move_arrays["level-up"].sort((a, b) => { //need to sort by level, then by machine moves, then by egg moves. May need to separate into 3 arrays.
+        return a.level - b.level;
+    })
     return {
         id: body.id,
         name: uppercaseName,
@@ -136,7 +150,7 @@ async function GetFormData2(varieties) {
         image: body.sprites.front_default,
         types: type_array,
         abilities: ability_list,
-        moves: move_list,
+        moves: move_arrays,
         forms: []
     };
 }
@@ -168,15 +182,6 @@ for (let i = 1; i <= 151; i++) {
 }
 
 const moves = await GetMoves();
-
-/*moves.sort((a, b) => { //need to sort by level, then by machine moves, then by egg moves. May need to separate into 3 arrays.
-    aNum = 0;
-    bNum = 0;
-    if (a.level > 0 && b.level > 0){
-        return a.level - b.level;
-    }
-    elif
-})*/
 
 SaveToFile(moves, 'moves.json');
 

@@ -76,7 +76,7 @@
     flex-direction: row;
     margin-left: 10vw;
     height: 100%;
-    width: 20vh;
+    width: 25vw;
   }
 
   .pokeImage {
@@ -122,10 +122,17 @@
     flex-direction: column;
   }
 
+  .abilityAndMove {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    height: 19vh;
+    width: 100%;
+  }
+
   .abilityBox {
     display: flex;
     width: 52vh;
-    margin-top: 3vh;
     flex-direction: column;
     border: solid 1px;
   }
@@ -148,7 +155,7 @@
   }
 
   .abilityDescription {
-    height: 15vh;
+    height: 100%;
     overflow-y: auto;
     white-space: pre-wrap;
   }
@@ -166,6 +173,18 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+  }
+
+  .moveList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .move {
+    border-bottom: solid 1px;
   }
 
   #leftArrow {
