@@ -23,6 +23,7 @@ async function GetMoves() { //write to separate file
         const move_pp = details.pp;
         const move_priority = details.priority;
         const move_target = details.target.name;
+        const move_type = details.type.name
         for (let name of details.names) {
             if(name.language.name == "en"){
                 move_name = name.name;
@@ -51,6 +52,7 @@ async function GetMoves() { //write to separate file
             pp: move_pp,
             priority: move_priority,
             target: move_target,
+            type: move_type,
             effect: description
         })
     }

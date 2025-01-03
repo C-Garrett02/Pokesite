@@ -48,8 +48,10 @@ function App() {
           "hidden": true
       }
     ],
+    "moves": [],
     "forms": []
   }));
+  const [moveList, setMoveList] = useState([])
   const [dexnum, setDexnum] = useState(0);
   const [name, setName] = useState(items[dexnum].name);
   const [image, setImage] = useState(items[dexnum].image);
@@ -286,7 +288,15 @@ function App() {
   }
 
   function Moves(){
+    for (let move of moves){
+      for (let details of moveList){
+        if (move.key == details.key){
+          console.log(details.name)
+        }
+      }
+    }
 
+    return <></>
   }
 
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
@@ -335,6 +345,9 @@ function App() {
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
+      const moveFile = await fetch('./moves.json');
+      const moveJson = await moveFile.json();
+      setMoveList(moveJson);
       const response = await fetch('./pokedex.json');
       const body = await response.json();
       setItems(body);
@@ -377,6 +390,7 @@ function App() {
           </div>
         </div>
         <Abilities />
+        <Moves />
       </div>
 
       <div className='wheel'>
