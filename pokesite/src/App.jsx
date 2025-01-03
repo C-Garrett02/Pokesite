@@ -293,11 +293,16 @@ function App() {
     )
   }
 
+  function Move({move}) {
+    
+  }
+
   function Moves(){
     const moveArray = []
     for (let move of moves["level-up"]){
       for (let details of moveList){
         if (move.key == details.key){
+          details.level = move.level;
           moveArray.push(details)
         }
       }
@@ -305,7 +310,7 @@ function App() {
 
     return (
         moveArray?.map((move) => (
-          <div key={move.key} className={move.type + " move"}> {move.name} </div>
+          <div key={move.key} className={move.type + " move"}>{move.level} {move.name} </div>
         ))
     )
   }
