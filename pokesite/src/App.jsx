@@ -293,8 +293,23 @@ function App() {
     )
   }
 
-  function Move({move}) {
-    
+  function Move({moveDetails}) {
+    let level_div = <></>;
+
+    if (moveDetails.level > 0){
+      level_div = <div className="level">{moveDetails.level}</div>;
+    }
+
+    return (
+      <div className="move">
+        {level_div}
+        <div className="moveName">{moveDetails.name}</div>
+        <div className="moveTypeBox">
+          <div className={moveDetails.type + " moveType"}>{moveDetails.type}</div>
+        </div>
+
+      </div>
+    )
   }
 
   function Moves(){
@@ -310,7 +325,7 @@ function App() {
 
     return (
         moveArray?.map((move) => (
-          <div key={move.key} className={move.type + " move"}>{move.level} {move.name} </div>
+          <Move key={move.key} moveDetails={move} />
         ))
     )
   }
