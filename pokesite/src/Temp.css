@@ -183,12 +183,6 @@
     overflow-y: auto;
   }
 
-  .move {
-    border-bottom: solid 1px;
-    display: flex;
-    flex-direction: row;
-  }
-
   #leftArrow {
     width: 2.5vh;
     height: 2.5vh;

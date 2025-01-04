@@ -5,6 +5,7 @@ import venusaur from '/Venusaur.png'
 //import './App.css'
 import './Temp.css'
 import './Types.css'
+import './Moves.css'
 import StatsChart from './StatsChart.jsx'
 import Chart from 'chart.js/auto';
 
@@ -304,10 +305,10 @@ function App() {
       <div className="move">
         {level_div}
         <div className="moveName">{moveDetails.name}</div>
-        <div className="moveTypeBox">
-          <div className={moveDetails.type + " moveType"}>{moveDetails.type}</div>
-        </div>
-
+        <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
+        <div className="moveClass">{moveDetails.class ?? "--"}</div>
+        <div className="movePower">{moveDetails.power ?? "--"}</div>
+        <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
       </div>
     )
   }
