@@ -1,3 +1,12 @@
+  .levelHeader {
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    height: 2vh;
+    position: sticky;
+    top: 0;
+  }
+  
   .move {
     border-bottom: solid 1px;
     display: flex;

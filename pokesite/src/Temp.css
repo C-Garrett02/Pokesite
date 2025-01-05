@@ -68,6 +68,10 @@
     flex-grow: 1;
   }
 
+  .left {
+    width: 70vw;
+  }
+
   .wheel {
     font-family: sans-serif;
     flex-grow: 1;
@@ -103,27 +107,28 @@
     display: flex;
     flex-direction: column;
     margin-left: 1vw;
-    width: 50vh;
+    width: 100%;
   }
 
   .statsChartBox {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 35vh;
+    width: 99%;
   }
 
   .statsChart {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 100%;
   }
 
   .baseStatTotal {
     display: flex;
-    height: 3.5vh;
+    height: 3vh;
     color: rgb(102, 102, 102);
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    border-bottom: dashed 2px;
   }
 
   .abilityBox {
@@ -177,10 +182,11 @@
 
   .moveBox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 3vh;
     height: 19vh;
     width: 100%;
+    overflow-y: auto;
   }
 
   .moveList {
@@ -188,7 +194,6 @@
     flex-direction: column;
     height: 100%;
     flex-grow: 1;
-    overflow-y: auto;
   }
 
   #leftArrow {

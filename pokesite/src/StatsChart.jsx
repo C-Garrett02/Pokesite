@@ -3,6 +3,8 @@ import Chart from 'chart.js/auto';
  
 function StatsChart({stats}) {
 
+    const fontscaling = window.innerHeight/(100/1.8);
+
     if(stats){
       const colors = [];
         for (const stat of Object.values(stats)){
@@ -62,6 +64,11 @@ function StatsChart({stats}) {
                 },
                 border: {
                   width: 0
+                },
+                ticks : {
+                  font: {
+                    size: fontscaling
+                  }
                 }
               }
             },

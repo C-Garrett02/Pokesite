@@ -73,7 +73,7 @@ function App() {
   const intervalRef = useRef(null);
   let isScrolling = false;
   
-  function useWindowSize(){ //custom Hook that listens to window size, though its purpose as a hook is pretty useless at the moment. Should rework this.
+  function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
     const windowSizeRef = useRef([0, 0]);
     useLayoutEffect(() => {
       const updateSize = debounce (() => {
@@ -421,14 +421,17 @@ function App() {
             <div className='baseStatTotal'>
                 <strong>Total: {stats.total}</strong>
             </div>
-            <Abilities />
           </div>
         </div>
         <div className="moveBox">
+          <div className="levelHeader">
+            LEVEL MOVES
+          </div>
           <div className="moveList">
             <Moves />
           </div>
         </div>
+        <Abilities />
       </div>
 
       <div className='wheel'>
