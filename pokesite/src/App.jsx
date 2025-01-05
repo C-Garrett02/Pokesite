@@ -242,7 +242,7 @@ function App() {
 
     return (
       <div className='searchBar'>
-        <input name='Pokemon Search Bar' className='monInput' value={inputStr} onChange={handleState}></input>
+        <input name='Pokemon Search Bar' className='monInput' placeholder='Search for Pokemon' value={inputStr} onChange={handleState}></input>
         <FilteredDex input={inputStr} />
       </div>
     )
@@ -414,15 +414,17 @@ function App() {
                 ))}
               </div>
           </div>
-          <div className='statsChartBox'>
-            <StatsChart stats={stats}/>
-            <div className='baseStatTotal'>
-              <strong>Total: {stats.total}</strong>
+          <div className="rightOfImage">
+            <div className='statsChartBox'>
+              <StatsChart stats={stats}/>
             </div>
+            <div className='baseStatTotal'>
+                <strong>Total: {stats.total}</strong>
+            </div>
+            <Abilities />
           </div>
         </div>
-        <div className="abilityAndMove">
-          <Abilities />
+        <div className="moveBox">
           <div className="moveList">
             <Moves />
           </div>

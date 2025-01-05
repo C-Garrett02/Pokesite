@@ -74,9 +74,9 @@
     align-content: center;
     display:flex;
     flex-direction: row;
-    margin-left: 10vw;
+    margin-left: 7vw;
     height: 100%;
-    width: 25vw;
+    width: 20vw;
   }
 
   .pokeImage {
@@ -94,47 +94,45 @@
     flex-direction: row;
   }
 
+  .imageAndType {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .rightOfImage {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    width: 50vh;
+  }
+
   .statsChartBox {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    width: 50vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    height: 25vh;
   }
 
   .statsChart {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 100;
+    width: 100%;
   }
 
   .baseStatTotal {
     display: flex;
-    height: 2vh;
+    height: 3.5vh;
     color: rgb(102, 102, 102);
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
-  .imageAndType {
-    display:flex;
-    flex-direction: column;
-  }
-
-  .abilityAndMove {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3vh;
-    height: 19vh;
-    width: 100%;
-  }
-
   .abilityBox {
     display: flex;
-    width: 52vh;
+    width: 100%;
+    height: 22.5vh;
     flex-direction: column;
-    border: solid 1px;
+    border: solid 4px;
+    border-radius: 1vh;
   }
 
   .abilityHeader {
@@ -156,6 +154,8 @@
 
   .abilityDescription {
     height: 100%;
+    padding-left: .5vh;
+    padding-right: .5vh;
     overflow-y: auto;
     white-space: pre-wrap;
   }
@@ -173,6 +173,14 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+  }
+
+  .moveBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    height: 19vh;
+    width: 100%;
   }
 
   .moveList {
