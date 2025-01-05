@@ -437,7 +437,7 @@ function App() {
                 isScrolling = true;
                 intervalRef.current = setInterval(slideEntriesUp, 10);
               }
-            }}>Decrement</button>
+            }}></button>
           </div>
           <div className="incrementButton">
             <button onClick={() => {
@@ -445,7 +445,7 @@ function App() {
                 isScrolling = true;
                 intervalRef.current = setInterval(slideEntriesDown, 10);
               }
-            }}>Increment</button>
+            }}></button>
           </div>
         </div>
         <VisibleEntries num={dexnum} />
