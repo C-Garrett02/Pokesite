@@ -6,6 +6,7 @@ import venusaur from '/Venusaur.png'
 import './Temp.css'
 import './Types.css'
 import './Moves.css'
+import useSound from 'use-sound'
 import StatsChart from './StatsChart.jsx'
 import Chart from 'chart.js/auto';
 
@@ -32,6 +33,8 @@ function App() {
       "special-defense": 65,
       "speed": 45
     },
+    "height": 7,
+    "weight": 10,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
     "types": [
       "grass",
@@ -64,8 +67,11 @@ function App() {
   const [image, setImage] = useState(items[dexnum].image);
   const [types, setTypes] = useState(items[dexnum].types)
   const [stats, setStats] = useState(items[dexnum].stats);
-  const [abilities, setAbilities] = useState(items[dexnum].abilities)
-  const [moves, setMoves] = useState(items[dexnum].moves)
+  const [abilities, setAbilities] = useState(items[dexnum].abilities);
+  const [moves, setMoves] = useState(items[dexnum].moves);
+  const [height, setHeight] = useState(items[dexnum].height);
+  const [weight, setWeight] = useState(items[dexnum].weight);
+  const [cry, setCry] = useState(items[dexnum].cry);
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const windowSizeRef = useWindowSize();
   let animationStep = 1;
@@ -183,6 +189,9 @@ function App() {
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
       setMoves(items[updatedDex].moves);
+      setWeight(items[updatedDex].weight);
+      setHeight(items[updatedDex].height);
+      setCry(items[updatedDex].cry);
     }
   }
 
@@ -196,6 +205,9 @@ function App() {
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
       setMoves(items[updatedDex].moves);
+      setWeight(items[updatedDex].weight);
+      setHeight(items[updatedDex].height);
+      setCry(items[updatedDex].cry);
     }
   }
 
@@ -216,6 +228,9 @@ function App() {
       setStats(items[updatedDex].stats);
       setAbilities(items[updatedDex].abilities);
       setMoves(items[updatedDex].moves);
+      setWeight(items[updatedDex].weight);
+      setHeight(items[updatedDex].height);
+      setCry(items[updatedDex].cry);
     }
     let filteredList = <></>
 
@@ -295,18 +310,13 @@ function App() {
   }
 
   function Move({moveDetails}) {
-    let level_div = <></>;
-
-    if (moveDetails.level > 0){
-      level_div = <div className="level">{moveDetails.level}</div>;
-    }
-
+    
     return (
       <div className="move">
-        {level_div}
+        <div className="level">{moveDetails.level}</div>
         <div className="moveName">{moveDetails.name}</div>
         <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
-        <div className="moveClass">{moveDetails.class ?? "--"}</div>
+        <img className="moveClass" src={moveDetails.class + ".png"}></img>
         <div className="movePower">{moveDetails.power ?? "--"}</div>
         <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
       </div>
@@ -314,20 +324,28 @@ function App() {
   }
 
   function Moves(){
-    const moveArray = []
+    const levelArray = []
     for (let move of moves["level-up"]){
       for (let details of moveList){
         if (move.key == details.key){
           details.level = move.level;
-          moveArray.push(details)
+          levelArray.push(details);
         }
       }
     }
 
     return (
-        moveArray?.map((move) => (
-          <Move key={move.key} moveDetails={move} />
-        ))
+      <div className="moveList">
+        <div className="levelHeader">
+          LEVEL MOVES
+        </div>
+        {levelArray?.map((move) => (
+            <Move key={move.key} moveDetails={move} />
+          ))}
+        <div className="levelHeader">
+          EGG MOVES
+        </div>
+      </div>
     )
   }
 
@@ -374,6 +392,17 @@ function App() {
       <div className={classString}>{typeCaps}</div>
     )
   }
+
+  function Cry(){
+    let volume = 0.05;
+    const [soundCry] = useSound(cry, {volume});
+
+    return (
+      <button className="cry" onClick={() => soundCry()}>
+         Play Sound
+      </button>
+    )
+  }
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
@@ -388,13 +417,14 @@ function App() {
       setStats(body[0].stats);
       setAbilities(body[0].abilities);
       setMoves(body[0].moves);
+      setWeight(body[0].weight);
+      setHeight(body[0].height);
+      setCry(body[0].cry);
     }
     fetchData();
   }, []);
 
   useLayoutEffect(calculateTransformations, []);
-  
-  //console.log('rendering app ' + Date.now());
 
   return (
     <>
@@ -421,15 +451,19 @@ function App() {
             <div className='baseStatTotal'>
                 <strong>Total: {stats.total}</strong>
             </div>
+            <div className="heightAndWeight">
+              <div>
+                {"Height: " + height}
+              </div>
+              <div>  
+                {"Weight: " + weight + "lbs"}
+              </div>
+            </div>
+            <Cry />
           </div>
         </div>
         <div className="moveBox">
-          <div className="levelHeader">
-            LEVEL MOVES
-          </div>
-          <div className="moveList">
-            <Moves />
-          </div>
+          <Moves />
         </div>
         <Abilities />
       </div>

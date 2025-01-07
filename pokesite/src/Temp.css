@@ -131,6 +131,22 @@
     border-bottom: dashed 2px;
   }
 
+  .heightAndWeight {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    gap: 1vh
+  }
+
+  .cry {
+    display: flex;
+    border: solid 1px;
+    width: 1vw;
+    justify-content: center;
+    align-items: center;
+  }
+
   .abilityBox {
     display: flex;
     width: 100%;
@@ -185,7 +201,6 @@
     flex-direction: column;
     margin-top: 3vh;
     height: 19vh;
-    width: 100%;
     overflow-y: auto;
   }
 

@@ -116,6 +116,7 @@ async function GetFormData2(varieties) {
     const inches = total_inches%12;
     const height = feet + '\' ' + inches + '"' ;
     const weight = Math.round((body.weight * 0.220462)*10) / 10;
+    const cry_url = body.cries.latest;
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
         bst += stat.base_stat;
@@ -155,10 +156,11 @@ async function GetFormData2(varieties) {
         stats: base_stats,
         image: body.sprites.front_default,
         types: type_array,
-        abilities: ability_list,
-        moves: move_arrays,
         height: height,
         weight: weight,
+        cry: cry_url,
+        abilities: ability_list,
+        moves: move_arrays,
         forms: []
     };
 }

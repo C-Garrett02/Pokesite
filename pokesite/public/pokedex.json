@@ -16,6 +16,9 @@
             "grass",
             "poison"
         ],
+        "height": "2' 4\"",
+        "weight": 15.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg",
         "abilities": [
             {
                 "name": "Overgrow",
@@ -469,8 +472,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 15.2,
         "forms": []
     },
     {
@@ -490,6 +491,9 @@
             "grass",
             "poison"
         ],
+        "height": "3' 3\"",
+        "weight": 28.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/2.ogg",
         "abilities": [
             {
                 "name": "Overgrow",
@@ -928,8 +932,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 28.7,
         "forms": []
     },
     {
@@ -949,6 +951,9 @@
             "grass",
             "poison"
         ],
+        "height": "6' 7\"",
+        "weight": 220.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/3.ogg",
         "abilities": [
             {
                 "name": "Overgrow",
@@ -1452,8 +1457,6 @@
             ],
             "other": []
         },
-        "height": "6' 7\"",
-        "weight": 220.5,
         "forms": []
     },
     {
@@ -1472,6 +1475,9 @@
         "types": [
             "fire"
         ],
+        "height": "2' 0\"",
+        "weight": 18.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg",
         "abilities": [
             {
                 "name": "Blaze",
@@ -2020,8 +2026,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 18.7,
         "forms": []
     },
     {
@@ -2040,6 +2044,9 @@
         "types": [
             "fire"
         ],
+        "height": "3' 7\"",
+        "weight": 41.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/5.ogg",
         "abilities": [
             {
                 "name": "Blaze",
@@ -2578,8 +2585,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 41.9,
         "forms": []
     },
     {
@@ -2599,6 +2604,9 @@
             "fire",
             "flying"
         ],
+        "height": "5' 7\"",
+        "weight": 199.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg",
         "abilities": [
             {
                 "name": "Blaze",
@@ -3277,8 +3285,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 199.5,
         "forms": []
     },
     {
@@ -3297,6 +3303,9 @@
         "types": [
             "water"
         ],
+        "height": "1' 8\"",
+        "weight": 19.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg",
         "abilities": [
             {
                 "name": "Torrent",
@@ -3850,8 +3859,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 19.8,
         "forms": []
     },
     {
@@ -3870,6 +3877,9 @@
         "types": [
             "water"
         ],
+        "height": "3' 3\"",
+        "weight": 49.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/8.ogg",
         "abilities": [
             {
                 "name": "Torrent",
@@ -4398,8 +4408,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 49.6,
         "forms": []
     },
     {
@@ -4418,6 +4426,9 @@
         "types": [
             "water"
         ],
+        "height": "5' 3\"",
+        "weight": 188.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/9.ogg",
         "abilities": [
             {
                 "name": "Torrent",
@@ -5041,8 +5052,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 188.5,
         "forms": []
     },
     {
@@ -5061,6 +5070,9 @@
         "types": [
             "bug"
         ],
+        "height": "1' 0\"",
+        "weight": 6.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10.ogg",
         "abilities": [
             {
                 "name": "Shield Dust",
@@ -5107,8 +5119,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 6.4,
         "forms": []
     },
     {
@@ -5127,6 +5137,9 @@
         "types": [
             "bug"
         ],
+        "height": "2' 4\"",
+        "weight": 21.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/11.ogg",
         "abilities": [
             {
                 "name": "Shed Skin",
@@ -5168,8 +5181,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 21.8,
         "forms": []
     },
     {
@@ -5189,6 +5200,9 @@
             "bug",
             "flying"
         ],
+        "height": "3' 7\"",
+        "weight": 70.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/12.ogg",
         "abilities": [
             {
                 "name": "Compound Eyes",
@@ -5641,8 +5655,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 70.5,
         "forms": []
     },
     {
@@ -5662,6 +5674,9 @@
             "bug",
             "poison"
         ],
+        "height": "1' 0\"",
+        "weight": 7.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/13.ogg",
         "abilities": [
             {
                 "name": "Shield Dust",
@@ -5703,8 +5718,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 7.1,
         "forms": []
     },
     {
@@ -5724,6 +5737,9 @@
             "bug",
             "poison"
         ],
+        "height": "2' 0\"",
+        "weight": 22,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/14.ogg",
         "abilities": [
             {
                 "name": "Shed Skin",
@@ -5765,8 +5781,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 22,
         "forms": []
     },
     {
@@ -5786,6 +5800,9 @@
             "bug",
             "poison"
         ],
+        "height": "3' 3\"",
+        "weight": 65,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/15.ogg",
         "abilities": [
             {
                 "name": "Swarm",
@@ -6218,8 +6235,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 65,
         "forms": []
     },
     {
@@ -6239,6 +6254,9 @@
             "normal",
             "flying"
         ],
+        "height": "1' 0\"",
+        "weight": 4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/16.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -6587,8 +6605,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 4,
         "forms": []
     },
     {
@@ -6608,6 +6624,9 @@
             "normal",
             "flying"
         ],
+        "height": "3' 7\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/17.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -6935,8 +6954,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -6956,6 +6973,9 @@
             "normal",
             "flying"
         ],
+        "height": "4' 11\"",
+        "weight": 87.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/18.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -7298,8 +7318,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 87.1,
         "forms": []
     },
     {
@@ -7318,6 +7336,9 @@
         "types": [
             "normal"
         ],
+        "height": "1' 0\"",
+        "weight": 7.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/19.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -7756,8 +7777,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 7.7,
         "forms": []
     },
     {
@@ -7776,6 +7795,9 @@
         "types": [
             "normal"
         ],
+        "height": "2' 4\"",
+        "weight": 40.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/20.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -8223,8 +8245,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 40.8,
         "forms": []
     },
     {
@@ -8244,6 +8264,9 @@
             "normal",
             "flying"
         ],
+        "height": "1' 0\"",
+        "weight": 4.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/21.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -8612,8 +8635,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 4.4,
         "forms": []
     },
     {
@@ -8633,6 +8654,9 @@
             "normal",
             "flying"
         ],
+        "height": "3' 11\"",
+        "weight": 83.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/22.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -9000,8 +9024,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 83.8,
         "forms": []
     },
     {
@@ -9020,6 +9042,9 @@
         "types": [
             "poison"
         ],
+        "height": "6' 7\"",
+        "weight": 15.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/23.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -9523,8 +9548,6 @@
             ],
             "other": []
         },
-        "height": "6' 7\"",
-        "weight": 15.2,
         "forms": []
     },
     {
@@ -9543,6 +9566,9 @@
         "types": [
             "poison"
         ],
+        "height": "11' 6\"",
+        "weight": 143.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/24.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -10076,8 +10102,6 @@
             ],
             "other": []
         },
-        "height": "11' 6\"",
-        "weight": 143.3,
         "forms": []
     },
     {
@@ -10096,6 +10120,9 @@
         "types": [
             "electric"
         ],
+        "height": "1' 4\"",
+        "weight": 13.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg",
         "abilities": [
             {
                 "name": "Static",
@@ -10644,8 +10671,6 @@
                 }
             ]
         },
-        "height": "1' 4\"",
-        "weight": 13.2,
         "forms": []
     },
     {
@@ -10664,6 +10689,9 @@
         "types": [
             "electric"
         ],
+        "height": "2' 7\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/26.ogg",
         "abilities": [
             {
                 "name": "Static",
@@ -11231,8 +11259,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -11251,6 +11277,9 @@
         "types": [
             "ground"
         ],
+        "height": "2' 0\"",
+        "weight": 26.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/27.ogg",
         "abilities": [
             {
                 "name": "Sand Veil",
@@ -11769,8 +11798,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 26.5,
         "forms": []
     },
     {
@@ -11789,6 +11816,9 @@
         "types": [
             "ground"
         ],
+        "height": "3' 3\"",
+        "weight": 65,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/28.ogg",
         "abilities": [
             {
                 "name": "Sand Veil",
@@ -12327,8 +12357,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 65,
         "forms": []
     },
     {
@@ -12347,6 +12375,9 @@
         "types": [
             "poison"
         ],
+        "height": "1' 4\"",
+        "weight": 15.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/29.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -12765,8 +12796,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 15.4,
         "forms": []
     },
     {
@@ -12785,6 +12814,9 @@
         "types": [
             "poison"
         ],
+        "height": "2' 7\"",
+        "weight": 44.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/30.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -13197,8 +13229,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 44.1,
         "forms": []
     },
     {
@@ -13218,6 +13248,9 @@
             "poison",
             "ground"
         ],
+        "height": "4' 3\"",
+        "weight": 132.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/31.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -13910,8 +13943,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 132.3,
         "forms": []
     },
     {
@@ -13930,6 +13961,9 @@
         "types": [
             "poison"
         ],
+        "height": "1' 8\"",
+        "weight": 19.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/32.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -14358,8 +14392,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 19.8,
         "forms": []
     },
     {
@@ -14378,6 +14410,9 @@
         "types": [
             "poison"
         ],
+        "height": "2' 11\"",
+        "weight": 43,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/33.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -14785,8 +14820,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 43,
         "forms": []
     },
     {
@@ -14806,6 +14839,9 @@
             "poison",
             "ground"
         ],
+        "height": "4' 7\"",
+        "weight": 136.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/34.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -15503,8 +15539,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 136.7,
         "forms": []
     },
     {
@@ -15523,6 +15557,9 @@
         "types": [
             "fairy"
         ],
+        "height": "2' 0\"",
+        "weight": 16.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/35.ogg",
         "abilities": [
             {
                 "name": "Cute Charm",
@@ -16356,8 +16393,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 16.5,
         "forms": []
     },
     {
@@ -16376,6 +16411,9 @@
         "types": [
             "fairy"
         ],
+        "height": "4' 3\"",
+        "weight": 88.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/36.ogg",
         "abilities": [
             {
                 "name": "Cute Charm",
@@ -17219,8 +17257,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 88.2,
         "forms": []
     },
     {
@@ -17239,6 +17275,9 @@
         "types": [
             "fire"
         ],
+        "height": "2' 0\"",
+        "weight": 21.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/37.ogg",
         "abilities": [
             {
                 "name": "Flash Fire",
@@ -17702,8 +17741,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 21.8,
         "forms": []
     },
     {
@@ -17722,6 +17759,9 @@
         "types": [
             "fire"
         ],
+        "height": "3' 7\"",
+        "weight": 43.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/38.ogg",
         "abilities": [
             {
                 "name": "Flash Fire",
@@ -18235,8 +18275,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 43.9,
         "forms": []
     },
     {
@@ -18256,6 +18294,9 @@
             "normal",
             "fairy"
         ],
+        "height": "1' 8\"",
+        "weight": 12.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/39.ogg",
         "abilities": [
             {
                 "name": "Cute Charm",
@@ -19023,8 +19064,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 12.1,
         "forms": []
     },
     {
@@ -19044,6 +19083,9 @@
             "normal",
             "fairy"
         ],
+        "height": "3' 3\"",
+        "weight": 26.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/40.ogg",
         "abilities": [
             {
                 "name": "Cute Charm",
@@ -19836,8 +19878,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 26.5,
         "forms": []
     },
     {
@@ -19857,6 +19897,9 @@
             "poison",
             "flying"
         ],
+        "height": "2' 7\"",
+        "weight": 16.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/41.ogg",
         "abilities": [
             {
                 "name": "Inner Focus",
@@ -20295,8 +20338,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 16.5,
         "forms": []
     },
     {
@@ -20316,6 +20357,9 @@
             "poison",
             "flying"
         ],
+        "height": "5' 3\"",
+        "weight": 121.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/42.ogg",
         "abilities": [
             {
                 "name": "Inner Focus",
@@ -20758,8 +20802,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 121.3,
         "forms": []
     },
     {
@@ -20779,6 +20821,9 @@
             "grass",
             "poison"
         ],
+        "height": "1' 8\"",
+        "weight": 11.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/43.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -21172,8 +21217,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 11.9,
         "forms": []
     },
     {
@@ -21193,6 +21236,9 @@
             "grass",
             "poison"
         ],
+        "height": "2' 7\"",
+        "weight": 19,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/44.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -21606,8 +21652,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 19,
         "forms": []
     },
     {
@@ -21627,6 +21671,9 @@
             "grass",
             "poison"
         ],
+        "height": "3' 11\"",
+        "weight": 41,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/45.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -22080,8 +22127,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 41,
         "forms": []
     },
     {
@@ -22101,6 +22146,9 @@
             "bug",
             "grass"
         ],
+        "height": "1' 0\"",
+        "weight": 11.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/46.ogg",
         "abilities": [
             {
                 "name": "Effect Spore",
@@ -22559,8 +22607,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 11.9,
         "forms": []
     },
     {
@@ -22580,6 +22626,9 @@
             "bug",
             "grass"
         ],
+        "height": "3' 3\"",
+        "weight": 65,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/47.ogg",
         "abilities": [
             {
                 "name": "Effect Spore",
@@ -23007,8 +23056,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 65,
         "forms": []
     },
     {
@@ -23028,6 +23075,9 @@
             "bug",
             "poison"
         ],
+        "height": "3' 3\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/48.ogg",
         "abilities": [
             {
                 "name": "Compound Eyes",
@@ -23426,8 +23476,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -23447,6 +23495,9 @@
             "bug",
             "poison"
         ],
+        "height": "4' 11\"",
+        "weight": 27.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/49.ogg",
         "abilities": [
             {
                 "name": "Shield Dust",
@@ -23934,8 +23985,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 27.6,
         "forms": []
     },
     {
@@ -23954,6 +24003,9 @@
         "types": [
             "ground"
         ],
+        "height": "0' 8\"",
+        "weight": 1.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/50.ogg",
         "abilities": [
             {
                 "name": "Sand Veil",
@@ -24392,8 +24444,6 @@
             ],
             "other": []
         },
-        "height": "0' 8\"",
-        "weight": 1.8,
         "forms": []
     },
     {
@@ -24412,6 +24462,9 @@
         "types": [
             "ground"
         ],
+        "height": "2' 4\"",
+        "weight": 73.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/51.ogg",
         "abilities": [
             {
                 "name": "Sand Veil",
@@ -24854,8 +24907,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 73.4,
         "forms": []
     },
     {
@@ -24874,6 +24925,9 @@
         "types": [
             "normal"
         ],
+        "height": "1' 4\"",
+        "weight": 9.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/52.ogg",
         "abilities": [
             {
                 "name": "Pickup",
@@ -25447,8 +25501,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 9.3,
         "forms": []
     },
     {
@@ -25467,6 +25519,9 @@
         "types": [
             "normal"
         ],
+        "height": "3' 3\"",
+        "weight": 70.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/53.ogg",
         "abilities": [
             {
                 "name": "Limber",
@@ -26044,8 +26099,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 70.5,
         "forms": []
     },
     {
@@ -26064,6 +26117,9 @@
         "types": [
             "water"
         ],
+        "height": "2' 7\"",
+        "weight": 43.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/54.ogg",
         "abilities": [
             {
                 "name": "Damp",
@@ -26692,8 +26748,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 43.2,
         "forms": []
     },
     {
@@ -26712,6 +26766,9 @@
         "types": [
             "water"
         ],
+        "height": "5' 7\"",
+        "weight": 168.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/55.ogg",
         "abilities": [
             {
                 "name": "Damp",
@@ -27354,8 +27411,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 168.9,
         "forms": []
     },
     {
@@ -27374,6 +27429,9 @@
         "types": [
             "fighting"
         ],
+        "height": "1' 8\"",
+        "weight": 61.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/56.ogg",
         "abilities": [
             {
                 "name": "Vital Spirit",
@@ -27992,8 +28050,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 61.7,
         "forms": []
     },
     {
@@ -28012,6 +28068,9 @@
         "types": [
             "fighting"
         ],
+        "height": "3' 3\"",
+        "weight": 70.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/57.ogg",
         "abilities": [
             {
                 "name": "Vital Spirit",
@@ -28614,8 +28673,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 70.5,
         "forms": []
     },
     {
@@ -28634,6 +28691,9 @@
         "types": [
             "fire"
         ],
+        "height": "2' 4\"",
+        "weight": 41.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/58.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -29067,8 +29127,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 41.9,
         "forms": []
     },
     {
@@ -29087,6 +29145,9 @@
         "types": [
             "fire"
         ],
+        "height": "6' 3\"",
+        "weight": 341.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/59.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -29564,8 +29625,6 @@
             ],
             "other": []
         },
-        "height": "6' 3\"",
-        "weight": 341.7,
         "forms": []
     },
     {
@@ -29584,6 +29643,9 @@
         "types": [
             "water"
         ],
+        "height": "2' 0\"",
+        "weight": 27.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/60.ogg",
         "abilities": [
             {
                 "name": "Water Absorb",
@@ -29997,8 +30059,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 27.3,
         "forms": []
     },
     {
@@ -30017,6 +30077,9 @@
         "types": [
             "water"
         ],
+        "height": "3' 3\"",
+        "weight": 44.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/61.ogg",
         "abilities": [
             {
                 "name": "Water Absorb",
@@ -30500,8 +30563,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 44.1,
         "forms": []
     },
     {
@@ -30521,6 +30582,9 @@
             "water",
             "fighting"
         ],
+        "height": "4' 3\"",
+        "weight": 119,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/62.ogg",
         "abilities": [
             {
                 "name": "Water Absorb",
@@ -31129,8 +31193,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 119,
         "forms": []
     },
     {
@@ -31149,6 +31211,9 @@
         "types": [
             "psychic"
         ],
+        "height": "2' 11\"",
+        "weight": 43,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/63.ogg",
         "abilities": [
             {
                 "name": "Synchronize",
@@ -31657,8 +31722,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 43,
         "forms": []
     },
     {
@@ -31677,6 +31740,9 @@
         "types": [
             "psychic"
         ],
+        "height": "4' 3\"",
+        "weight": 124.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/64.ogg",
         "abilities": [
             {
                 "name": "Synchronize",
@@ -32219,8 +32285,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 124.6,
         "forms": []
     },
     {
@@ -32239,6 +32303,9 @@
         "types": [
             "psychic"
         ],
+        "height": "4' 11\"",
+        "weight": 105.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/65.ogg",
         "abilities": [
             {
                 "name": "Synchronize",
@@ -32821,8 +32888,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 105.8,
         "forms": []
     },
     {
@@ -32841,6 +32906,9 @@
         "types": [
             "fighting"
         ],
+        "height": "2' 7\"",
+        "weight": 43,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/66.ogg",
         "abilities": [
             {
                 "name": "Guts",
@@ -33364,8 +33432,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 43,
         "forms": []
     },
     {
@@ -33384,6 +33450,9 @@
         "types": [
             "fighting"
         ],
+        "height": "4' 11\"",
+        "weight": 155.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/67.ogg",
         "abilities": [
             {
                 "name": "Guts",
@@ -33881,8 +33950,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 155.4,
         "forms": []
     },
     {
@@ -33901,6 +33968,9 @@
         "types": [
             "fighting"
         ],
+        "height": "5' 3\"",
+        "weight": 286.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/68.ogg",
         "abilities": [
             {
                 "name": "Guts",
@@ -34453,8 +34523,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 286.6,
         "forms": []
     },
     {
@@ -34474,6 +34542,9 @@
             "grass",
             "poison"
         ],
+        "height": "2' 4\"",
+        "weight": 8.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/69.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -34897,8 +34968,6 @@
             ],
             "other": []
         },
-        "height": "2' 4\"",
-        "weight": 8.8,
         "forms": []
     },
     {
@@ -34918,6 +34987,9 @@
             "grass",
             "poison"
         ],
+        "height": "3' 3\"",
+        "weight": 14.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/70.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -35351,8 +35423,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 14.1,
         "forms": []
     },
     {
@@ -35372,6 +35442,9 @@
             "grass",
             "poison"
         ],
+        "height": "5' 7\"",
+        "weight": 34.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/71.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -35840,8 +35913,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 34.2,
         "forms": []
     },
     {
@@ -35861,6 +35932,9 @@
             "water",
             "poison"
         ],
+        "height": "2' 11\"",
+        "weight": 100.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/72.ogg",
         "abilities": [
             {
                 "name": "Clear Body",
@@ -36349,8 +36423,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 100.3,
         "forms": []
     },
     {
@@ -36370,6 +36442,9 @@
             "water",
             "poison"
         ],
+        "height": "5' 3\"",
+        "weight": 121.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/73.ogg",
         "abilities": [
             {
                 "name": "Clear Body",
@@ -36898,8 +36973,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 121.3,
         "forms": []
     },
     {
@@ -36919,6 +36992,9 @@
             "rock",
             "ground"
         ],
+        "height": "1' 4\"",
+        "weight": 44.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/74.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -37377,8 +37453,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 44.1,
         "forms": []
     },
     {
@@ -37398,6 +37472,9 @@
             "rock",
             "ground"
         ],
+        "height": "3' 3\"",
+        "weight": 231.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/75.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -37876,8 +37953,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 231.5,
         "forms": []
     },
     {
@@ -37897,6 +37972,9 @@
             "rock",
             "ground"
         ],
+        "height": "4' 7\"",
+        "weight": 661.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/76.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -38405,8 +38483,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 661.4,
         "forms": []
     },
     {
@@ -38425,6 +38501,9 @@
         "types": [
             "fire"
         ],
+        "height": "3' 3\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/77.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -38793,8 +38872,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -38813,6 +38890,9 @@
         "types": [
             "fire"
         ],
+        "height": "5' 7\"",
+        "weight": 209.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/78.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -39230,8 +39310,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 209.4,
         "forms": []
     },
     {
@@ -39251,6 +39329,9 @@
             "water",
             "psychic"
         ],
+        "height": "3' 11\"",
+        "weight": 79.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/79.ogg",
         "abilities": [
             {
                 "name": "Oblivious",
@@ -39849,8 +39930,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 79.4,
         "forms": []
     },
     {
@@ -39870,6 +39949,9 @@
             "water",
             "psychic"
         ],
+        "height": "5' 3\"",
+        "weight": 173.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/80.ogg",
         "abilities": [
             {
                 "name": "Oblivious",
@@ -40572,8 +40654,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 173.1,
         "forms": []
     },
     {
@@ -40593,6 +40673,9 @@
             "electric",
             "steel"
         ],
+        "height": "1' 0\"",
+        "weight": 13.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/81.ogg",
         "abilities": [
             {
                 "name": "Magnet Pull",
@@ -40990,8 +41073,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 13.2,
         "forms": []
     },
     {
@@ -41011,6 +41092,9 @@
             "electric",
             "steel"
         ],
+        "height": "3' 3\"",
+        "weight": 132.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/82.ogg",
         "abilities": [
             {
                 "name": "Magnet Pull",
@@ -41423,8 +41507,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 132.3,
         "forms": []
     },
     {
@@ -41444,6 +41526,9 @@
             "normal",
             "flying"
         ],
+        "height": "2' 7\"",
+        "weight": 33.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/83.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -41947,8 +42032,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 33.1,
         "forms": []
     },
     {
@@ -41968,6 +42051,9 @@
             "normal",
             "flying"
         ],
+        "height": "4' 7\"",
+        "weight": 86.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/84.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -42386,8 +42472,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 86.4,
         "forms": []
     },
     {
@@ -42407,6 +42491,9 @@
             "normal",
             "flying"
         ],
+        "height": "5' 11\"",
+        "weight": 187.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/85.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -42865,8 +42952,6 @@
             ],
             "other": []
         },
-        "height": "5' 11\"",
-        "weight": 187.8,
         "forms": []
     },
     {
@@ -42885,6 +42970,9 @@
         "types": [
             "water"
         ],
+        "height": "3' 7\"",
+        "weight": 198.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/86.ogg",
         "abilities": [
             {
                 "name": "Thick Fat",
@@ -43348,8 +43436,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 198.4,
         "forms": []
     },
     {
@@ -43369,6 +43455,9 @@
             "water",
             "ice"
         ],
+        "height": "5' 7\"",
+        "weight": 264.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/87.ogg",
         "abilities": [
             {
                 "name": "Thick Fat",
@@ -43862,8 +43951,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 264.6,
         "forms": []
     },
     {
@@ -43882,6 +43969,9 @@
         "types": [
             "poison"
         ],
+        "height": "2' 11\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/88.ogg",
         "abilities": [
             {
                 "name": "Stench",
@@ -44380,8 +44470,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -44400,6 +44488,9 @@
         "types": [
             "poison"
         ],
+        "height": "3' 11\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/89.ogg",
         "abilities": [
             {
                 "name": "Stench",
@@ -44942,8 +45033,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -44962,6 +45051,9 @@
         "types": [
             "water"
         ],
+        "height": "1' 0\"",
+        "weight": 8.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/90.ogg",
         "abilities": [
             {
                 "name": "Shell Armor",
@@ -45365,8 +45457,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 8.8,
         "forms": []
     },
     {
@@ -45386,6 +45476,9 @@
             "water",
             "ice"
         ],
+        "height": "4' 11\"",
+        "weight": 292.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/91.ogg",
         "abilities": [
             {
                 "name": "Shell Armor",
@@ -45853,8 +45946,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 292.1,
         "forms": []
     },
     {
@@ -45874,6 +45965,9 @@
             "ghost",
             "poison"
         ],
+        "height": "4' 3\"",
+        "weight": 0.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/92.ogg",
         "abilities": [
             {
                 "name": "Levitate",
@@ -46372,8 +46466,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 0.2,
         "forms": []
     },
     {
@@ -46393,6 +46485,9 @@
             "ghost",
             "poison"
         ],
+        "height": "5' 3\"",
+        "weight": 0.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/93.ogg",
         "abilities": [
             {
                 "name": "Levitate",
@@ -46905,8 +47000,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 0.2,
         "forms": []
     },
     {
@@ -46926,6 +47019,9 @@
             "ghost",
             "poison"
         ],
+        "height": "4' 11\"",
+        "weight": 89.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/94.ogg",
         "abilities": [
             {
                 "name": "Cursed Body",
@@ -47563,8 +47659,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 89.3,
         "forms": []
     },
     {
@@ -47584,6 +47678,9 @@
             "rock",
             "ground"
         ],
+        "height": "28' 10\"",
+        "weight": 463,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/95.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -48057,8 +48154,6 @@
             ],
             "other": []
         },
-        "height": "28' 10\"",
-        "weight": 463,
         "forms": []
     },
     {
@@ -48077,6 +48172,9 @@
         "types": [
             "psychic"
         ],
+        "height": "3' 3\"",
+        "weight": 71.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/96.ogg",
         "abilities": [
             {
                 "name": "Insomnia",
@@ -48680,8 +48778,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 71.4,
         "forms": []
     },
     {
@@ -48700,6 +48796,9 @@
         "types": [
             "psychic"
         ],
+        "height": "5' 3\"",
+        "weight": 166.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/97.ogg",
         "abilities": [
             {
                 "name": "Insomnia",
@@ -49317,8 +49416,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 166.7,
         "forms": []
     },
     {
@@ -49337,6 +49434,9 @@
         "types": [
             "water"
         ],
+        "height": "1' 4\"",
+        "weight": 14.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/98.ogg",
         "abilities": [
             {
                 "name": "Hyper Cutter",
@@ -49775,8 +49875,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 14.3,
         "forms": []
     },
     {
@@ -49795,6 +49893,9 @@
         "types": [
             "water"
         ],
+        "height": "4' 3\"",
+        "weight": 132.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/99.ogg",
         "abilities": [
             {
                 "name": "Hyper Cutter",
@@ -50247,8 +50348,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 132.3,
         "forms": []
     },
     {
@@ -50267,6 +50366,9 @@
         "types": [
             "electric"
         ],
+        "height": "1' 8\"",
+        "weight": 22.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/100.ogg",
         "abilities": [
             {
                 "name": "Soundproof",
@@ -50630,8 +50732,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 22.9,
         "forms": []
     },
     {
@@ -50650,6 +50750,9 @@
         "types": [
             "electric"
         ],
+        "height": "3' 11\"",
+        "weight": 146.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/101.ogg",
         "abilities": [
             {
                 "name": "Soundproof",
@@ -51042,8 +51145,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 146.8,
         "forms": []
     },
     {
@@ -51063,6 +51164,9 @@
             "grass",
             "psychic"
         ],
+        "height": "1' 4\"",
+        "weight": 5.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/102.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -51526,8 +51630,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 5.5,
         "forms": []
     },
     {
@@ -51547,6 +51649,9 @@
             "grass",
             "psychic"
         ],
+        "height": "6' 7\"",
+        "weight": 264.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/103.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -52064,8 +52169,6 @@
             ],
             "other": []
         },
-        "height": "6' 7\"",
-        "weight": 264.6,
         "forms": []
     },
     {
@@ -52084,6 +52187,9 @@
         "types": [
             "ground"
         ],
+        "height": "1' 4\"",
+        "weight": 14.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/104.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -52592,8 +52698,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 14.3,
         "forms": []
     },
     {
@@ -52612,6 +52716,9 @@
         "types": [
             "ground"
         ],
+        "height": "3' 3\"",
+        "weight": 99.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/105.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -53129,8 +53236,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 99.2,
         "forms": []
     },
     {
@@ -53149,6 +53254,9 @@
         "types": [
             "fighting"
         ],
+        "height": "4' 11\"",
+        "weight": 109.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/106.ogg",
         "abilities": [
             {
                 "name": "Limber",
@@ -53692,8 +53800,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 109.8,
         "forms": []
     },
     {
@@ -53712,6 +53818,9 @@
         "types": [
             "fighting"
         ],
+        "height": "4' 7\"",
+        "weight": 110.7,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/107.ogg",
         "abilities": [
             {
                 "name": "Keen Eye",
@@ -54250,8 +54359,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 110.7,
         "forms": []
     },
     {
@@ -54270,6 +54377,9 @@
         "types": [
             "normal"
         ],
+        "height": "3' 11\"",
+        "weight": 144.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/108.ogg",
         "abilities": [
             {
                 "name": "Own Tempo",
@@ -54883,8 +54993,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 144.4,
         "forms": []
     },
     {
@@ -54903,6 +55011,9 @@
         "types": [
             "poison"
         ],
+        "height": "2' 0\"",
+        "weight": 2.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/109.ogg",
         "abilities": [
             {
                 "name": "Levitate",
@@ -55326,8 +55437,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 2.2,
         "forms": []
     },
     {
@@ -55346,6 +55455,9 @@
         "types": [
             "poison"
         ],
+        "height": "3' 11\"",
+        "weight": 20.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/110.ogg",
         "abilities": [
             {
                 "name": "Levitate",
@@ -55763,8 +55875,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 20.9,
         "forms": []
     },
     {
@@ -55784,6 +55894,9 @@
             "ground",
             "rock"
         ],
+        "height": "3' 3\"",
+        "weight": 253.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/111.ogg",
         "abilities": [
             {
                 "name": "Lightning Rod",
@@ -56352,8 +56465,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 253.5,
         "forms": []
     },
     {
@@ -56373,6 +56484,9 @@
             "ground",
             "rock"
         ],
+        "height": "6' 3\"",
+        "weight": 264.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/112.ogg",
         "abilities": [
             {
                 "name": "Lightning Rod",
@@ -57086,8 +57200,6 @@
             ],
             "other": []
         },
-        "height": "6' 3\"",
-        "weight": 264.6,
         "forms": []
     },
     {
@@ -57106,6 +57218,9 @@
         "types": [
             "normal"
         ],
+        "height": "3' 7\"",
+        "weight": 76.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/113.ogg",
         "abilities": [
             {
                 "name": "Natural Cure",
@@ -57854,8 +57969,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 76.3,
         "forms": []
     },
     {
@@ -57874,6 +57987,9 @@
         "types": [
             "grass"
         ],
+        "height": "3' 3\"",
+        "weight": 77.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/114.ogg",
         "abilities": [
             {
                 "name": "Chlorophyll",
@@ -58307,8 +58423,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 77.2,
         "forms": []
     },
     {
@@ -58327,6 +58441,9 @@
         "types": [
             "normal"
         ],
+        "height": "7' 3\"",
+        "weight": 176.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/115.ogg",
         "abilities": [
             {
                 "name": "Early Bird",
@@ -58960,8 +59077,6 @@
             ],
             "other": []
         },
-        "height": "7' 3\"",
-        "weight": 176.4,
         "forms": []
     },
     {
@@ -58980,6 +59095,9 @@
         "types": [
             "water"
         ],
+        "height": "1' 4\"",
+        "weight": 17.6,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/116.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -59368,8 +59486,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 17.6,
         "forms": []
     },
     {
@@ -59388,6 +59504,9 @@
         "types": [
             "water"
         ],
+        "height": "3' 11\"",
+        "weight": 55.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/117.ogg",
         "abilities": [
             {
                 "name": "Poison Point",
@@ -59781,8 +59900,6 @@
             ],
             "other": []
         },
-        "height": "3' 11\"",
-        "weight": 55.1,
         "forms": []
     },
     {
@@ -59801,6 +59918,9 @@
         "types": [
             "water"
         ],
+        "height": "2' 0\"",
+        "weight": 33.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/118.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -60204,8 +60324,6 @@
             ],
             "other": []
         },
-        "height": "2' 0\"",
-        "weight": 33.1,
         "forms": []
     },
     {
@@ -60224,6 +60342,9 @@
         "types": [
             "water"
         ],
+        "height": "4' 3\"",
+        "weight": 86,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/119.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -60621,8 +60742,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 86,
         "forms": []
     },
     {
@@ -60641,6 +60760,9 @@
         "types": [
             "water"
         ],
+        "height": "2' 7\"",
+        "weight": 76.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/120.ogg",
         "abilities": [
             {
                 "name": "Illuminate",
@@ -61064,8 +61186,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 76.1,
         "forms": []
     },
     {
@@ -61085,6 +61205,9 @@
             "water",
             "psychic"
         ],
+        "height": "3' 7\"",
+        "weight": 176.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/121.ogg",
         "abilities": [
             {
                 "name": "Illuminate",
@@ -61572,8 +61695,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 176.4,
         "forms": []
     },
     {
@@ -61593,6 +61714,9 @@
             "psychic",
             "fairy"
         ],
+        "height": "4' 3\"",
+        "weight": 120.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/122.ogg",
         "abilities": [
             {
                 "name": "Soundproof",
@@ -62256,8 +62380,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 120.2,
         "forms": []
     },
     {
@@ -62277,6 +62399,9 @@
             "bug",
             "flying"
         ],
+        "height": "4' 11\"",
+        "weight": 123.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/123.ogg",
         "abilities": [
             {
                 "name": "Swarm",
@@ -62745,8 +62870,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 123.5,
         "forms": []
     },
     {
@@ -62766,6 +62889,9 @@
             "ice",
             "psychic"
         ],
+        "height": "4' 7\"",
+        "weight": 89.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/124.ogg",
         "abilities": [
             {
                 "name": "Oblivious",
@@ -63398,8 +63524,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 89.5,
         "forms": []
     },
     {
@@ -63418,6 +63542,9 @@
         "types": [
             "electric"
         ],
+        "height": "3' 7\"",
+        "weight": 66.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/125.ogg",
         "abilities": [
             {
                 "name": "Static",
@@ -63936,8 +64063,6 @@
             ],
             "other": []
         },
-        "height": "3' 7\"",
-        "weight": 66.1,
         "forms": []
     },
     {
@@ -63956,6 +64081,9 @@
         "types": [
             "fire"
         ],
+        "height": "4' 3\"",
+        "weight": 98.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/126.ogg",
         "abilities": [
             {
                 "name": "Flame Body",
@@ -64484,8 +64612,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 98.1,
         "forms": []
     },
     {
@@ -64504,6 +64630,9 @@
         "types": [
             "bug"
         ],
+        "height": "4' 11\"",
+        "weight": 121.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/127.ogg",
         "abilities": [
             {
                 "name": "Hyper Cutter",
@@ -64957,8 +65086,6 @@
             ],
             "other": []
         },
-        "height": "4' 11\"",
-        "weight": 121.3,
         "forms": []
     },
     {
@@ -64977,6 +65104,9 @@
         "types": [
             "normal"
         ],
+        "height": "4' 7\"",
+        "weight": 194.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/128.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -65479,8 +65609,6 @@
             ],
             "other": []
         },
-        "height": "4' 7\"",
-        "weight": 194.9,
         "forms": []
     },
     {
@@ -65499,6 +65627,9 @@
         "types": [
             "water"
         ],
+        "height": "2' 11\"",
+        "weight": 22,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/129.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -65546,8 +65677,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 22,
         "forms": []
     },
     {
@@ -65567,6 +65696,9 @@
             "water",
             "flying"
         ],
+        "height": "21' 4\"",
+        "weight": 518.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/130.ogg",
         "abilities": [
             {
                 "name": "Intimidate",
@@ -66099,8 +66231,6 @@
             ],
             "other": []
         },
-        "height": "21' 4\"",
-        "weight": 518.1,
         "forms": []
     },
     {
@@ -66120,6 +66250,9 @@
             "water",
             "ice"
         ],
+        "height": "8' 2\"",
+        "weight": 485,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/131.ogg",
         "abilities": [
             {
                 "name": "Water Absorb",
@@ -66708,8 +66841,6 @@
             ],
             "other": []
         },
-        "height": "8' 2\"",
-        "weight": 485,
         "forms": []
     },
     {
@@ -66728,6 +66859,9 @@
         "types": [
             "normal"
         ],
+        "height": "1' 0\"",
+        "weight": 8.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/132.ogg",
         "abilities": [
             {
                 "name": "Limber",
@@ -66753,8 +66887,6 @@
             "tutor": [],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 8.8,
         "forms": []
     },
     {
@@ -66773,6 +66905,9 @@
         "types": [
             "normal"
         ],
+        "height": "1' 0\"",
+        "weight": 14.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/133.ogg",
         "abilities": [
             {
                 "name": "Run Away",
@@ -67171,8 +67306,6 @@
             ],
             "other": []
         },
-        "height": "1' 0\"",
-        "weight": 14.3,
         "forms": []
     },
     {
@@ -67191,6 +67324,9 @@
         "types": [
             "water"
         ],
+        "height": "3' 3\"",
+        "weight": 63.9,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/134.ogg",
         "abilities": [
             {
                 "name": "Water Absorb",
@@ -67703,8 +67839,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 63.9,
         "forms": []
     },
     {
@@ -67723,6 +67857,9 @@
         "types": [
             "electric"
         ],
+        "height": "2' 7\"",
+        "weight": 54,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/135.ogg",
         "abilities": [
             {
                 "name": "Volt Absorb",
@@ -68230,8 +68367,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 54,
         "forms": []
     },
     {
@@ -68250,6 +68385,9 @@
         "types": [
             "fire"
         ],
+        "height": "2' 11\"",
+        "weight": 55.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/136.ogg",
         "abilities": [
             {
                 "name": "Flash Fire",
@@ -68742,8 +68880,6 @@
             ],
             "other": []
         },
-        "height": "2' 11\"",
-        "weight": 55.1,
         "forms": []
     },
     {
@@ -68762,6 +68898,9 @@
         "types": [
             "normal"
         ],
+        "height": "2' 7\"",
+        "weight": 80.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/137.ogg",
         "abilities": [
             {
                 "name": "Trace",
@@ -69224,8 +69363,6 @@
             ],
             "other": []
         },
-        "height": "2' 7\"",
-        "weight": 80.5,
         "forms": []
     },
     {
@@ -69245,6 +69382,9 @@
             "rock",
             "water"
         ],
+        "height": "1' 4\"",
+        "weight": 16.5,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/138.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -69673,8 +69813,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 16.5,
         "forms": []
     },
     {
@@ -69694,6 +69832,9 @@
             "rock",
             "water"
         ],
+        "height": "3' 3\"",
+        "weight": 77.2,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/139.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -70151,8 +70292,6 @@
             ],
             "other": []
         },
-        "height": "3' 3\"",
-        "weight": 77.2,
         "forms": []
     },
     {
@@ -70172,6 +70311,9 @@
             "rock",
             "water"
         ],
+        "height": "1' 8\"",
+        "weight": 25.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/140.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -70615,8 +70757,6 @@
             ],
             "other": []
         },
-        "height": "1' 8\"",
-        "weight": 25.4,
         "forms": []
     },
     {
@@ -70636,6 +70776,9 @@
             "rock",
             "water"
         ],
+        "height": "4' 3\"",
+        "weight": 89.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/141.ogg",
         "abilities": [
             {
                 "name": "Swift Swim",
@@ -71178,8 +71321,6 @@
             ],
             "other": []
         },
-        "height": "4' 3\"",
-        "weight": 89.3,
         "forms": []
     },
     {
@@ -71199,6 +71340,9 @@
             "rock",
             "flying"
         ],
+        "height": "5' 11\"",
+        "weight": 130.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/142.ogg",
         "abilities": [
             {
                 "name": "Rock Head",
@@ -71717,8 +71861,6 @@
             ],
             "other": []
         },
-        "height": "5' 11\"",
-        "weight": 130.1,
         "forms": []
     },
     {
@@ -71737,6 +71879,9 @@
         "types": [
             "normal"
         ],
+        "height": "6' 11\"",
+        "weight": 1014.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/143.ogg",
         "abilities": [
             {
                 "name": "Immunity",
@@ -72445,8 +72590,6 @@
             ],
             "other": []
         },
-        "height": "6' 11\"",
-        "weight": 1014.1,
         "forms": []
     },
     {
@@ -72466,6 +72609,9 @@
             "ice",
             "flying"
         ],
+        "height": "5' 7\"",
+        "weight": 122.1,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/144.ogg",
         "abilities": [
             {
                 "name": "Pressure",
@@ -72928,8 +73074,6 @@
             ],
             "other": []
         },
-        "height": "5' 7\"",
-        "weight": 122.1,
         "forms": []
     },
     {
@@ -72949,6 +73093,9 @@
             "electric",
             "flying"
         ],
+        "height": "5' 3\"",
+        "weight": 116,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/145.ogg",
         "abilities": [
             {
                 "name": "Pressure",
@@ -73406,8 +73553,6 @@
             ],
             "other": []
         },
-        "height": "5' 3\"",
-        "weight": 116,
         "forms": []
     },
     {
@@ -73427,6 +73572,9 @@
             "fire",
             "flying"
         ],
+        "height": "6' 7\"",
+        "weight": 132.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/146.ogg",
         "abilities": [
             {
                 "name": "Pressure",
@@ -73859,8 +74007,6 @@
             ],
             "other": []
         },
-        "height": "6' 7\"",
-        "weight": 132.3,
         "forms": []
     },
     {
@@ -73879,6 +74025,9 @@
         "types": [
             "dragon"
         ],
+        "height": "5' 11\"",
+        "weight": 7.3,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/147.ogg",
         "abilities": [
             {
                 "name": "Shed Skin",
@@ -74332,8 +74481,6 @@
             ],
             "other": []
         },
-        "height": "5' 11\"",
-        "weight": 7.3,
         "forms": []
     },
     {
@@ -74352,6 +74499,9 @@
         "types": [
             "dragon"
         ],
+        "height": "13' 1\"",
+        "weight": 36.4,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/148.ogg",
         "abilities": [
             {
                 "name": "Shed Skin",
@@ -74794,8 +74944,6 @@
             ],
             "other": []
         },
-        "height": "13' 1\"",
-        "weight": 36.4,
         "forms": []
     },
     {
@@ -74815,6 +74963,9 @@
             "dragon",
             "flying"
         ],
+        "height": "7' 3\"",
+        "weight": 463,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/149.ogg",
         "abilities": [
             {
                 "name": "Inner Focus",
@@ -75522,8 +75673,6 @@
             ],
             "other": []
         },
-        "height": "7' 3\"",
-        "weight": 463,
         "forms": []
     },
     {
@@ -75542,6 +75691,9 @@
         "types": [
             "psychic"
         ],
+        "height": "6' 7\"",
+        "weight": 269,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg",
         "abilities": [
             {
                 "name": "Pressure",
@@ -76399,8 +76551,6 @@
             ],
             "other": []
         },
-        "height": "6' 7\"",
-        "weight": 269,
         "forms": []
     },
     {
@@ -76419,6 +76569,9 @@
         "types": [
             "psychic"
         ],
+        "height": "1' 4\"",
+        "weight": 8.8,
+        "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg",
         "abilities": [
             {
                 "name": "Synchronize",
@@ -78311,8 +78464,6 @@
             ],
             "other": []
         },
-        "height": "1' 4\"",
-        "weight": 8.8,
         "forms": []
     }
 ]
