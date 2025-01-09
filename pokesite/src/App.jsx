@@ -310,10 +310,18 @@ function App() {
   }
 
   function Move({moveDetails}) {
-    
+    let levelDiv = <></>;
+
+    if(moveDetails.level >= 0){
+      levelDiv = <div className="level">{moveDetails.level}</div>;
+    }
+    else if(moveDetails.method){
+      levelDiv = <div className="level">{moveDetails.method}</div>;
+    }
+
     return (
       <div className="move">
-        <div className="level">{moveDetails.level}</div>
+        {levelDiv}
         <div className="moveName">{moveDetails.name}</div>
         <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
         <img className="moveClass" src={moveDetails.class + ".png"}></img>
@@ -324,7 +332,10 @@ function App() {
   }
 
   function Moves(){
-    const levelArray = []
+    const levelArray = [];
+    const machineArray = [];
+    const eggArray = [];
+    const otherArray = [];
     for (let move of moves["level-up"]){
       for (let details of moveList){
         if (move.key == details.key){
@@ -333,18 +344,102 @@ function App() {
         }
       }
     }
+    for (let move of moves["machine"]){
+      for (let details of moveList){
+        if (move.key == details.key){
+          details.level = -1;
+          machineArray.push(details);
+        }
+      }
+    }
+    for (let move of moves["egg"]){
+      for (let details of moveList){
+        if (move.key == details.key){
+          details.level = -1;
+          eggArray.push(details);
+        }
+      }
+    }
+    for (let move of moves["other"]){
+      for (let details of moveList){
+        if (move.key == details.key){
+          details.level = -1;
+          details.method = move.method;
+          otherArray.push(details);
+        }
+      }
+    }
 
     return (
       <div className="moveList">
         <div className="levelHeader">
-          LEVEL MOVES
+          <div className="categoryTitle">Level Moves</div>
+          <div className="levelHeaderDetails">
+            <div className="level">Level</div>
+            <div className="moveName">Move</div>
+            <div className="typeHeader">Type</div>
+            <div className="moveClass">Class</div>
+            <div className="movePower">Power</div>
+            <div className="moveAccuracy">Accuracy</div>
+          </div>
         </div>
         {levelArray?.map((move) => (
             <Move key={move.key} moveDetails={move} />
           ))}
+        
+        {machineArray.length > 0 ?
         <div className="levelHeader">
-          EGG MOVES
+          <div className="categoryTitle">Machine Moves</div>
+          <div className="levelHeaderDetails">
+            <div className="moveName">Move</div>
+            <div className="typeHeader">Type</div>
+            <div className="moveClass">Class</div>
+            <div className="movePower">Power</div>
+            <div className="moveAccuracy">Accuracy</div>
+          </div>
         </div>
+          : <></>
+        }
+        {machineArray?.map((move) => (
+            <Move key={move.key} moveDetails={move} />
+          ))}
+
+        {eggArray.length > 0 ?
+        <div className="levelHeader">
+          <div className="categoryTitle">Egg Moves</div>
+          <div className="levelHeaderDetails">
+            <div className="moveName">Move</div>
+            <div className="typeHeader">Type</div>
+            <div className="moveClass">Class</div>
+            <div className="movePower">Power</div>
+            <div className="moveAccuracy">Accuracy</div>
+          </div>
+        </div>
+        : <></>
+        }
+
+        {eggArray?.map((move) => (
+            <Move key={move.key} moveDetails={move} />
+          ))}
+
+        {otherArray.length > 0 ?
+        <div className="levelHeader">
+          <div className="categoryTitle">Other Moves</div>
+          <div className="levelHeaderDetails">
+            <div className="level">Method</div>
+            <div className="moveName">Move</div>
+            <div className="typeHeader">Type</div>
+            <div className="moveClass">Class</div>
+            <div className="movePower">Power</div>
+            <div className="moveAccuracy">Accuracy</div>
+          </div>
+        </div>
+        : <></>
+        }
+
+        {otherArray?.map((move) => (
+            <Move key={move.key} moveDetails={move} />
+          ))}
       </div>
     )
   }
@@ -462,10 +557,10 @@ function App() {
             <Cry />
           </div>
         </div>
-        <div className="moveBox">
+        <div className="test">
           <Moves />
+          <Abilities />
         </div>
-        <Abilities />
       </div>
 
       <div className='wheel'>

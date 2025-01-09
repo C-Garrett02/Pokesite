@@ -141,6 +141,18 @@ async function GetFormData2(varieties) {
                     move_arrays[current_move.method].push(current_move);
                 }
                 else {
+                    if(current_move.method == "stadium-surfing-pikachu"){
+                        current_move.method = "Pokemon Stadium";
+                    }
+                    else if(current_move.method == "tutor"){
+                        current_move.method = "Tutor"
+                    }
+                    else if(current_move.method == "form-change"){
+                        current_move.method = "Form Change"
+                    }
+                    else {
+                        current_move.method = "Other"
+                    }
                     move_arrays["other"].push(current_move);
                 }
                 break;
