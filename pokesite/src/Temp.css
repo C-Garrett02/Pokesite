@@ -150,7 +150,7 @@
 
   .test {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .moveList {
@@ -164,10 +164,9 @@
 
   .abilityBox {
     display: flex;
-    height: 20vh;
+    height: 18vh;
     flex-direction: column;
     border: solid 1px;
-    width: 30vw;
   }
 
   .abilityHeader {
