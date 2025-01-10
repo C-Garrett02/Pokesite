@@ -150,21 +150,21 @@
 
   .test {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 35vh;
   }
 
   .moveList {
     display: flex;
     flex-direction: column;
-    font-size: 1.8vh;
+    font-size: 2vh;
     overflow-y: auto;
-    height: 20vh;
-    width: 100%;
+    width: 70%;
   }
 
   .abilityBox {
     display: flex;
-    height: 18vh;
+    width: 30%;
     flex-direction: column;
     border: solid 1px;
   }
@@ -174,10 +174,12 @@
     border-bottom: solid 1px;
     align-items: center;
     height: 4vh;
+    font-size: 2vh;
   }
 
   #abilityTextEnd {
     margin-left: 2%;
+    font-size: 2vh;
   }
 
   .abilityName {
@@ -192,6 +194,7 @@
     padding-right: .5vh;
     overflow-y: auto;
     white-space: pre-wrap;
+    font-size: 2vh;
   }
 
   .directionBtns {

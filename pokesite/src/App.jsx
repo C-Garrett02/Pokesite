@@ -364,8 +364,9 @@ function App() {
       for (let details of moveList){
         if (move.key == details.key){
           details.level = -1;
-          details.method = move.method;
-          otherArray.push(details);
+          let copy = details
+          copy.method = move.method;
+          otherArray.push(copy);
         }
       }
     }
