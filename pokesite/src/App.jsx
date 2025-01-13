@@ -84,7 +84,7 @@ function App() {
     useLayoutEffect(() => {
       const updateSize = debounce (() => {
         windowSizeRef.current = [window.innerWidth, window.innerHeight];
-        calculateTransformations();
+        //calculateTransformations();
       }, 100)
       window.addEventListener('resize', updateSize);
       updateSize();
@@ -93,7 +93,7 @@ function App() {
     return windowSizeRef;
   }
 
-  function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
+  /*function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
     forwardArr.length = 0;
     backwardsArr.length = 0;
     const matchStr = /\((\d*\.*\d*)\)/;
@@ -177,7 +177,7 @@ function App() {
       incrementDex();
       isScrolling = false;
     }
-  }
+  }*/
 
   function incrementDex() { 
     if(dexnum < items.length - 1){
@@ -445,6 +445,32 @@ function App() {
     )
   }
 
+  function Wheel(){
+    return(
+      <div className='wheel'>
+        <div className='directionButtons'>
+          <div className="decrementButton">
+            <button onClick={() => {
+              if(dexnum != 0 && isScrolling == false){
+                isScrolling = true;
+                intervalRef.current = setInterval(slideEntriesUp, 10);
+              }
+            }}></button>
+          </div>
+          <div className="incrementButton">
+            <button onClick={() => {
+              if(dexnum < items.length - 1 && isScrolling == false){
+                isScrolling = true;
+                intervalRef.current = setInterval(slideEntriesDown, 10);
+              }
+            }}></button>
+          </div>
+        </div>
+        <VisibleEntries num={dexnum} />
+      </div>
+    )
+  }
+
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
     let id_string = 'entry' + (index-dexnum);
     if(index > -1 && index < items.length){
@@ -520,7 +546,7 @@ function App() {
     fetchData();
   }, []);
 
-  useLayoutEffect(calculateTransformations, []);
+  //useLayoutEffect(calculateTransformations, []);
 
   return (
     <>
@@ -562,28 +588,6 @@ function App() {
           <Moves />
           <Abilities />
         </div>
-      </div>
-
-      <div className='wheel'>
-        <div className='directionButtons'>
-          <div className="decrementButton">
-            <button onClick={() => {
-              if(dexnum != 0 && isScrolling == false){
-                isScrolling = true;
-                intervalRef.current = setInterval(slideEntriesUp, 10);
-              }
-            }}></button>
-          </div>
-          <div className="incrementButton">
-            <button onClick={() => {
-              if(dexnum < items.length - 1 && isScrolling == false){
-                isScrolling = true;
-                intervalRef.current = setInterval(slideEntriesDown, 10);
-              }
-            }}></button>
-          </div>
-        </div>
-        <VisibleEntries num={dexnum} />
       </div>
     </div>
     </>
