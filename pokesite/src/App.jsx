@@ -73,76 +73,10 @@ function App() {
   const [weight, setWeight] = useState(items[dexnum].weight);
   const [cry, setCry] = useState(items[dexnum].cry);
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
-  const windowSizeRef = useWindowSize();
   let animationStep = 1;
-  //const totalAnimationSteps = 30;
   const intervalRef = useRef(null);
   let isScrolling = false;
-  
-  function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
-    const windowSizeRef = useRef([0, 0]);
-    useLayoutEffect(() => {
-      const updateSize = debounce (() => {
-        windowSizeRef.current = [window.innerWidth, window.innerHeight];
-        //calculateTransformations();
-      }, 100)
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);
-    return windowSizeRef;
-  }
-
-  /*function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
-    forwardArr.length = 0;
-    backwardsArr.length = 0;
-    const matchStr = /\((\d*\.*\d*)\)/;
-
-    for (let i = 0; i < refArray.length - 1; i++){ //For decrements
-      const curElement = refArray[i].current;
-      const nextElement = refArray[i+1].current;
-      const curElementStyle = window.getComputedStyle(curElement);
-      const nextElementStyle = window.getComputedStyle(nextElement);
-
-      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-        top: (nextElement.offsetTop - curElement.offsetTop), 
-        marginLeft: {
-          start: parseInt(curElementStyle.marginLeft),
-          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-          end: parseInt(nextElementStyle.marginLeft)
-        },
-        brightness: {
-          start: curElementStyle.filter.match(matchStr)[1],
-          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-          end: nextElementStyle.filter.match(matchStr)[1]
-        }
-      };
-      forwardArr.push(transformation)
-    }
-
-    for (let i = 1; i < refArray.length; i++){ //For increments
-      const curElement = refArray[i].current;
-      const nextElement = refArray[i-1].current;
-      const curElementStyle = window.getComputedStyle(curElement);
-      const nextElementStyle = window.getComputedStyle(nextElement);
-
-      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-        top: (nextElement.offsetTop - curElement.offsetTop), 
-        marginLeft: {
-          start: parseInt(curElementStyle.marginLeft),
-          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-          end: parseInt(nextElementStyle.marginLeft)
-        },
-        brightness: {
-          start: curElementStyle.filter.match(matchStr)[1],
-          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-          end: nextElementStyle.filter.match(matchStr)[1]
-        }
-      };
-      backwardsArr.push(transformation)
-    }
-  
-  }
+  const totalAnimationSteps = 30;
 
   function slideEntriesUp(totalAnimationSteps = 30) {
     const multiplyBy = animationStep/totalAnimationSteps
@@ -177,7 +111,7 @@ function App() {
       incrementDex();
       isScrolling = false;
     }
-  }*/
+  }
 
   function incrementDex() { 
     if(dexnum < items.length - 1){
@@ -445,7 +379,74 @@ function App() {
     )
   }
 
-  function Wheel(){
+  function Wheel(){ 
+    useLayoutEffect(calculateTransformations, []);
+    const windowSizeRef = useWindowSize();
+  
+    function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
+      const windowSizeRef = useRef([0, 0]);
+      useLayoutEffect(() => {
+        const updateSize = debounce (() => {
+          windowSizeRef.current = [window.innerWidth, window.innerHeight];
+          calculateTransformations();
+        }, 100)
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+      }, []);
+      return windowSizeRef;
+    }
+  
+    function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
+      forwardArr.length = 0;
+      backwardsArr.length = 0;
+      const matchStr = /\((\d*\.*\d*)\)/;
+  
+      for (let i = 0; i < refArray.length - 1; i++){ //For decrements
+        const curElement = refArray[i].current;
+        const nextElement = refArray[i+1].current;
+        const curElementStyle = window.getComputedStyle(curElement);
+        const nextElementStyle = window.getComputedStyle(nextElement);
+  
+        const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
+          top: (nextElement.offsetTop - curElement.offsetTop), 
+          marginLeft: {
+            start: parseInt(curElementStyle.marginLeft),
+            increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
+            end: parseInt(nextElementStyle.marginLeft)
+          },
+          brightness: {
+            start: curElementStyle.filter.match(matchStr)[1],
+            increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
+            end: nextElementStyle.filter.match(matchStr)[1]
+          }
+        };
+        forwardArr.push(transformation)
+      }
+  
+      for (let i = 1; i < refArray.length; i++){ //For increments
+        const curElement = refArray[i].current;
+        const nextElement = refArray[i-1].current;
+        const curElementStyle = window.getComputedStyle(curElement);
+        const nextElementStyle = window.getComputedStyle(nextElement);
+  
+        const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
+          top: (nextElement.offsetTop - curElement.offsetTop), 
+          marginLeft: {
+            start: parseInt(curElementStyle.marginLeft),
+            increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
+            end: parseInt(nextElementStyle.marginLeft)
+          },
+          brightness: {
+            start: curElementStyle.filter.match(matchStr)[1],
+            increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
+            end: nextElementStyle.filter.match(matchStr)[1]
+          }
+        };
+        backwardsArr.push(transformation)
+      }
+    
+    }
     return(
       <div className='wheel'>
         <div className='directionButtons'>
@@ -546,8 +547,6 @@ function App() {
     fetchData();
   }, []);
 
-  //useLayoutEffect(calculateTransformations, []);
-
   return (
     <>
     <div className='topBar'>
@@ -589,6 +588,7 @@ function App() {
           <Abilities />
         </div>
       </div>
+      <Wheel />
     </div>
     </>
   )

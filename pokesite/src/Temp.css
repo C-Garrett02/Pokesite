@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 20%
+    width: 20%;
   }
 
   .monInput {
@@ -80,7 +80,10 @@
     flex-direction: row;
     margin-left: 7vw;
     height: 100%;
-    width: 20vw;
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .pokeImage {
