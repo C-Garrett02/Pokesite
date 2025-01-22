@@ -1,62 +1,39 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
+async function PushPokemon(dex) { //Make a base pokemon and attach its forms to it.
+    const pokemon = await GetPokemon2(dex);
+    pokedex.push(pokemon)
+}
+
 async function GetPokemon2(dex) {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon-species/' + dex.toString());
     const body = await response.json();
-    return body.varieties;
-}
-
-async function GetVersions() { //get versions in chronological order
-    const response = await fetch('https://pokeapi.co/api/v2/version-group?limit=30');
-    const body = await response.json();
-    let versions = [];
-    for (let group of body.results) {
-        versions.push(group.name);
-    }
-    return versions;
-}
-
-async function GetAbility(ability) { //currently writes to pokedex, consider also making own file? Not as big of a deal as moves, though.
-    const response = await fetch(ability.url);
-    const body = await response.json();
-    let description = "";
-    let ability_name = "";
-    for (let name of body.names) {
-        if(name.language.name == "en"){
-            ability_name = name.name;
+    const alternateForms = [];
+    let basePokemon;
+    for (let form of body.varieties){
+        console.log(form);
+        if (form.is_default == true){
+            basePokemon = await GetFormData2(form);
         }
-    }
-    if(body.effect_entries.length > 0){
-        for (let entry of body.effect_entries) {
-            if(entry.language.name == "en"){
-                description = entry.effect;
-                //description = description.replace(/\n/g, '');
-                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
-                //description = description.replace('Overworld', '\n\nOverworld');
+        else {
+            const other_form = await GetFormData2(form);
+            if(other_form !== null){
+                alternateForms.push(other_form);
             }
         }
     }
-    else {
-        for (let i = body.flavor_text_entries.length - 1; i >= 0; i--){ //Want to get the most recent entry, start from back
-            if(body.flavor_text_entries[i].language.name == "en"){
-                description = body.flavor_text_entries[i].flavor_text;
-                //description = description.replace(/\n/g, '');
-                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
-                //description = description.replace('Overworld', '\n\nOverworld');
-            }
-        }
-    }
-    return {
-        name: ability_name,
-        effect: description
-    }
+    basePokemon.forms = alternateForms;
+    return basePokemon;
 }
 
-async function GetFormData2(varieties) {
+async function GetFormData2(variety) {
     const versions = await GetVersions(); //Should really only call this once and pass it to this function or something. Will maybe work on that later.
-    const response = await fetch(varieties[0].pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
+    const response = await fetch(variety.pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
+    if(body.sprites.front_default == null){
+        return null;
+    }
     const uppercaseName = body.name.charAt(0).toUpperCase() + body.name.slice(1);
     let latestIndex = 0;
     let base_stats = {};
@@ -144,10 +121,50 @@ async function GetFormData2(varieties) {
     };
 }
 
-async function PushPokemon(dex) {
-    const varieties = await GetPokemon2(dex);
-    const pokemon = await GetFormData2(varieties);
-    pokedex.push(pokemon)
+async function GetVersions() { //get versions in chronological order
+    const response = await fetch('https://pokeapi.co/api/v2/version-group?limit=30');
+    const body = await response.json();
+    let versions = [];
+    for (let group of body.results) {
+        versions.push(group.name);
+    }
+    return versions;
+}
+
+async function GetAbility(ability) { //currently writes to pokedex, consider also making own file? Not as big of a deal as moves, though.
+    const response = await fetch(ability.url);
+    const body = await response.json();
+    let description = "";
+    let ability_name = "";
+    for (let name of body.names) {
+        if(name.language.name == "en"){
+            ability_name = name.name;
+        }
+    }
+    if(body.effect_entries.length > 0){
+        for (let entry of body.effect_entries) {
+            if(entry.language.name == "en"){
+                description = entry.effect;
+                //description = description.replace(/\n/g, '');
+                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace('Overworld', '\n\nOverworld');
+            }
+        }
+    }
+    else {
+        for (let i = body.flavor_text_entries.length - 1; i >= 0; i--){ //Want to get the most recent entry, start from back
+            if(body.flavor_text_entries[i].language.name == "en"){
+                description = body.flavor_text_entries[i].flavor_text;
+                //description = description.replace(/\n/g, '');
+                //description = description.replace(/([a-z, A-Z])\.([a-z, A-Z])/g, '$1. $2');
+                //description = description.replace('Overworld', '\n\nOverworld');
+            }
+        }
+    }
+    return {
+        name: ability_name,
+        effect: description
+    }
 }
 
 function SaveToFile(array, filename) {
