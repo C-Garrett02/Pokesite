@@ -78,6 +78,57 @@ function App() {
   let isScrolling = false;
   const totalAnimationSteps = 30;
 
+  function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
+    forwardArr.length = 0;
+    backwardsArr.length = 0;
+    const matchStr = /\((\d*\.*\d*)\)/;
+
+    for (let i = 0; i < refArray.length - 1; i++){ //For decrements
+      const curElement = refArray[i].current;
+      const nextElement = refArray[i+1].current;
+      const curElementStyle = window.getComputedStyle(curElement);
+      const nextElementStyle = window.getComputedStyle(nextElement);
+
+      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
+        top: (nextElement.offsetTop - curElement.offsetTop), 
+        marginLeft: {
+          start: parseInt(curElementStyle.marginLeft),
+          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
+          end: parseInt(nextElementStyle.marginLeft)
+        },
+        brightness: {
+          start: curElementStyle.filter.match(matchStr)[1],
+          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
+          end: nextElementStyle.filter.match(matchStr)[1]
+        }
+      };
+      forwardArr.push(transformation)
+    }
+
+    for (let i = 1; i < refArray.length; i++){ //For increments
+      const curElement = refArray[i].current;
+      const nextElement = refArray[i-1].current;
+      const curElementStyle = window.getComputedStyle(curElement);
+      const nextElementStyle = window.getComputedStyle(nextElement);
+
+      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
+        top: (nextElement.offsetTop - curElement.offsetTop), 
+        marginLeft: {
+          start: parseInt(curElementStyle.marginLeft),
+          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
+          end: parseInt(nextElementStyle.marginLeft)
+        },
+        brightness: {
+          start: curElementStyle.filter.match(matchStr)[1],
+          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
+          end: nextElementStyle.filter.match(matchStr)[1]
+        }
+      };
+      backwardsArr.push(transformation)
+    }
+  
+  }
+
   function slideEntriesUp(totalAnimationSteps = 30) {
     const multiplyBy = animationStep/totalAnimationSteps
 
@@ -380,8 +431,14 @@ function App() {
   }
 
   function Wheel(){ 
+    const [hover, setHover] = useState(false);
+
+    console.log(hover);
+
+    const handleMouseEnter = () => setHover(true);
+    const handleMouseLeave = () => console.log("left")
+
     useLayoutEffect(calculateTransformations, []);
-    const windowSizeRef = useWindowSize();
   
     function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
       const windowSizeRef = useRef([0, 0]);
@@ -396,59 +453,14 @@ function App() {
       }, []);
       return windowSizeRef;
     }
-  
-    function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
-      forwardArr.length = 0;
-      backwardsArr.length = 0;
-      const matchStr = /\((\d*\.*\d*)\)/;
-  
-      for (let i = 0; i < refArray.length - 1; i++){ //For decrements
-        const curElement = refArray[i].current;
-        const nextElement = refArray[i+1].current;
-        const curElementStyle = window.getComputedStyle(curElement);
-        const nextElementStyle = window.getComputedStyle(nextElement);
-  
-        const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-          top: (nextElement.offsetTop - curElement.offsetTop), 
-          marginLeft: {
-            start: parseInt(curElementStyle.marginLeft),
-            increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-            end: parseInt(nextElementStyle.marginLeft)
-          },
-          brightness: {
-            start: curElementStyle.filter.match(matchStr)[1],
-            increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-            end: nextElementStyle.filter.match(matchStr)[1]
-          }
-        };
-        forwardArr.push(transformation)
-      }
-  
-      for (let i = 1; i < refArray.length; i++){ //For increments
-        const curElement = refArray[i].current;
-        const nextElement = refArray[i-1].current;
-        const curElementStyle = window.getComputedStyle(curElement);
-        const nextElementStyle = window.getComputedStyle(nextElement);
-  
-        const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-          top: (nextElement.offsetTop - curElement.offsetTop), 
-          marginLeft: {
-            start: parseInt(curElementStyle.marginLeft),
-            increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-            end: parseInt(nextElementStyle.marginLeft)
-          },
-          brightness: {
-            start: curElementStyle.filter.match(matchStr)[1],
-            increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-            end: nextElementStyle.filter.match(matchStr)[1]
-          }
-        };
-        backwardsArr.push(transformation)
-      }
-    
-    }
+
+    const windowSizeRef = useWindowSize();
+
     return(
-      <div className='wheel'>
+      <div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='pulloutBar'>
+          <img id='leftArrow' src='/triangle.svg' />
+        </div>
         <div className='directionButtons'>
           <div className="decrementButton">
             <button onClick={() => {
@@ -477,7 +489,7 @@ function App() {
     if(index > -1 && index < items.length){
       return (
         <>
-          <div className="entry" ref={refArray[index - dexnum + Math.floor(refArray.length/2)]} id={id_string}>{index+1}: {items[index].name}</div>
+          <div className="entry" ref={refArray[index - dexnum + Math.floor(refArray.length/2)]} id={id_string}>{index+1}: {items[index].name}</div> 
         </>
       )
     }
