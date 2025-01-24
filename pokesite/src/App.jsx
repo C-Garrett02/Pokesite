@@ -61,22 +61,40 @@ function App() {
     },
     "forms": []
   }));
-  const [moveList, setMoveList] = useState([])
-  const [dexnum, setDexnum] = useState(0);
-  const [name, setName] = useState(items[dexnum].name);
-  const [image, setImage] = useState(items[dexnum].image);
-  const [types, setTypes] = useState(items[dexnum].types)
-  const [stats, setStats] = useState(items[dexnum].stats);
-  const [abilities, setAbilities] = useState(items[dexnum].abilities);
-  const [moves, setMoves] = useState(items[dexnum].moves);
-  const [height, setHeight] = useState(items[dexnum].height);
-  const [weight, setWeight] = useState(items[dexnum].weight);
-  const [cry, setCry] = useState(items[dexnum].cry);
+  const [pokemon, setPokemon] = useState({
+    dexnum: 0,
+    name: items[0].name,
+    image: items[0].image,
+    types: items[0].types,
+    stats: items[0].stats,
+    abilities: items[0].abilities,
+    moves: items[0].moves,
+    height: items[0].height,
+    weight: items[0].weight,
+    cry: items[0].cry
+  })
+  const [moveList, setMoveList] = useState([]) //the specific data for each move, not the moves of each pokemon
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   let animationStep = 1;
   const intervalRef = useRef(null);
   let isScrolling = false;
   const totalAnimationSteps = 30;
+
+  function updateMon(num) {
+    let newMon = {
+      dexnum: num,
+      name: items[num].name,
+      image: items[num].image,
+      types: items[num].types,
+      stats: items[num].stats,
+      abilities: items[num].abilities,
+      moves: items[num].moves,
+      height: items[num].height,
+      weight: items[num].weight,
+      cry: items[num].cry
+    };
+    setPokemon(newMon);
+  }
 
   function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
     forwardArr.length = 0;
@@ -165,40 +183,24 @@ function App() {
   }
 
   function incrementDex() { 
-    if(dexnum < items.length - 1){
-      let updatedDex = dexnum + 1;
-      setDexnum(updatedDex);
-      setName(items[updatedDex].name);
-      setImage(items[updatedDex].image);
-      setTypes(items[updatedDex].types);
-      setStats(items[updatedDex].stats);
-      setAbilities(items[updatedDex].abilities);
-      setMoves(items[updatedDex].moves);
-      setWeight(items[updatedDex].weight);
-      setHeight(items[updatedDex].height);
-      setCry(items[updatedDex].cry);
+    if(pokemon.dexnum < items.length - 1){
+      //let updatedDex = dexnum + 1;
+      let updatedDex =  pokemon.dexnum + 1;
+      updateMon(updatedDex);
     }
   }
 
   function decrementDex() {
-    if(dexnum != 0){
-      let updatedDex = dexnum - 1;
-      setDexnum(updatedDex);
-      setName(items[updatedDex].name);
-      setImage(items[updatedDex].image);
-      setTypes(items[updatedDex].types);
-      setStats(items[updatedDex].stats);
-      setAbilities(items[updatedDex].abilities);
-      setMoves(items[updatedDex].moves);
-      setWeight(items[updatedDex].weight);
-      setHeight(items[updatedDex].height);
-      setCry(items[updatedDex].cry);
+    if(pokemon.dexnum != 0){
+      //let updatedDex = dexnum - 1;
+      let updatedDex =  pokemon.dexnum - 1;
+      updateMon(updatedDex);
     }
   }
 
   function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
     return(
-      items.filter((pokemon) => pokemon.name.toLowerCase().includes(input.toLowerCase())
+      items.filter((p) => p.name.toLowerCase().includes(input.toLowerCase())
       )
     )
   }
@@ -206,22 +208,13 @@ function App() {
   function FilteredDex({input}){ //returns list of divs that provide matches. Does not exist in dom unless there are results to be returned.
     const jumpToMon = (e) => {
       const updatedDex = parseInt(e.target.getAttribute('number'))-1;
-      setDexnum(updatedDex);
-      setName(items[updatedDex].name);
-      setImage(items[updatedDex].image);
-      setTypes(items[updatedDex].types);
-      setStats(items[updatedDex].stats);
-      setAbilities(items[updatedDex].abilities);
-      setMoves(items[updatedDex].moves);
-      setWeight(items[updatedDex].weight);
-      setHeight(items[updatedDex].height);
-      setCry(items[updatedDex].cry);
+      updateMon(updatedDex);
     }
     let filteredList = <></>
 
     if (input.length >= 3){
-        filteredList = filterByInput(input).map(pokemon => 
-          <button key={pokemon.name} number={pokemon.id} className='monButton' onClick={jumpToMon}>{pokemon.name}</button>
+        filteredList = filterByInput(input).map(p => 
+          <button key={p.name} number={p.id} className='monButton' onClick={jumpToMon}>{p.name}</button>
         )
     }
 
@@ -252,7 +245,7 @@ function App() {
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
     function incrementAbility(){
-      if (abilityIndex+1 < abilities.length){
+      if (abilityIndex+1 < pokemon.abilities.length){
         setTextEnd(generateTextEnd(abilityIndex+1));
         setAbilityIndex(abilityIndex+1);
       }
@@ -264,7 +257,7 @@ function App() {
       }
     }
     function generateTextEnd(index){
-      if(abilities[index].hidden){
+      if(pokemon.abilities[index].hidden){
         return "(Hidden)";
       }
       else{
@@ -276,7 +269,7 @@ function App() {
       <div className='abilityBox'>
         <div className='abilityHeader'>
           <div className='abilityName'>
-            <strong>{abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
+            <strong>{pokemon.abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
           </div>
           <div className='directionBtns'>
             <button className='abilityBtn' onClick={decrementAbility}>
@@ -288,7 +281,7 @@ function App() {
           </div>
         </div>
         <div className='abilityDescription'>
-          {abilities[abilityIndex].effect}
+          {pokemon.abilities[abilityIndex].effect}
         </div>
       </div>
     )
@@ -321,7 +314,7 @@ function App() {
     const machineArray = [];
     const eggArray = [];
     const otherArray = [];
-    for (let move of moves["level-up"]){
+    for (let move of pokemon.moves["level-up"]){
       for (let details of moveList){
         if (move.key == details.key){
           details.level = move.level;
@@ -329,7 +322,7 @@ function App() {
         }
       }
     }
-    for (let move of moves["machine"]){
+    for (let move of pokemon.moves["machine"]){
       for (let details of moveList){
         if (move.key == details.key){
           details.level = -1;
@@ -337,7 +330,7 @@ function App() {
         }
       }
     }
-    for (let move of moves["egg"]){
+    for (let move of pokemon.moves["egg"]){
       for (let details of moveList){
         if (move.key == details.key){
           details.level = -1;
@@ -345,7 +338,7 @@ function App() {
         }
       }
     }
-    for (let move of moves["other"]){
+    for (let move of pokemon.moves["other"]){
       for (let details of moveList){
         if (move.key == details.key){
           details.level = -1;
@@ -431,14 +424,14 @@ function App() {
   }
 
   function Wheel(){ 
-    const [hover, setHover] = useState(false);
+    /*const [hover, setHover] = useState(false);
 
     console.log(hover);
 
     const handleMouseEnter = () => setHover(true);
-    const handleMouseLeave = () => console.log("left")
+    const handleMouseLeave = () => console.log("left")*/
 
-    useLayoutEffect(calculateTransformations, []);
+    //<div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
   
     function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
       const windowSizeRef = useRef([0, 0]);
@@ -457,14 +450,14 @@ function App() {
     const windowSizeRef = useWindowSize();
 
     return(
-      <div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className={'wheel'}>
         <div className='pulloutBar'>
           <img id='leftArrow' src='/triangle.svg' />
         </div>
         <div className='directionButtons'>
           <div className="decrementButton">
             <button onClick={() => {
-              if(dexnum != 0 && isScrolling == false){
+              if(pokemon.dexnum != 0 && isScrolling == false){
                 isScrolling = true;
                 intervalRef.current = setInterval(slideEntriesUp, 10);
               }
@@ -472,31 +465,31 @@ function App() {
           </div>
           <div className="incrementButton">
             <button onClick={() => {
-              if(dexnum < items.length - 1 && isScrolling == false){
+              if(pokemon.dexnum < items.length - 1 && isScrolling == false){
                 isScrolling = true;
                 intervalRef.current = setInterval(slideEntriesDown, 10);
               }
             }}></button>
           </div>
         </div>
-        <VisibleEntries num={dexnum} />
+        <VisibleEntries num={pokemon.dexnum} />
       </div>
     )
   }
 
   function Entry({index}){ //fill refArray and the DOM with our pokemon entries
-    let id_string = 'entry' + (index-dexnum);
+    let id_string = 'entry' + (index-pokemon.dexnum);
     if(index > -1 && index < items.length){
       return (
         <>
-          <div className="entry" ref={refArray[index - dexnum + Math.floor(refArray.length/2)]} id={id_string}>{index+1}: {items[index].name}</div> 
+          <div className="entry" ref={refArray[index - pokemon.dexnum + Math.floor(refArray.length/2)]} id={id_string}>{index+1}: {items[index].name}</div> 
         </>
       )
     }
     else {
       return (
       <>
-        <div className="invisibleEntry" ref={refArray[index - dexnum + Math.floor(refArray.length/2)]} id={id_string}></div>
+        <div className="invisibleEntry" ref={refArray[index - pokemon.dexnum + Math.floor(refArray.length/2)]} id={id_string}></div>
       </>
       )
     }
@@ -530,7 +523,7 @@ function App() {
 
   function Cry(){
     let volume = 0.05;
-    const [soundCry] = useSound(cry, {volume});
+    const [soundCry] = useSound(pokemon.cry, {volume});
 
     return (
       <button className="cry" onClick={() => soundCry()}>
@@ -547,17 +540,15 @@ function App() {
       const response = await fetch('./pokedex.json');
       const body = await response.json();
       setItems(body);
-      setImage(body[0].image);
-      setTypes(body[0].types);
-      setStats(body[0].stats);
-      setAbilities(body[0].abilities);
-      setMoves(body[0].moves);
-      setWeight(body[0].weight);
-      setHeight(body[0].height);
-      setCry(body[0].cry);
     }
     fetchData();
   }, []);
+
+  useEffect(() => {
+    updateMon(0);
+  }, [items]);
+
+  useLayoutEffect(calculateTransformations, []);
 
   return (
     <>
@@ -569,27 +560,27 @@ function App() {
         <div className='visuals'>
           <div className='imageAndType'>
               <div className='imageContainer'>
-                <img className='pokeImage' src={image} />
+                <img className='pokeImage' src={pokemon.image} />
               </div>
               <div className='typeBox'>
-                {types?.map((type) => (
+                {pokemon.types?.map((type) => (
                   <Type key={type} typeName={type} />
                 ))}
               </div>
           </div>
           <div className="rightOfImage">
             <div className='statsChartBox'>
-              <StatsChart stats={stats}/>
+              <StatsChart stats={pokemon.stats}/>
             </div>
             <div className='baseStatTotal'>
-                <strong>Total: {stats.total}</strong>
+                <strong>Total: {pokemon.stats.total}</strong>
             </div>
             <div className="heightAndWeight">
               <div>
-                {"Height: " + height}
+                {"Height: " + pokemon.height}
               </div>
               <div>  
-                {"Weight: " + weight + "lbs"}
+                {"Weight: " + pokemon.weight + "lbs"}
               </div>
             </div>
             <Cry />
