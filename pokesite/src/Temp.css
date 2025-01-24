@@ -99,6 +99,14 @@
     right: -30vw;
   }
 
+  .pokeName {
+    height: 3vh;
+    font-size: 3vh;
+    background-color: rgb(224, 222, 222);
+    display: flex;
+    align-items: center;
+  }
+
   .pokeImage {
     height: 50vh;
     image-rendering: pixelated;
@@ -131,7 +139,7 @@
     display: flex;
     flex-direction: column;
     height: 35vh;
-    width: 99%;
+    width: 80%;
   }
 
   .statsChart {
@@ -166,7 +174,7 @@
   .test {
     display: flex;
     flex-direction: row;
-    height: 35vh;
+    height: 30vh;
   }
 
   .moveList {

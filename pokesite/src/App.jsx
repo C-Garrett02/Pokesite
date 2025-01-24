@@ -26,38 +26,283 @@ function App() {
     "id": 1,
     "name": "Bulbasaur",
     "stats": {
-      "hp": 45,
-      "attack": 49,
-      "defense": 49,
-      "special-attack": 65,
-      "special-defense": 65,
-      "speed": 45
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 45,
+        "total": 318
     },
-    "height": 7,
-    "weight": 10,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
     "types": [
-      "grass",
-      "poison"
+        "grass",
+        "poison"
     ],
+    "height": "2' 4\"",
+    "weight": 15.2,
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg",
     "abilities": [
-      {
-          "name": "Overgrow",
-          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage.",
-          "hidden": false
-      },
-      {
-          "name": "Chlorophyll",
-          "effect": "This Pokémon's Speed is doubled during strong sunlight.This bonus does not count as a stat modifier.",
-          "hidden": true
-      }
+        {
+            "name": "Overgrow",
+            "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage.",
+            "hidden": false
+        },
+        {
+            "name": "Chlorophyll",
+            "effect": "This Pokémon's Speed is doubled during strong sunlight.\n\nThis bonus does not count as a stat modifier.",
+            "hidden": true
+        }
     ],
     "moves": {
-      "level-up": [],
-      machine: [],
-      egg: [],
-      tutor: [],
-      other: []
+        "level-up": [
+            {
+                "key": "tackle",
+                "level": 1,
+                "method": "level-up"
+            },
+            {
+                "key": "growl",
+                "level": 1,
+                "method": "level-up"
+            },
+            {
+                "key": "vine-whip",
+                "level": 3,
+                "method": "level-up"
+            },
+            {
+                "key": "growth",
+                "level": 6,
+                "method": "level-up"
+            },
+            {
+                "key": "leech-seed",
+                "level": 9,
+                "method": "level-up"
+            },
+            {
+                "key": "razor-leaf",
+                "level": 12,
+                "method": "level-up"
+            },
+            {
+                "key": "poison-powder",
+                "level": 15,
+                "method": "level-up"
+            },
+            {
+                "key": "sleep-powder",
+                "level": 15,
+                "method": "level-up"
+            },
+            {
+                "key": "seed-bomb",
+                "level": 18,
+                "method": "level-up"
+            },
+            {
+                "key": "take-down",
+                "level": 21,
+                "method": "level-up"
+            },
+            {
+                "key": "sweet-scent",
+                "level": 24,
+                "method": "level-up"
+            },
+            {
+                "key": "synthesis",
+                "level": 27,
+                "method": "level-up"
+            },
+            {
+                "key": "worry-seed",
+                "level": 30,
+                "method": "level-up"
+            },
+            {
+                "key": "power-whip",
+                "level": 33,
+                "method": "level-up"
+            },
+            {
+                "key": "solar-beam",
+                "level": 36,
+                "method": "level-up"
+            }
+        ],
+        "machine": [
+            {
+                "key": "swords-dance",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "body-slam",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "double-edge",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "rest",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "substitute",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "protect",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "sludge-bomb",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "giga-drain",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "endure",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "charm",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "false-swipe",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "sleep-talk",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "sunny-day",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "facade",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "helping-hand",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "knock-off",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "weather-ball",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "bullet-seed",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "magical-leaf",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "energy-ball",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "leaf-storm",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "grass-knot",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "venoshock",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "acid-spray",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "grass-pledge",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "grassy-terrain",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "grassy-glide",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "tera-blast",
+                "level": 0,
+                "method": "machine"
+            },
+            {
+                "key": "trailblaze",
+                "level": 0,
+                "method": "machine"
+            }
+        ],
+        "egg": [
+            {
+                "key": "petal-dance",
+                "level": 0,
+                "method": "egg"
+            },
+            {
+                "key": "toxic",
+                "level": 0,
+                "method": "egg"
+            },
+            {
+                "key": "curse",
+                "level": 0,
+                "method": "egg"
+            },
+            {
+                "key": "ingrain",
+                "level": 0,
+                "method": "egg"
+            }
+        ],
+        "tutor": [],
+        "other": []
     },
     "forms": []
   }));
@@ -93,6 +338,22 @@ function App() {
       weight: items[num].weight,
       cry: items[num].cry
     };
+    setPokemon(newMon);
+  }
+
+  function updateForm(num) {
+    let newMon = {
+      dexnum: pokemon.dexnum,
+      name: pokemon.forms[num].name,
+      image: pokemon.forms[num].image,
+      types: pokemon.forms[num].types,
+      stats: pokemon.forms[num].stats,
+      abilities: pokemon.forms[num].abilities,
+      moves: pokemon.forms[num].moves,
+      height: pokemon.forms[num].height,
+      weight: pokemon.forms[num].weight,
+      cry: pokemon.forms[num].cry
+    }
     setPokemon(newMon);
   }
 
@@ -244,6 +505,9 @@ function App() {
   function Abilities(){
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
+
+    useEffect(()=>{console.log("mounting...")}, []);
+
     function incrementAbility(){
       if (abilityIndex+1 < pokemon.abilities.length){
         setTextEnd(generateTextEnd(abilityIndex+1));
@@ -432,6 +696,8 @@ function App() {
     const handleMouseLeave = () => console.log("left")*/
 
     //<div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+
+    useLayoutEffect(calculateTransformations, []);
   
     function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
       const windowSizeRef = useRef([0, 0]);
@@ -548,8 +814,6 @@ function App() {
     updateMon(0);
   }, [items]);
 
-  useLayoutEffect(calculateTransformations, []);
-
   return (
     <>
     <div className='topBar'>
@@ -562,11 +826,14 @@ function App() {
               <div className='imageContainer'>
                 <img className='pokeImage' src={pokemon.image} />
               </div>
+              <div className='pokeName'>
+                Tauros Paldea Combat Breed
+              </div>
               <div className='typeBox'>
                 {pokemon.types?.map((type) => (
                   <Type key={type} typeName={type} />
                 ))}
-              </div>
+              </div>          
           </div>
           <div className="rightOfImage">
             <div className='statsChartBox'>
@@ -591,7 +858,6 @@ function App() {
           <Abilities />
         </div>
       </div>
-      <Wheel />
     </div>
     </>
   )
