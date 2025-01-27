@@ -99,14 +99,6 @@
     right: -30vw;
   }
 
-  .pokeName {
-    height: 3vh;
-    font-size: 3vh;
-    background-color: rgb(224, 222, 222);
-    display: flex;
-    align-items: center;
-  }
-
   .pokeImage {
     height: 50vh;
     image-rendering: pixelated;
@@ -184,6 +176,31 @@
     font-size: 2vh;
     overflow-y: auto;
     width: 50%;
+    max-height: 100%;
+    align-self: flex-start;
+  }
+
+  .navBar {
+    margin-bottom: 1vh;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pokeName {
+    font-weight: bold;
+    font-size: 3vh;
+    display: flex;
+  }
+
+  .monBtn {
+    display: flex;
+    border: solid black 1px;
+    border-radius: 1vh;
+    align-items: center;
+    height: 2vh;
   }
 
   .abilityBox {
@@ -193,6 +210,8 @@
     border: solid 1px;
     margin-left: auto;
     margin-right: auto;
+    max-height: 100%;
+    align-self: flex-start;
   }
 
   .abilityHeader {
@@ -215,7 +234,6 @@
   }
 
   .abilityDescription {
-    height: 100%;
     padding-left: .5vh;
     padding-right: .5vh;
     overflow-y: auto;

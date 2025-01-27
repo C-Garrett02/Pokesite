@@ -449,6 +449,9 @@ function App() {
       let updatedDex =  pokemon.dexnum + 1;
       updateMon(updatedDex);
     }
+    else {
+      updateMon(0);
+    }
   }
 
   function decrementDex() {
@@ -456,6 +459,9 @@ function App() {
       //let updatedDex = dexnum - 1;
       let updatedDex =  pokemon.dexnum - 1;
       updateMon(updatedDex);
+    }
+    else {
+      updateMon(items.length-1);
     }
   }
 
@@ -826,9 +832,6 @@ function App() {
               <div className='imageContainer'>
                 <img className='pokeImage' src={pokemon.image} />
               </div>
-              <div className='pokeName'>
-                Tauros Paldea Combat Breed
-              </div>
               <div className='typeBox'>
                 {pokemon.types?.map((type) => (
                   <Type key={type} typeName={type} />
@@ -858,6 +861,17 @@ function App() {
           <Abilities />
         </div>
       </div>
+    </div>
+    <div className='navBar'>
+      <button className='monBtn' onClick={decrementDex}>
+        &lt; {(pokemon.dexnum > 0) ? items[pokemon.dexnum-1].name : items[items.length-1].name}
+      </button>
+      <div className='pokeName'>
+          {pokemon.name}
+      </div>
+      <button className='monBtn' onClick={incrementDex}>
+          {(pokemon.dexnum < items.length-1) ? items[pokemon.dexnum+1].name : items[0].name} &gt;
+      </button>
     </div>
     </>
   )
