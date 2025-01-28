@@ -917,7 +917,7 @@
         "forms": [
             {
                 "id": 10033,
-                "name": "Venusaur-mega",
+                "name": "Mega Venusaur",
                 "stats": {
                     "hp": 80,
                     "attack": 100,
@@ -1090,7 +1090,7 @@
             },
             {
                 "id": 10195,
-                "name": "Venusaur-gmax",
+                "name": "Gigantamax Venusaur",
                 "stats": {
                     "hp": 80,
                     "attack": 82,
@@ -2227,7 +2227,7 @@
         "forms": [
             {
                 "id": 10034,
-                "name": "Charizard-mega-x",
+                "name": "Mega Charizard X",
                 "stats": {
                     "hp": 78,
                     "attack": 130,
@@ -2460,7 +2460,7 @@
             },
             {
                 "id": 10035,
-                "name": "Charizard-mega-y",
+                "name": "Mega Charizard Y",
                 "stats": {
                     "hp": 78,
                     "attack": 104,
@@ -2693,7 +2693,7 @@
             },
             {
                 "id": 10196,
-                "name": "Charizard-gmax",
+                "name": "Gigantamax Charizard",
                 "stats": {
                     "hp": 78,
                     "attack": 84,
@@ -3759,7 +3759,7 @@
         "forms": [
             {
                 "id": 10036,
-                "name": "Blastoise-mega",
+                "name": "Mega Blastoise",
                 "stats": {
                     "hp": 79,
                     "attack": 103,
@@ -3976,7 +3976,7 @@
             },
             {
                 "id": 10197,
-                "name": "Blastoise-gmax",
+                "name": "Gigantamax Blastoise",
                 "stats": {
                     "hp": 79,
                     "attack": 83,
@@ -4382,7 +4382,7 @@
         "forms": [
             {
                 "id": 10198,
-                "name": "Butterfree-gmax",
+                "name": "Gigantamax Butterfree",
                 "stats": {
                     "hp": 60,
                     "attack": 45,
@@ -4786,7 +4786,7 @@
         "forms": [
             {
                 "id": 10090,
-                "name": "Beedrill-mega",
+                "name": "Mega Beedrill",
                 "stats": {
                     "hp": 65,
                     "attack": 150,
@@ -5600,7 +5600,7 @@
         "forms": [
             {
                 "id": 10073,
-                "name": "Pidgeot-mega",
+                "name": "Mega Pidgeot",
                 "stats": {
                     "hp": 83,
                     "attack": 80,
@@ -6057,7 +6057,7 @@
         "forms": [
             {
                 "id": 10091,
-                "name": "Rattata-alola",
+                "name": "Alolan Rattata",
                 "stats": {
                     "hp": 30,
                     "attack": 56,
@@ -6518,7 +6518,7 @@
         "forms": [
             {
                 "id": 10092,
-                "name": "Raticate-alola",
+                "name": "Alolan Raticate",
                 "stats": {
                     "hp": 75,
                     "attack": 71,
@@ -6716,7 +6716,7 @@
             },
             {
                 "id": 10093,
-                "name": "Raticate-totem-alola",
+                "name": "Totem Alolan Raticate",
                 "stats": {
                     "hp": 75,
                     "attack": 71,
@@ -8611,7 +8611,7 @@
         "forms": [
             {
                 "id": 10080,
-                "name": "Pikachu-rock-star",
+                "name": "Pikachu Rock Star",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -8930,7 +8930,7 @@
             },
             {
                 "id": 10081,
-                "name": "Pikachu-belle",
+                "name": "Pikachu Belle",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -9249,7 +9249,7 @@
             },
             {
                 "id": 10082,
-                "name": "Pikachu-pop-star",
+                "name": "Pikachu Pop Star",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -9568,7 +9568,7 @@
             },
             {
                 "id": 10083,
-                "name": "Pikachu-phd",
+                "name": "Pikachu Ph.D.",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -9887,7 +9887,7 @@
             },
             {
                 "id": 10084,
-                "name": "Pikachu-libre",
+                "name": "Pikachu Libre",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -10206,7 +10206,7 @@
             },
             {
                 "id": 10085,
-                "name": "Pikachu-cosplay",
+                "name": "Cosplay Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -10519,7 +10519,7 @@
             },
             {
                 "id": 10094,
-                "name": "Pikachu-original-cap",
+                "name": "Original Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -10821,7 +10821,7 @@
             },
             {
                 "id": 10095,
-                "name": "Pikachu-hoenn-cap",
+                "name": "Hoenn Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -11123,7 +11123,7 @@
             },
             {
                 "id": 10096,
-                "name": "Pikachu-sinnoh-cap",
+                "name": "Sinnoh Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -11425,7 +11425,7 @@
             },
             {
                 "id": 10097,
-                "name": "Pikachu-unova-cap",
+                "name": "Unova Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -11727,7 +11727,7 @@
             },
             {
                 "id": 10098,
-                "name": "Pikachu-kalos-cap",
+                "name": "Kalos Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -12029,7 +12029,7 @@
             },
             {
                 "id": 10099,
-                "name": "Pikachu-alola-cap",
+                "name": "Alola Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -12331,7 +12331,7 @@
             },
             {
                 "id": 10148,
-                "name": "Pikachu-partner-cap",
+                "name": "Partner Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -12633,7 +12633,7 @@
             },
             {
                 "id": 10160,
-                "name": "Pikachu-world-cap",
+                "name": "World Cap Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -12935,7 +12935,7 @@
             },
             {
                 "id": 10199,
-                "name": "Pikachu-gmax",
+                "name": "Gigantamax Pikachu",
                 "stats": {
                     "hp": 35,
                     "attack": 55,
@@ -13323,7 +13323,7 @@
         "forms": [
             {
                 "id": 10100,
-                "name": "Raichu-alola",
+                "name": "Alolan Raichu",
                 "stats": {
                     "hp": 60,
                     "attack": 85,
@@ -14060,7 +14060,7 @@
         "forms": [
             {
                 "id": 10101,
-                "name": "Sandshrew-alola",
+                "name": "Alolan Sandshrew",
                 "stats": {
                     "hp": 50,
                     "attack": 75,
@@ -14818,7 +14818,7 @@
         "forms": [
             {
                 "id": 10102,
-                "name": "Sandslash-alola",
+                "name": "Alolan Sandslash",
                 "stats": {
                     "hp": 75,
                     "attack": 100,
@@ -15189,7 +15189,7 @@
     },
     {
         "id": 29,
-        "name": "Nidoran-f",
+        "name": "Nidoran♀",
         "stats": {
             "hp": 55,
             "attack": 47,
@@ -16112,7 +16112,7 @@
     },
     {
         "id": 32,
-        "name": "Nidoran-m",
+        "name": "Nidoran♂",
         "stats": {
             "hp": 46,
             "attack": 57,
@@ -18358,7 +18358,7 @@
         "forms": [
             {
                 "id": 10103,
-                "name": "Vulpix-alola",
+                "name": "Alolan Vulpix",
                 "stats": {
                     "hp": 38,
                     "attack": 41,
@@ -19025,7 +19025,7 @@
         "forms": [
             {
                 "id": 10104,
-                "name": "Ninetales-alola",
+                "name": "Alolan Ninetales",
                 "stats": {
                     "hp": 73,
                     "attack": 67,
@@ -22476,7 +22476,7 @@
         "forms": [
             {
                 "id": 10105,
-                "name": "Diglett-alola",
+                "name": "Alolan Diglett",
                 "stats": {
                     "hp": 10,
                     "attack": 55,
@@ -23093,7 +23093,7 @@
         "forms": [
             {
                 "id": 10106,
-                "name": "Dugtrio-alola",
+                "name": "Alolan Dugtrio",
                 "stats": {
                     "hp": 35,
                     "attack": 100,
@@ -23795,7 +23795,7 @@
         "forms": [
             {
                 "id": 10107,
-                "name": "Meowth-alola",
+                "name": "Alolan Meowth",
                 "stats": {
                     "hp": 40,
                     "attack": 35,
@@ -24163,7 +24163,7 @@
             },
             {
                 "id": 10161,
-                "name": "Meowth-galar",
+                "name": "Galarian Meowth",
                 "stats": {
                     "hp": 50,
                     "attack": 65,
@@ -24546,7 +24546,7 @@
             },
             {
                 "id": 10200,
-                "name": "Meowth-gmax",
+                "name": "Gigantamax Meowth",
                 "stats": {
                     "hp": 40,
                     "attack": 45,
@@ -24959,7 +24959,7 @@
         "forms": [
             {
                 "id": 10108,
-                "name": "Persian-alola",
+                "name": "Alolan Persian",
                 "stats": {
                     "hp": 65,
                     "attack": 60,
@@ -27245,7 +27245,7 @@
         "forms": [
             {
                 "id": 10229,
-                "name": "Growlithe-hisui",
+                "name": "Hisuian Growlithe",
                 "stats": {
                     "hp": 60,
                     "attack": 75,
@@ -27887,7 +27887,7 @@
         "forms": [
             {
                 "id": 10230,
-                "name": "Arcanine-hisui",
+                "name": "Hisuian Arcanine",
                 "stats": {
                     "hp": 95,
                     "attack": 115,
@@ -29469,7 +29469,7 @@
         "forms": [
             {
                 "id": 10037,
-                "name": "Alakazam-mega",
+                "name": "Mega Alakazam",
                 "stats": {
                     "hp": 55,
                     "attack": 50,
@@ -29940,7 +29940,7 @@
         "forms": [
             {
                 "id": 10201,
-                "name": "Machamp-gmax",
+                "name": "Gigantamax Machamp",
                 "stats": {
                     "hp": 90,
                     "attack": 130,
@@ -31910,7 +31910,7 @@
         "forms": [
             {
                 "id": 10109,
-                "name": "Geodude-alola",
+                "name": "Alolan Geodude",
                 "stats": {
                     "hp": 40,
                     "attack": 80,
@@ -32584,7 +32584,7 @@
         "forms": [
             {
                 "id": 10110,
-                "name": "Graveler-alola",
+                "name": "Alolan Graveler",
                 "stats": {
                     "hp": 55,
                     "attack": 95,
@@ -33298,7 +33298,7 @@
         "forms": [
             {
                 "id": 10111,
-                "name": "Golem-alola",
+                "name": "Alolan Golem",
                 "stats": {
                     "hp": 80,
                     "attack": 120,
@@ -33784,7 +33784,7 @@
         "forms": [
             {
                 "id": 10162,
-                "name": "Ponyta-galar",
+                "name": "Galarian Ponyta",
                 "stats": {
                     "hp": 50,
                     "attack": 85,
@@ -34145,7 +34145,7 @@
         "forms": [
             {
                 "id": 10163,
-                "name": "Rapidash-galar",
+                "name": "Galarian Rapidash",
                 "stats": {
                     "hp": 65,
                     "attack": 100,
@@ -34844,7 +34844,7 @@
         "forms": [
             {
                 "id": 10164,
-                "name": "Slowpoke-galar",
+                "name": "Galarian Slowpoke",
                 "stats": {
                     "hp": 90,
                     "attack": 65,
@@ -35657,7 +35657,7 @@
         "forms": [
             {
                 "id": 10071,
-                "name": "Slowbro-mega",
+                "name": "Mega Slowbro",
                 "stats": {
                     "hp": 95,
                     "attack": 75,
@@ -35890,7 +35890,7 @@
             },
             {
                 "id": 10165,
-                "name": "Slowbro-galar",
+                "name": "Galarian Slowbro",
                 "stats": {
                     "hp": 95,
                     "attack": 100,
@@ -36942,7 +36942,7 @@
     },
     {
         "id": 83,
-        "name": "Farfetchd",
+        "name": "Farfetch’d",
         "stats": {
             "hp": 52,
             "attack": 90,
@@ -37235,7 +37235,7 @@
         "forms": [
             {
                 "id": 10166,
-                "name": "Farfetchd-galar",
+                "name": "Galarian Farfetch’d",
                 "stats": {
                     "hp": 52,
                     "attack": 95,
@@ -39188,7 +39188,7 @@
         "forms": [
             {
                 "id": 10112,
-                "name": "Grimer-alola",
+                "name": "Alolan Grimer",
                 "stats": {
                     "hp": 80,
                     "attack": 80,
@@ -40000,7 +40000,7 @@
         "forms": [
             {
                 "id": 10113,
-                "name": "Muk-alola",
+                "name": "Alolan Muk",
                 "stats": {
                     "hp": 105,
                     "attack": 105,
@@ -42055,7 +42055,7 @@
         "forms": [
             {
                 "id": 10038,
-                "name": "Gengar-mega",
+                "name": "Mega Gengar",
                 "stats": {
                     "hp": 60,
                     "attack": 65,
@@ -42268,7 +42268,7 @@
             },
             {
                 "id": 10202,
-                "name": "Gengar-gmax",
+                "name": "Gigantamax Gengar",
                 "stats": {
                     "hp": 60,
                     "attack": 65,
@@ -43782,7 +43782,7 @@
         "forms": [
             {
                 "id": 10203,
-                "name": "Kingler-gmax",
+                "name": "Gigantamax Kingler",
                 "stats": {
                     "hp": 55,
                     "attack": 130,
@@ -44081,7 +44081,7 @@
         "forms": [
             {
                 "id": 10231,
-                "name": "Voltorb-hisui",
+                "name": "Hisuian Voltorb",
                 "stats": {
                     "hp": 40,
                     "attack": 30,
@@ -44643,7 +44643,7 @@
         "forms": [
             {
                 "id": 10232,
-                "name": "Electrode-hisui",
+                "name": "Hisuian Electrode",
                 "stats": {
                     "hp": 60,
                     "attack": 50,
@@ -45584,7 +45584,7 @@
         "forms": [
             {
                 "id": 10114,
-                "name": "Exeggutor-alola",
+                "name": "Alolan Exeggutor",
                 "stats": {
                     "hp": 95,
                     "attack": 105,
@@ -46583,7 +46583,7 @@
         "forms": [
             {
                 "id": 10115,
-                "name": "Marowak-alola",
+                "name": "Alolan Marowak",
                 "stats": {
                     "hp": 60,
                     "attack": 80,
@@ -47012,7 +47012,7 @@
             },
             {
                 "id": 10149,
-                "name": "Marowak-totem",
+                "name": "Totem Alolan Marowak",
                 "stats": {
                     "hp": 60,
                     "attack": 80,
@@ -48849,7 +48849,7 @@
         "forms": [
             {
                 "id": 10167,
-                "name": "Weezing-galar",
+                "name": "Galarian Weezing",
                 "stats": {
                     "hp": 65,
                     "attack": 90,
@@ -50963,7 +50963,7 @@
         "forms": [
             {
                 "id": 10039,
-                "name": "Kangaskhan-mega",
+                "name": "Mega Kangaskhan",
                 "stats": {
                     "hp": 105,
                     "attack": 125,
@@ -52683,7 +52683,7 @@
     },
     {
         "id": 122,
-        "name": "Mr-mime",
+        "name": "Mr. Mime",
         "stats": {
             "hp": 40,
             "attack": 45,
@@ -52769,7 +52769,7 @@
         "forms": [
             {
                 "id": 10168,
-                "name": "Mr-mime-galar",
+                "name": "Galarian Mr. Mime",
                 "stats": {
                     "hp": 50,
                     "attack": 65,
@@ -54861,7 +54861,7 @@
         "forms": [
             {
                 "id": 10040,
-                "name": "Pinsir-mega",
+                "name": "Mega Pinsir",
                 "stats": {
                     "hp": 65,
                     "attack": 155,
@@ -55363,7 +55363,7 @@
         "forms": [
             {
                 "id": 10250,
-                "name": "Tauros-paldea-combat-breed",
+                "name": "Paldean Tauros (Combat Breed)",
                 "stats": {
                     "hp": 75,
                     "attack": 110,
@@ -55661,7 +55661,7 @@
             },
             {
                 "id": 10251,
-                "name": "Tauros-paldea-blaze-breed",
+                "name": "Paldean Tauros (Blaze Breed)",
                 "stats": {
                     "hp": 75,
                     "attack": 110,
@@ -55985,7 +55985,7 @@
             },
             {
                 "id": 10252,
-                "name": "Tauros-paldea-aqua-breed",
+                "name": "Paldean Tauros (Aqua Breed)",
                 "stats": {
                     "hp": 75,
                     "attack": 110,
@@ -56719,7 +56719,7 @@
         "forms": [
             {
                 "id": 10041,
-                "name": "Gyarados-mega",
+                "name": "Mega Gyarados",
                 "stats": {
                     "hp": 95,
                     "attack": 155,
@@ -57307,7 +57307,7 @@
         "forms": [
             {
                 "id": 10204,
-                "name": "Lapras-gmax",
+                "name": "Gigantamax Lapras",
                 "stats": {
                     "hp": 130,
                     "attack": 85,
@@ -57668,7 +57668,7 @@
         "forms": [
             {
                 "id": 10205,
-                "name": "Eevee-gmax",
+                "name": "Gigantamax Eevee",
                 "stats": {
                     "hp": 55,
                     "attack": 55,
@@ -60455,7 +60455,7 @@
         "forms": [
             {
                 "id": 10042,
-                "name": "Aerodactyl-mega",
+                "name": "Mega Aerodactyl",
                 "stats": {
                     "hp": 80,
                     "attack": 135,
@@ -61082,7 +61082,7 @@
         "forms": [
             {
                 "id": 10206,
-                "name": "Snorlax-gmax",
+                "name": "Gigantamax Snorlax",
                 "stats": {
                     "hp": 160,
                     "attack": 110,
@@ -61416,7 +61416,7 @@
         "forms": [
             {
                 "id": 10169,
-                "name": "Articuno-galar",
+                "name": "Galarian Articuno",
                 "stats": {
                     "hp": 90,
                     "attack": 85,
@@ -61998,7 +61998,7 @@
         "forms": [
             {
                 "id": 10170,
-                "name": "Zapdos-galar",
+                "name": "Galarian Zapdos",
                 "stats": {
                     "hp": 90,
                     "attack": 125,
@@ -62580,7 +62580,7 @@
         "forms": [
             {
                 "id": 10171,
-                "name": "Moltres-galar",
+                "name": "Galarian Moltres",
                 "stats": {
                     "hp": 90,
                     "attack": 85,
@@ -64469,7 +64469,7 @@
         "forms": [
             {
                 "id": 10043,
-                "name": "Mewtwo-mega-x",
+                "name": "Mega Mewtwo X",
                 "stats": {
                     "hp": 106,
                     "attack": 190,
@@ -64752,7 +64752,7 @@
             },
             {
                 "id": 10044,
-                "name": "Mewtwo-mega-y",
+                "name": "Mega Mewtwo Y",
                 "stats": {
                     "hp": 106,
                     "attack": 150,

@@ -512,8 +512,6 @@ function App() {
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
 
-    useEffect(()=>{console.log("mounting...")}, []);
-
     function incrementAbility(){
       if (abilityIndex+1 < pokemon.abilities.length){
         setTextEnd(generateTextEnd(abilityIndex+1));
@@ -558,6 +556,12 @@ function App() {
   }
 
   function Move({moveDetails}) {
+    const [clicked, setClicked] = useState(false);
+
+    const handleClick = () => {
+      clicked ? setClicked(false) : setClicked(true);
+    }
+
     let levelDiv = <></>;
 
     if(moveDetails.level >= 0){
@@ -566,9 +570,10 @@ function App() {
     else if(moveDetails.method){
       levelDiv = <div className="level">{moveDetails.method}</div>;
     }
-
+    
     return (
-      <div className="move">
+      <>
+      <div className="move" onClick={handleClick}>
         {levelDiv}
         <div className="moveName">{moveDetails.name}</div>
         <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
@@ -576,6 +581,13 @@ function App() {
         <div className="movePower">{moveDetails.power ?? "--"}</div>
         <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
       </div>
+      <div className={"movePanel " + (clicked ? "" : "hidden")}>
+      <span>{"Target: " + moveDetails.target + "\n\n"}</span>
+        <span>{"PP: " + moveDetails.pp + "\n\n"}</span>
+        <span>{"Priority: " + moveDetails.pp + "\n\n"}</span>
+        <span>{"Effect: " + moveDetails.effect}</span>
+      </div>
+      </>
     )
   }
 

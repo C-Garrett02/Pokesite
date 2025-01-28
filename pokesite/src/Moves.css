@@ -36,6 +36,24 @@
     align-content: center;
     height: 3vh;
     justify-content: space-around;
+    background-color: white;
+  }
+
+  .move:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+  }
+
+  .movePanel {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    white-space: pre-wrap;
+  }
+
+  .hidden {
+    height: 0vh !important;
+    display: none;
   }
 
   .level {

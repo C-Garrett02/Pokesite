@@ -28,13 +28,15 @@ async function GetMoves() { //write to separate file
         const move_power = details.power;
         const move_pp = details.pp;
         const move_priority = details.priority;
-        const move_target = details.target.name;
+        let move_target = details.target.name;
         const move_type = details.type.name
+
         for (let name of details.names) {
             if(name.language.name == "en"){
                 move_name = name.name;
             }
         }
+
         if(details.effect_entries.length > 0){
             for (let entry of details.effect_entries) {
                 if(entry.language.name == "en"){
@@ -49,6 +51,12 @@ async function GetMoves() { //write to separate file
                 }
             }
         }
+
+        move_target = move_target.charAt(0).toUpperCase() + move_target.slice(1);
+        while(move_target.indexOf('-') != -1){
+            move_target = move_target.slice(0, move_target.indexOf('-')) + " " + move_target.charAt(move_target.indexOf('-')+1).toUpperCase() + move_target.slice(move_target.indexOf('-')+2);
+        }
+
         moves.push({
             key: move_key,
             name: move_name,
