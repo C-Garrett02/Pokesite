@@ -341,6 +341,7 @@ function App() {
       forms: items[num].forms
     };
     setPokemon(newMon);
+    document.getElementById("formSelection").selectedIndex = 0; //normally try and avoid these but it was the easiest solution to a bug where selectedIndex would persist between pokemon
   }
 
   function updateForm(num) {
@@ -817,14 +818,16 @@ function App() {
       </button>
     )
   }
-
+  
   function handleSelect(e) {
     //updateForm(e.target.getAttribute('key'));
     const index = e.target.options.selectedIndex;
     if (index == 0) {
       updateMon(pokemon.dexnum);
     }
-    updateForm(index-1);
+    else{
+      updateForm(index-1);
+    }
   }
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
@@ -854,7 +857,7 @@ function App() {
           <div className='imageAndType'>
               <div className='imageContainer'>
                 <img className='pokeImage' src={pokemon.image} />
-                <select id="formSelection" onChange={handleSelect}>
+                <select id="formSelection" onChange={handleSelect}> 
                   <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
                   {pokemon.forms?.map((form, index) => (
                     <option key={index+1} place={index+1}>{form.name}</option>
