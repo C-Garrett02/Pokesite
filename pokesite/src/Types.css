@@ -4,13 +4,14 @@
 }
 
 .type {
+    display: flex;
     font-family: sans-serif;
     border-radius: 3vw;
-    height: 2.92vh;
+    font-size: 2vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     width: 8vw;
-    text-align: center;
+    justify-content: center;
     color: white;
     font-weight: bold;
 }

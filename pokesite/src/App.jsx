@@ -341,7 +341,8 @@ function App() {
       forms: items[num].forms
     };
     setPokemon(newMon);
-    document.getElementById("formSelection").selectedIndex = 0; //normally try and avoid these but it was the easiest solution to a bug where selectedIndex would persist between pokemon
+    //normally try and avoid the below but it was the easiest solution to a bug where selectedIndex would persist between pokemon
+    document.getElementById("formSelection").selectedIndex = 0; 
   }
 
   function updateForm(num) {
@@ -818,7 +819,7 @@ function App() {
       </button>
     )
   }
-  
+
   function handleSelect(e) {
     //updateForm(e.target.getAttribute('key'));
     const index = e.target.options.selectedIndex;
