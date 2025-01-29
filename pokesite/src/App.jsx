@@ -316,7 +316,8 @@ function App() {
     moves: items[0].moves,
     height: items[0].height,
     weight: items[0].weight,
-    cry: items[0].cry
+    cry: items[0].cry,
+    forms: items[0].forms
   })
   const [moveList, setMoveList] = useState([]) //the specific data for each move, not the moves of each pokemon
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -336,7 +337,8 @@ function App() {
       moves: items[num].moves,
       height: items[num].height,
       weight: items[num].weight,
-      cry: items[num].cry
+      cry: items[num].cry,
+      forms: items[num].forms
     };
     setPokemon(newMon);
   }
@@ -352,7 +354,8 @@ function App() {
       moves: pokemon.forms[num].moves,
       height: pokemon.forms[num].height,
       weight: pokemon.forms[num].weight,
-      cry: pokemon.forms[num].cry
+      cry: pokemon.forms[num].cry,
+      forms: pokemon.forms
     }
     setPokemon(newMon);
   }
@@ -570,10 +573,10 @@ function App() {
     else if(moveDetails.method){
       levelDiv = <div className="level">{moveDetails.method}</div>;
     }
-    
+
     return (
       <>
-      <div className="move" onClick={handleClick}>
+      <div className={"move " + (clicked ? "moveClicked" : "")} onClick={handleClick}>
         {levelDiv}
         <div className="moveName">{moveDetails.name}</div>
         <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
@@ -582,10 +585,8 @@ function App() {
         <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
       </div>
       <div className={"movePanel " + (clicked ? "" : "hidden")}>
-      <span>{"Target: " + moveDetails.target + "\n\n"}</span>
-        <span>{"PP: " + moveDetails.pp + "\n\n"}</span>
-        <span>{"Priority: " + moveDetails.pp + "\n\n"}</span>
-        <span>{"Effect: " + moveDetails.effect}</span>
+        <span className="topOfPanel"><strong>Targets: </strong>{moveDetails.target + "\t"}<strong>PP: </strong>{moveDetails.pp + "\t"}<strong>Priority: </strong>{moveDetails.pp + "\n\n"}</span>
+        <span className="bodyOfPanel"><strong>Effect: </strong>{moveDetails.effect}</span>
       </div>
       </>
     )
@@ -633,6 +634,7 @@ function App() {
 
     return (
       <div className="moveList">
+        {levelArray.length > 0 ?
         <div className="levelHeader">
           <div className="categoryTitle">Level Moves</div>
           <div className="levelHeaderDetails">
@@ -644,6 +646,8 @@ function App() {
             <div className="moveAccuracy">Accuracy</div>
           </div>
         </div>
+        : <div className="levelHeader maxMoves"><strong>MAX MOVES</strong></div>
+        }
         {levelArray?.map((move) => (
             <Move key={move.key} moveDetails={move} />
           ))}
@@ -678,7 +682,6 @@ function App() {
         </div>
         : <></>
         }
-
         {eggArray?.map((move) => (
             <Move key={move.key} moveDetails={move} />
           ))}
@@ -697,7 +700,6 @@ function App() {
         </div>
         : <></>
         }
-
         {otherArray?.map((move) => (
             <Move key={move.key} moveDetails={move} />
           ))}
@@ -811,9 +813,18 @@ function App() {
 
     return (
       <button className="cry" onClick={() => soundCry()}>
-         Play Sound
+         Cry
       </button>
     )
+  }
+
+  function handleSelect(e) {
+    //updateForm(e.target.getAttribute('key'));
+    const index = e.target.options.selectedIndex;
+    if (index == 0) {
+      updateMon(pokemon.dexnum);
+    }
+    updateForm(index-1);
   }
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
@@ -828,7 +839,7 @@ function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
+  useEffect(() => { //updates the pokemon once that ^ loads
     updateMon(0);
   }, [items]);
 
@@ -843,6 +854,12 @@ function App() {
           <div className='imageAndType'>
               <div className='imageContainer'>
                 <img className='pokeImage' src={pokemon.image} />
+                <select id="formSelection" onChange={handleSelect}>
+                  <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
+                  {pokemon.forms?.map((form, index) => (
+                    <option key={index+1} place={index+1}>{form.name}</option>
+                  ))}
+                </select>
               </div>
               <div className='typeBox'>
                 {pokemon.types?.map((type) => (

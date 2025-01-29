@@ -291,7 +291,7 @@ function SaveToFile(array, filename) {
 let promises = [];
 let pokedex = [];
 
-for (let i = 1; i <= 151; i++) {
+for (let i = 1; i <= 1025; i++) {
     promises.push(PushPokemon(i));
 }
 
