@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react'
 import bulbasaur from '/Bulbasaur.png'
 import ivysaur from '/Ivysaur.png'
 import venusaur from '/Venusaur.png'
@@ -8,6 +8,7 @@ import './Types.css'
 import './Moves.css'
 import useSound from 'use-sound'
 import StatsChart from './StatsChart.jsx'
+import SearchBar from './SearchBar.jsx'
 import Chart from 'chart.js/auto';
 
 const forwardArr = [];
@@ -321,6 +322,7 @@ function App() {
   })
   const [moveList, setMoveList] = useState([]) //the specific data for each move, not the moves of each pokemon
   const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [hovering, setHovering] = useState(false);
   let animationStep = 1;
   const intervalRef = useRef(null);
   let isScrolling = false;
@@ -468,49 +470,6 @@ function App() {
     else {
       updateMon(items.length-1);
     }
-  }
-
-  function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
-    return(
-      items.filter((p) => p.name.toLowerCase().includes(input.toLowerCase())
-      )
-    )
-  }
-
-  function FilteredDex({input}){ //returns list of divs that provide matches. Does not exist in dom unless there are results to be returned.
-    const jumpToMon = (e) => {
-      const updatedDex = parseInt(e.target.getAttribute('number'))-1;
-      updateMon(updatedDex);
-    }
-    let filteredList = <></>
-
-    if (input.length >= 3){
-        filteredList = filterByInput(input).map(p => 
-          <button key={p.name} number={p.id} className='monButton' onClick={jumpToMon}>{p.name}</button>
-        )
-    }
-
-    if(filteredList.length){
-      return <div className='listedMon'>{filteredList}</div>
-    }
-    else{
-      return null;
-    }
-  }
-
-  function SearchBar(){ //The search bar for pokemon and the search results
-    const [inputStr, setInputStr] = useState('');
-
-    const handleState = (e) => {
-      setInputStr(e.target.value);
-    };
-
-    return (
-      <div className='searchBar'>
-        <input name='Pokemon Search Bar' className='monInput' placeholder='Search for Pokemon' value={inputStr} onChange={handleState}></input>
-        <FilteredDex input={inputStr} />
-      </div>
-    )
   }
 
   function Abilities(){
@@ -710,35 +669,13 @@ function App() {
   }
 
   function Wheel(){ 
-    /*const [hover, setHover] = useState(false);
-
-    console.log(hover);
-
-    const handleMouseEnter = () => setHover(true);
-    const handleMouseLeave = () => console.log("left")*/
+    const handleMouseEnter = () => {console.log("enter"); setHovering(true)};
+    const handleMouseLeave = () => {console.log("leave"); setHovering(false)};
 
     //<div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
-    useLayoutEffect(calculateTransformations, []);
-  
-    function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
-      const windowSizeRef = useRef([0, 0]);
-      useLayoutEffect(() => {
-        const updateSize = debounce (() => {
-          windowSizeRef.current = [window.innerWidth, window.innerHeight];
-          calculateTransformations();
-        }, 100)
-        window.addEventListener('resize', updateSize);
-        updateSize();
-        return () => window.removeEventListener('resize', updateSize);
-      }, []);
-      return windowSizeRef;
-    }
-
-    const windowSizeRef = useWindowSize();
-
     return(
-      <div className={'wheel'}>
+      <div className={'wheel ' + (hovering ? 'wheelExtend' : 'wheelRetract')} onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
         <div className='pulloutBar'>
           <img id='leftArrow' src='/triangle.svg' />
         </div>
@@ -830,6 +767,20 @@ function App() {
       updateForm(index-1);
     }
   }
+
+  function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
+    const windowSizeRef = useRef([0, 0]);
+    useLayoutEffect(() => {
+      const updateSize = debounce (() => {
+        windowSizeRef.current = [window.innerWidth, window.innerHeight];
+        calculateTransformations();
+      }, 100)
+      window.addEventListener('resize', updateSize);
+      updateSize();
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    return windowSizeRef;
+  }
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
@@ -847,10 +798,15 @@ function App() {
     updateMon(0);
   }, [items]);
 
+  //These are just used for my wheel. If the wheel is taken out, these need to be commented out. Not awesome but it's how I'm doing it for the moment.
+  const windowSizeRef = useWindowSize();
+  useLayoutEffect(calculateTransformations, []);
+
+
   return (
     <>
     <div className='topBar'>
-      <SearchBar />
+      <SearchBar updateFunc={updateMon} items={items}/>
     </div>
     <div className='leftAndRight'>
       <div className='left'>
@@ -865,10 +821,12 @@ function App() {
                   ))}
                 </select>
               </div>
-              <div className='typeBox'>
-                {pokemon.types?.map((type) => (
-                  <Type key={type} typeName={type} />
-                ))}
+              <div className='typeBox'> 
+                <Type key={pokemon.types[0]} typeName={pokemon.types[0]} />
+                {pokemon.types.length > 1 ? //This was previously mapped, but for styling I wanted to define manually
+                  <Type key={pokemon.types[1]} typeName={pokemon.types[1]} /> 
+                  : <></>
+                }
               </div>          
           </div>
           <div className="rightOfImage">
@@ -888,6 +846,7 @@ function App() {
             </div>
             <Cry />
           </div>
+          <Wheel />
         </div>
         <div className="test">
           <Moves />

@@ -1,6 +1,8 @@
 .typeBox {
     display: flex;
     flex-direction: row;
+    height: 4.4vh;
+    position: relative;
 }
 
 .type {
@@ -8,13 +10,22 @@
     font-family: sans-serif;
     border-radius: 3vw;
     font-size: 2vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
     width: 8vw;
+    align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
 }
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 4.4vh solid transparent;
+    border-right: 4.4vh solid transparent;
+    border-top: 4.4vh solid #5d9d3c;
+    position: absolute;
+    left: calc(8vw - 4.4vh);
+  }
 
 .normal {
     background-color: #a1a1a1

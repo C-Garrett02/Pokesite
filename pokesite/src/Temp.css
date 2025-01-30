@@ -83,15 +83,10 @@
     width: 31vw;
     position: absolute;
     top: 0;
-    right: -30vw;
     transition: right .5s;
   }
 
-  .wheel:hover {
-    right: 0;
-  }
-
-  .wheelHover {
+  .wheelExtend { /*wheel component seems to remount every mon update which causes wheel to retract. Thus we need a way to track state.*/
     right: 0;
   }
 
