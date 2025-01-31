@@ -14,6 +14,7 @@ function SearchBar({updateFunc, items}) {
         const jumpToMon = (e) => {
             const updatedDex = parseInt(e.target.getAttribute('number'))-1;
             updateFunc(updatedDex);
+            setInputStr('');
         }
         let filteredList = <></>
 

@@ -632,7 +632,7 @@ function App() {
         </div>
         <div className="test">
           <Moves pokemon={pokemon} moveList={moveList}/>
-          <Abilities key={pokemon.name} pokemon={pokemon}/>
+          <Abilities pokemon={pokemon}/>
         </div>
       </div>
     </div>
