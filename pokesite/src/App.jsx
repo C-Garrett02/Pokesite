@@ -11,7 +11,7 @@ import StatsChart from './StatsChart.jsx'
 import SearchBar from './SearchBar.jsx'
 import Abilities from './Abilities.jsx'
 import Moves from './Moves.jsx'
-import Wheel from './Wheel.jsx'
+import BetterWheel from './BetterWheel.jsx'
 import Chart from 'chart.js/auto';
 
 function debounce(callback, wait) {
@@ -362,92 +362,6 @@ function App() {
     setPokemon(newMon);
   }
 
-  /*function calculateTransformations() {  //Find difference between relative top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
-    forwardArr.length = 0;
-    backwardsArr.length = 0;
-    const matchStr = /\((\d*\.*\d*)\)/;
-
-    for (let i = 0; i < refArray.length - 1; i++){ //For decrements
-      const curElement = refArray[i].current;
-      const nextElement = refArray[i+1].current;
-      const curElementStyle = window.getComputedStyle(curElement);
-      const nextElementStyle = window.getComputedStyle(nextElement);
-
-      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-        top: (nextElement.offsetTop - curElement.offsetTop), 
-        marginLeft: {
-          start: parseInt(curElementStyle.marginLeft),
-          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-          end: parseInt(nextElementStyle.marginLeft)
-        },
-        brightness: {
-          start: curElementStyle.filter.match(matchStr)[1],
-          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-          end: nextElementStyle.filter.match(matchStr)[1]
-        }
-      };
-      forwardArr.push(transformation)
-    }
-
-    for (let i = 1; i < refArray.length; i++){ //For increments
-      const curElement = refArray[i].current;
-      const nextElement = refArray[i-1].current;
-      const curElementStyle = window.getComputedStyle(curElement);
-      const nextElementStyle = window.getComputedStyle(nextElement);
-
-      const transformation = { //Values we'll have to add on to current values, gradually, to create a slide effect. Everything but top will need a starting and ending reference.
-        top: (nextElement.offsetTop - curElement.offsetTop), 
-        marginLeft: {
-          start: parseInt(curElementStyle.marginLeft),
-          increment: parseInt(nextElementStyle.marginLeft) - parseInt(curElementStyle.marginLeft),
-          end: parseInt(nextElementStyle.marginLeft)
-        },
-        brightness: {
-          start: curElementStyle.filter.match(matchStr)[1],
-          increment: nextElementStyle.filter.match(matchStr)[1] - curElementStyle.filter.match(matchStr)[1],
-          end: nextElementStyle.filter.match(matchStr)[1]
-        }
-      };
-      backwardsArr.push(transformation)
-    }
-  
-  }
-
-  function slideEntriesUp(totalAnimationSteps = 30) {
-    const multiplyBy = animationStep/totalAnimationSteps
-
-    for (let i = 0; i < refArray.length - 1; i++){ //loop through 
-      refArray[i].current.style.top = (+forwardArr[i].top)*multiplyBy + 'px'; 
-      refArray[i].current.style.marginLeft = +forwardArr[i].marginLeft.start + (+forwardArr[i].marginLeft.increment)*multiplyBy + 'px'; //offload the addition here to the calculation function in the future, perhaps.
-      refArray[i].current.style.filter = 'brightness(' + +(+forwardArr[i].brightness.start + (+forwardArr[i].brightness.increment)*multiplyBy) + ')';
-    }
-
-    animationStep++;
-    if(animationStep > totalAnimationSteps - 1){ //last frame will be rendered
-      animationStep = 1;
-      clearInterval(intervalRef.current);
-      decrementDex();
-      isScrolling = true;
-    }
-  }
-
-  function slideEntriesDown(totalAnimationSteps = 30) {
-    const multiplyBy = animationStep/totalAnimationSteps
-    for (let i = 1; i < refArray.length; i++){ //loop through 
-      refArray[i].current.style.top = (+backwardsArr[i-1].top)*multiplyBy + 'px'; 
-      refArray[i].current.style.marginLeft = +backwardsArr[i-1].marginLeft.start + (+backwardsArr[i-1].marginLeft.increment)*multiplyBy + 'px'; //offload the addition here to the calculation function in the future, perhaps.
-      refArray[i].current.style.filter = 'brightness(' + +(+backwardsArr[i-1].brightness.start + (+backwardsArr[i-1].brightness.increment)*multiplyBy) + ')';
-    }
-
-    animationStep++;
-    if(animationStep > totalAnimationSteps - 1){ //last frame will be rendered
-      animationStep = 1;
-      clearInterval(intervalRef.current);
-      incrementDex();
-      isScrolling = false;
-    }
-  }*/
-
   function incrementDex() { 
     if(pokemon.dexnum < items.length - 1){
       //let updatedDex = dexnum + 1;
@@ -469,76 +383,6 @@ function App() {
       updateMon(items.length-1);
     }
   }
-
-  /*function Wheel(){ 
-    //const handleMouseEnter = () => {console.log("enter"); setHovering(true)};
-    //const handleMouseLeave = () => {console.log("leave"); setHovering(false)};
-
-    //<div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-
-    return(
-      <div className={'wheel ' + (hovering ? 'wheelExtend' : 'wheelRetract')} onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
-        <div className='pulloutBar'>
-          <img id='leftArrow' src='/triangle.svg' />
-        </div>
-        <div className='directionButtons'>
-          <div className="decrementButton">
-            <button onClick={() => {
-              if(pokemon.dexnum != 0 && isScrolling == false){
-                isScrolling = true;
-                intervalRef.current = setInterval(slideEntriesUp, 10);
-              }
-            }}></button>
-          </div>
-          <div className="incrementButton">
-            <button onClick={() => {
-              if(pokemon.dexnum < items.length - 1 && isScrolling == false){
-                isScrolling = true;
-                intervalRef.current = setInterval(slideEntriesDown, 10);
-              }
-            }}></button>
-          </div>
-        </div>
-        <VisibleEntries num={pokemon.dexnum} />
-      </div>
-    )
-  }*/
-
-  /*function Entry({index}){ //fill refArray and the DOM with our pokemon entries
-    let id_string = 'entry' + (index-pokemon.dexnum);
-    if(index > -1 && index < items.length){
-      return (
-        <>
-          <div className="entry" ref={refArray[index - pokemon.dexnum + Math.floor(refArray.length/2)]} id={id_string}>{index+1}: {items[index].name}</div> 
-        </>
-      )
-    }
-    else {
-      return (
-      <>
-        <div className="invisibleEntry" ref={refArray[index - pokemon.dexnum + Math.floor(refArray.length/2)]} id={id_string}></div>
-      </>
-      )
-    }
-  }
-
-  function VisibleEntries({num}){
-    return(
-      <>
-        <div className="entries" >
-          <Entry index={num-4}/>
-          <Entry index={num-3}/>
-          <Entry index={num-2}/>
-          <Entry index={num-1}/>
-          <Entry index={num}/>
-          <Entry index={num+1}/>
-          <Entry index={num+2}/>
-          <Entry index={num+3}/>
-          <Entry index={num+4}/>
-        </div>
-      </>
-    )
-  }*/
 
   function Type({typeName}){
     const classString = typeName + ' type';
@@ -635,6 +479,7 @@ function App() {
           <Abilities key={pokemon.name} pokemon={pokemon}/>
         </div>
       </div>
+      <BetterWheel items={items} pokemon={pokemon} updateFunc={updateMon}/>
     </div>
     <div className='navBar'>
       <button className='monBtn' onClick={decrementDex}>
