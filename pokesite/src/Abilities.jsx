@@ -3,9 +3,6 @@ import { useState, useEffect } from 'react'
 function Abilities({pokemon}) {
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
-    const [pokeName, setPokeName] = useState(pokemon.name)
-    let abilityName = "";
-    let abilityEffect = "";
 
     function incrementAbility() {
         if (abilityIndex + 1 < pokemon.abilities.length) {
@@ -28,23 +25,11 @@ function Abilities({pokemon}) {
         }
     }
 
-    if(pokeName != pokemon.name){ //somewhat contrived logic to avoid remounting and reset the ability back to the first one every time a new pokemon is selected.
-        setAbilityIndex(0);
-        setPokeName(pokemon.name);
-        setTextEnd(generateTextEnd(0));
-        abilityName = pokemon.abilities[0].name;
-        abilityEffect = pokemon.abilities[0].effect;
-    }
-    else {
-        abilityName = pokemon.abilities[abilityIndex].name;
-        abilityEffect = pokemon.abilities[abilityIndex].effect;
-    }
-
     return (
         <div className='abilityBox'>
             <div className='abilityHeader'>
                 <div className='abilityName'>
-                    <strong>{abilityName}</strong> <span id="abilityTextEnd">{textEnd}</span>
+                    <strong>{pokemon.abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
                 </div>
                 <div className='directionBtns'>
                     <button className='abilityBtn' onClick={decrementAbility}>
@@ -56,7 +41,7 @@ function Abilities({pokemon}) {
                 </div>
             </div>
             <div className='abilityDescription'>
-                {abilityEffect}
+                {pokemon.abilities[abilityIndex].effect}
             </div>
         </div>
     )
