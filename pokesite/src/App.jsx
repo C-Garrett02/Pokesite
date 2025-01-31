@@ -9,6 +9,7 @@ import './Moves.css'
 import useSound from 'use-sound'
 import StatsChart from './StatsChart.jsx'
 import SearchBar from './SearchBar.jsx'
+import Abilities from './Abilities.jsx'
 import Chart from 'chart.js/auto';
 
 const forwardArr = [];
@@ -472,7 +473,7 @@ function App() {
     }
   }
 
-  function Abilities(){
+/*  function Abilities(){
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
 
@@ -517,7 +518,7 @@ function App() {
         </div>
       </div>
     )
-  }
+  }*/
 
   function Move({moveDetails}) {
     const [clicked, setClicked] = useState(false);
@@ -850,7 +851,7 @@ function App() {
         </div>
         <div className="test">
           <Moves />
-          <Abilities />
+          <Abilities pokemon={pokemon}/>
         </div>
       </div>
     </div>
