@@ -1,0 +1,118 @@
+import Move from './Move.jsx'
+
+function Moves({pokemon, moveList}) {
+    const levelArray = [];
+    const machineArray = [];
+    const eggArray = [];
+    const otherArray = [];
+    for (let move of pokemon.moves["level-up"]) {
+        for (let details of moveList) {
+            if (move.key == details.key) {
+                details.level = move.level;
+                levelArray.push(details);
+            }
+        }
+    }
+    for (let move of pokemon.moves["machine"]) {
+        for (let details of moveList) {
+            if (move.key == details.key) {
+                details.level = -1;
+                machineArray.push(details);
+            }
+        }
+    }
+    for (let move of pokemon.moves["egg"]) {
+        for (let details of moveList) {
+            if (move.key == details.key) {
+                details.level = -1;
+                eggArray.push(details);
+            }
+        }
+    }
+    for (let move of pokemon.moves["other"]) {
+        for (let details of moveList) {
+            if (move.key == details.key) {
+                details.level = -1;
+                let copy = details
+                copy.method = move.method;
+                otherArray.push(copy);
+            }
+        }
+    }
+
+    return (
+        <div className="moveList">
+            {levelArray.length > 0 ?
+                <div className="levelHeader">
+                    <div className="categoryTitle">Level Moves</div>
+                    <div className="levelHeaderDetails">
+                        <div className="level">Level</div>
+                        <div className="moveName">Move</div>
+                        <div className="typeHeader">Type</div>
+                        <div className="moveClass">Class</div>
+                        <div className="movePower">Power</div>
+                        <div className="moveAccuracy">Accuracy</div>
+                    </div>
+                </div>
+                : <div className="levelHeader maxMoves"><strong>MAX MOVES</strong></div>
+            }
+            {levelArray?.map((move) => (
+                <Move key={move.key} moveDetails={move} />
+            ))}
+
+            {machineArray.length > 0 ?
+                <div className="levelHeader">
+                    <div className="categoryTitle">Machine Moves</div>
+                    <div className="levelHeaderDetails">
+                        <div className="moveName">Move</div>
+                        <div className="typeHeader">Type</div>
+                        <div className="moveClass">Class</div>
+                        <div className="movePower">Power</div>
+                        <div className="moveAccuracy">Accuracy</div>
+                    </div>
+                </div>
+                : <></>
+            }
+            {machineArray?.map((move) => (
+                <Move key={move.key} moveDetails={move} />
+            ))}
+
+            {eggArray.length > 0 ?
+                <div className="levelHeader">
+                    <div className="categoryTitle">Egg Moves</div>
+                    <div className="levelHeaderDetails">
+                        <div className="moveName">Move</div>
+                        <div className="typeHeader">Type</div>
+                        <div className="moveClass">Class</div>
+                        <div className="movePower">Power</div>
+                        <div className="moveAccuracy">Accuracy</div>
+                    </div>
+                </div>
+                : <></>
+            }
+            {eggArray?.map((move) => (
+                <Move key={move.key} moveDetails={move} />
+            ))}
+
+            {otherArray.length > 0 ?
+                <div className="levelHeader">
+                    <div className="categoryTitle">Other Moves</div>
+                    <div className="levelHeaderDetails">
+                        <div className="level">Method</div>
+                        <div className="moveName">Move</div>
+                        <div className="typeHeader">Type</div>
+                        <div className="moveClass">Class</div>
+                        <div className="movePower">Power</div>
+                        <div className="moveAccuracy">Accuracy</div>
+                    </div>
+                </div>
+                : <></>
+            }
+            {otherArray?.map((move) => (
+                <Move key={move.key} moveDetails={move} />
+            ))}
+        </div>
+    )
+}
+
+export default Moves;

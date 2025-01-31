@@ -10,10 +10,9 @@ import useSound from 'use-sound'
 import StatsChart from './StatsChart.jsx'
 import SearchBar from './SearchBar.jsx'
 import Abilities from './Abilities.jsx'
+import Moves from './Moves.jsx'
+import Wheel from './Wheel.jsx'
 import Chart from 'chart.js/auto';
-
-const forwardArr = [];
-const backwardsArr = [];
 
 function debounce(callback, wait) {
   let timeout = null;
@@ -322,12 +321,10 @@ function App() {
     forms: items[0].forms
   })
   const [moveList, setMoveList] = useState([]) //the specific data for each move, not the moves of each pokemon
-  const refArray = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
-  const [hovering, setHovering] = useState(false);
-  let animationStep = 1;
-  const intervalRef = useRef(null);
-  let isScrolling = false;
-  const totalAnimationSteps = 30;
+  //let animationStep = 1;
+  //const totalAnimationSteps = 30;
+  //const intervalRef = useRef(null);
+  //let isScrolling = false;
 
   function updateMon(num) {
     let newMon = {
@@ -365,7 +362,7 @@ function App() {
     setPokemon(newMon);
   }
 
-  function calculateTransformations() {  //Find difference between realtive top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
+  /*function calculateTransformations() {  //Find difference between relative top value, left margin, brightness. Do this every time the window resizes, optimally, so the logic doesn't have to rerun every rerender
     forwardArr.length = 0;
     backwardsArr.length = 0;
     const matchStr = /\((\d*\.*\d*)\)/;
@@ -449,7 +446,7 @@ function App() {
       incrementDex();
       isScrolling = false;
     }
-  }
+  }*/
 
   function incrementDex() { 
     if(pokemon.dexnum < items.length - 1){
@@ -473,205 +470,9 @@ function App() {
     }
   }
 
-/*  function Abilities(){
-    const [abilityIndex, setAbilityIndex] = useState(0);
-    const [textEnd, setTextEnd] = useState(generateTextEnd(0));
-
-    function incrementAbility(){
-      if (abilityIndex+1 < pokemon.abilities.length){
-        setTextEnd(generateTextEnd(abilityIndex+1));
-        setAbilityIndex(abilityIndex+1);
-      }
-    }
-    function decrementAbility(){
-      if (abilityIndex-1 > -1){
-        setTextEnd(generateTextEnd(abilityIndex-1));
-        setAbilityIndex(abilityIndex-1);
-      }
-    }
-    function generateTextEnd(index){
-      if(pokemon.abilities[index].hidden){
-        return "(Hidden)";
-      }
-      else{
-        return "(Ability " + (index+1) + ")";
-      }
-    }
-
-    return (
-      <div className='abilityBox'>
-        <div className='abilityHeader'>
-          <div className='abilityName'>
-            <strong>{pokemon.abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
-          </div>
-          <div className='directionBtns'>
-            <button className='abilityBtn' onClick={decrementAbility}>
-              <img id='leftArrow' src='/triangle.svg' />
-            </button>
-            <button className='abilityBtn' onClick={incrementAbility}>
-              <img id='rightArrow' src='/triangle.svg' />
-            </button>
-          </div>
-        </div>
-        <div className='abilityDescription'>
-          {pokemon.abilities[abilityIndex].effect}
-        </div>
-      </div>
-    )
-  }*/
-
-  function Move({moveDetails}) {
-    const [clicked, setClicked] = useState(false);
-
-    const handleClick = () => {
-      clicked ? setClicked(false) : setClicked(true);
-    }
-
-    let levelDiv = <></>;
-
-    if(moveDetails.level >= 0){
-      levelDiv = <div className="level">{moveDetails.level}</div>;
-    }
-    else if(moveDetails.method){
-      levelDiv = <div className="level">{moveDetails.method}</div>;
-    }
-
-    return (
-      <>
-      <div className={"move " + (clicked ? "moveClicked" : "")} onClick={handleClick}>
-        {levelDiv}
-        <div className="moveName">{moveDetails.name}</div>
-        <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>
-        <img className="moveClass" src={moveDetails.class + ".png"}></img>
-        <div className="movePower">{moveDetails.power ?? "--"}</div>
-        <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
-      </div>
-      <div className={"movePanel " + (clicked ? "" : "hidden")}>
-        <span className="topOfPanel"><strong>Targets: </strong>{moveDetails.target + "\t"}<strong>PP: </strong>{moveDetails.pp + "\t"}<strong>Priority: </strong>{moveDetails.pp + "\n\n"}</span>
-        <span className="bodyOfPanel"><strong>Effect: </strong>{moveDetails.effect}</span>
-      </div>
-      </>
-    )
-  }
-
-  function Moves(){
-    const levelArray = [];
-    const machineArray = [];
-    const eggArray = [];
-    const otherArray = [];
-    for (let move of pokemon.moves["level-up"]){
-      for (let details of moveList){
-        if (move.key == details.key){
-          details.level = move.level;
-          levelArray.push(details);
-        }
-      }
-    }
-    for (let move of pokemon.moves["machine"]){
-      for (let details of moveList){
-        if (move.key == details.key){
-          details.level = -1;
-          machineArray.push(details);
-        }
-      }
-    }
-    for (let move of pokemon.moves["egg"]){
-      for (let details of moveList){
-        if (move.key == details.key){
-          details.level = -1;
-          eggArray.push(details);
-        }
-      }
-    }
-    for (let move of pokemon.moves["other"]){
-      for (let details of moveList){
-        if (move.key == details.key){
-          details.level = -1;
-          let copy = details
-          copy.method = move.method;
-          otherArray.push(copy);
-        }
-      }
-    }
-
-    return (
-      <div className="moveList">
-        {levelArray.length > 0 ?
-        <div className="levelHeader">
-          <div className="categoryTitle">Level Moves</div>
-          <div className="levelHeaderDetails">
-            <div className="level">Level</div>
-            <div className="moveName">Move</div>
-            <div className="typeHeader">Type</div>
-            <div className="moveClass">Class</div>
-            <div className="movePower">Power</div>
-            <div className="moveAccuracy">Accuracy</div>
-          </div>
-        </div>
-        : <div className="levelHeader maxMoves"><strong>MAX MOVES</strong></div>
-        }
-        {levelArray?.map((move) => (
-            <Move key={move.key} moveDetails={move} />
-          ))}
-        
-        {machineArray.length > 0 ?
-        <div className="levelHeader">
-          <div className="categoryTitle">Machine Moves</div>
-          <div className="levelHeaderDetails">
-            <div className="moveName">Move</div>
-            <div className="typeHeader">Type</div>
-            <div className="moveClass">Class</div>
-            <div className="movePower">Power</div>
-            <div className="moveAccuracy">Accuracy</div>
-          </div>
-        </div>
-          : <></>
-        }
-        {machineArray?.map((move) => (
-            <Move key={move.key} moveDetails={move} />
-          ))}
-
-        {eggArray.length > 0 ?
-        <div className="levelHeader">
-          <div className="categoryTitle">Egg Moves</div>
-          <div className="levelHeaderDetails">
-            <div className="moveName">Move</div>
-            <div className="typeHeader">Type</div>
-            <div className="moveClass">Class</div>
-            <div className="movePower">Power</div>
-            <div className="moveAccuracy">Accuracy</div>
-          </div>
-        </div>
-        : <></>
-        }
-        {eggArray?.map((move) => (
-            <Move key={move.key} moveDetails={move} />
-          ))}
-
-        {otherArray.length > 0 ?
-        <div className="levelHeader">
-          <div className="categoryTitle">Other Moves</div>
-          <div className="levelHeaderDetails">
-            <div className="level">Method</div>
-            <div className="moveName">Move</div>
-            <div className="typeHeader">Type</div>
-            <div className="moveClass">Class</div>
-            <div className="movePower">Power</div>
-            <div className="moveAccuracy">Accuracy</div>
-          </div>
-        </div>
-        : <></>
-        }
-        {otherArray?.map((move) => (
-            <Move key={move.key} moveDetails={move} />
-          ))}
-      </div>
-    )
-  }
-
-  function Wheel(){ 
-    const handleMouseEnter = () => {console.log("enter"); setHovering(true)};
-    const handleMouseLeave = () => {console.log("leave"); setHovering(false)};
+  /*function Wheel(){ 
+    //const handleMouseEnter = () => {console.log("enter"); setHovering(true)};
+    //const handleMouseLeave = () => {console.log("leave"); setHovering(false)};
 
     //<div className={'wheel ' + (hover ? '' : '')} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
@@ -701,9 +502,9 @@ function App() {
         <VisibleEntries num={pokemon.dexnum} />
       </div>
     )
-  }
+  }*/
 
-  function Entry({index}){ //fill refArray and the DOM with our pokemon entries
+  /*function Entry({index}){ //fill refArray and the DOM with our pokemon entries
     let id_string = 'entry' + (index-pokemon.dexnum);
     if(index > -1 && index < items.length){
       return (
@@ -737,7 +538,7 @@ function App() {
         </div>
       </>
     )
-  }
+  }*/
 
   function Type({typeName}){
     const classString = typeName + ' type';
@@ -768,20 +569,6 @@ function App() {
       updateForm(index-1);
     }
   }
-
-  function useWindowSize(){ //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
-    const windowSizeRef = useRef([0, 0]);
-    useLayoutEffect(() => {
-      const updateSize = debounce (() => {
-        windowSizeRef.current = [window.innerWidth, window.innerHeight];
-        calculateTransformations();
-      }, 100)
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);
-    return windowSizeRef;
-  }
   
   useEffect(() => { //sets the items to the array of json objects, where each object represents 1 pokemon
     async function fetchData() {
@@ -798,11 +585,6 @@ function App() {
   useEffect(() => { //updates the pokemon once that ^ loads
     updateMon(0);
   }, [items]);
-
-  //These are just used for my wheel. If the wheel is taken out, these need to be commented out. Not awesome but it's how I'm doing it for the moment.
-  const windowSizeRef = useWindowSize();
-  useLayoutEffect(calculateTransformations, []);
-
 
   return (
     <>
@@ -847,11 +629,10 @@ function App() {
             </div>
             <Cry />
           </div>
-          <Wheel />
         </div>
         <div className="test">
-          <Moves />
-          <Abilities pokemon={pokemon}/>
+          <Moves pokemon={pokemon} moveList={moveList}/>
+          <Abilities key={pokemon.name} pokemon={pokemon}/>
         </div>
       </div>
     </div>

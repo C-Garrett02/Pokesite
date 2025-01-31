@@ -4,12 +4,6 @@ function Abilities({pokemon}) {
     const [abilityIndex, setAbilityIndex] = useState(0);
     const [textEnd, setTextEnd] = useState(generateTextEnd(0));
 
-    useEffect(() => {
-        console.log('test');
-        setAbilityIndex(0);
-        setTextEnd(generateTextEnd(0));
-    }, [pokemon])
-
     function incrementAbility() {
         if (abilityIndex + 1 < pokemon.abilities.length) {
             setTextEnd(generateTextEnd(abilityIndex + 1));

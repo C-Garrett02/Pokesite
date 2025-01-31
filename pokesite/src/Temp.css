@@ -81,18 +81,24 @@
     margin-left: 7vw;
     height: 100%;
     width: 31vw;
+    right: -30vw;
     position: absolute;
     top: 0;
     transition: right .5s;
   }
 
-  .wheelExtend { /*wheel component seems to remount every mon update which causes wheel to retract. Thus we need a way to track state.*/
+  .wheel:hover {
+    right: 0vw;
+  }
+
+  /*wheel component seems to remount every mon update which causes wheel to retract. Thus we need a way to track state.*/
+  /*.wheelExtend { 
     right: 0;
   }
 
   .wheelRetract {
     right: -30vw;
-  }
+  }*/
 
   .imageAndType {
     display:flex;
