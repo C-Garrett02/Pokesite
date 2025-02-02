@@ -482,15 +482,9 @@ function App() {
       <BetterWheel items={items} pokemon={pokemon} updateFunc={updateMon}/>
     </div>
     <div className='navBar'>
-      <button className='monBtn' onClick={decrementDex}>
-        &lt; {(pokemon.dexnum > 0) ? items[pokemon.dexnum-1].name : items[items.length-1].name}
-      </button>
       <div className='pokeName'>
           {pokemon.name}
       </div>
-      <button className='monBtn' onClick={incrementDex}>
-          {(pokemon.dexnum < items.length-1) ? items[pokemon.dexnum+1].name : items[0].name} &gt;
-      </button>
     </div>
     </>
   )

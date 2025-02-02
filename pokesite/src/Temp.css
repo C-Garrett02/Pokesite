@@ -52,7 +52,7 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    z-index: 100;
+    z-index: 2;
     width: 100%;
     background-color: white;
     box-sizing: border-box;
@@ -77,11 +77,12 @@
     flex-grow: 1;
     align-content: center;
     display:flex;
+    background-color: rgba(255, 255, 255, 1);
     flex-direction: row;
     margin-left: 7vw;
     height: 100%;
-    width: 31vw;
-    right: -0;
+    width: 31.5vw;
+    right: -30vw;
     position: absolute;
     top: 0;
     transition: right .5s;
@@ -205,7 +206,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .pokeName {
@@ -269,6 +270,7 @@
 
   .abilityBtn {
     display: flex;
+    border: 0px;
     border-left: 1px solid;
     height: 100%;
     align-items: center;
@@ -289,12 +291,12 @@
     object-fit: contain;
   }
 
-  .pulloutBar {
+  .pulloutButton {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1vw;
+    width: 1.5vw;
     border: 1px solid;
     border-top-left-radius: 1vh;
     border-bottom-left-radius: 1vh;
@@ -308,6 +310,8 @@
     align-items: center;
     justify-content: center;
     padding-right: 1vw;
+    border-left: 1px solid black;
+    padding-left: 1vw;
   }
 
   .incrementButton, .decrementButton {
@@ -420,84 +424,34 @@
     bottom: -15.5vh;
   }
 
-
-
-  @keyframes down0 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 25vh;
-      top: 60vh;
-    }
+  .downArrow {
+    width: 0; 
+    height: 0; 
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    border-top: 1vh solid #5d9d3c;
   }
 
-  @keyframes up0 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 60vh;
-      top: 25vh;
-    }
+  .upArrow {
+    width: 0; 
+    height: 0; 
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    border-bottom: 1vh solid #5d9d3c;
   }
 
-  @keyframes down0 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 25vh;
-      top: 60vh;
-    }
+  .leftArrow {
+    width: 0; 
+    height: 0; 
+    border-top: 1vh solid transparent;
+    border-right: 1vh solid #5d9d3c;
+    border-bottom: 1vh solid transparent;
   }
 
-  @keyframes up0 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 60vh;
-      top: 25vh;
-    }
-  }
-
-  @keyframes down1 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 25vh;
-      top: 60vh;
-    }
-  }
-
-  @keyframes up1 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 60vh;
-      top: 25vh;
-    }
-  }
-
-  @keyframes down-1 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 25vh;
-      top: 60vh;
-    }
-  }
-
-  @keyframes up-1 {
-    to {
-      z-index: 9;
-      filter: brightness(0.8);
-      margin-left: 1vw;
-      bottom: 60vh;
-      top: 25vh;
-    }
+  .rightArrow {
+    width: 0; 
+    height: 0; 
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    border-bottom: 1vh solid #5d9d3c;
   }

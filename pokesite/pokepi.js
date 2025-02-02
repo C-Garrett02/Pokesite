@@ -12,12 +12,14 @@ async function GetPokemon2(dex) {
     const alternateForms = [];
     let basePokemon;
     for (let form of body.varieties){
-        console.log(form);
         if (form.is_default == true){
-            basePokemon = await GetFormData(form);
+            basePokemon = await GetAltFormData(form);
             for (let record of body.names){
                 if (record.language.name == "en") {
-                    basePokemon.name = record.name;
+                    basePokemon.species = record.name;
+                    if (basePokemon.name == "placeholder"){
+                        basePokemon.name = record.name;
+                    }
                 }
             }
         }

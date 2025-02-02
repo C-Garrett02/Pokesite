@@ -5,7 +5,7 @@ function SearchBar({updateFunc, items}) {
 
     function filterByInput(input) { //should only call if input.length >= 3. While this likely doesnt cause performance issues, can be optimized if needed.
         return(
-            items.filter((p) => p.name.toLowerCase().includes(input.toLowerCase())
+            items.filter((p) => p.species.toLowerCase().includes(input.toLowerCase())
             )
         )
     }
@@ -20,7 +20,7 @@ function SearchBar({updateFunc, items}) {
 
         if (input.length >= 3){
             filteredList = filterByInput(input).map(p => 
-                <button key={p.name} number={p.id} className='monButton' onClick={jumpToMon}>{p.name}</button>
+                <button key={p.species} number={p.id} className='monButton' onClick={jumpToMon}>{p.species}</button>
             )
         }
 

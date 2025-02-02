@@ -25,7 +25,7 @@ function BetterWheel({items, pokemon, updateFunc}) {
         setTimeout(() => {
             if(down){
                 setDown(false);
-                updateFunc(pokemon.dexnum+1);
+                updateFunc(pokemon.dexnum-1);
             }
             if(up){
                 setUp(false);
@@ -39,8 +39,17 @@ function BetterWheel({items, pokemon, updateFunc}) {
     //now that position is absolute, probably dont need invisible entry
     return (
         <div className='wheel'>
-            <button onClick={handleDown}></button>
-            <button onClick={handleUp}></button>
+            <button className="pulloutButton">
+                <div className='leftArrow'></div>
+            </button>
+            <div className="directionButtons">
+                <button onClick={handleDown} className="decrementButton">
+                    <div className="upArrow" />
+                </button>
+                <button onClick={handleUp} className="incrementButton">
+                    <div className="downArrow" />
+                </button>
+            </div>
             <div className="entries">
                 {indexArray.map((ind) => {
                     if (pokemon.dexnum + ind < 0 || pokemon.dexnum + ind >= items.length){
