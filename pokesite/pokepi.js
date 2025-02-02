@@ -128,7 +128,6 @@ async function GetFormData(variety) {
 }
 
 async function GetAltFormData(variety) { //Currently does not differentiate between purely cosmetic forms (e.g. polteageist antique vs phony)
-    const versions = await GetVersions(); //Should really only call this once and pass it to this function or something. Will maybe work on that later.
     const response = await fetch(variety.pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
     if(body.sprites.front_default == null){
@@ -295,6 +294,7 @@ function SaveToFile(array, filename) {
 
 let promises = [];
 let pokedex = [];
+const versions = await GetVersions()
 
 for (let i = 1; i <= 1025; i++) {
     promises.push(PushPokemon(i));
