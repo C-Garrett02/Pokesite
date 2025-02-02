@@ -83598,7 +83598,7 @@
     },
     {
         "id": 201,
-        "name": "Unown A",
+        "name": "Unown",
         "stats": {
             "hp": 48,
             "attack": 72,
@@ -163421,7 +163421,7 @@
     },
     {
         "id": 412,
-        "name": "Plant Burmy",
+        "name": "Burmy",
         "stats": {
             "hp": 40,
             "attack": 29,
@@ -165403,7 +165403,7 @@
     },
     {
         "id": 421,
-        "name": "Overcast Cherrim",
+        "name": "Cherrim",
         "stats": {
             "hp": 70,
             "attack": 60,
@@ -165480,7 +165480,7 @@
     },
     {
         "id": 422,
-        "name": "West Shellos",
+        "name": "Shellos",
         "stats": {
             "hp": 76,
             "attack": 48,
@@ -165784,7 +165784,7 @@
     },
     {
         "id": 423,
-        "name": "West Gastrodon",
+        "name": "Gastrodon",
         "stats": {
             "hp": 111,
             "attack": 83,
@@ -191123,7 +191123,7 @@
     },
     {
         "id": 493,
-        "name": "Normal Arceus",
+        "name": "Arceus",
         "stats": {
             "hp": 120,
             "attack": 120,
@@ -224366,7 +224366,7 @@
     },
     {
         "id": 585,
-        "name": "Spring Deerling",
+        "name": "Deerling",
         "stats": {
             "hp": 60,
             "attack": 60,
@@ -224641,7 +224641,7 @@
     },
     {
         "id": 586,
-        "name": "Spring Sawsbuck",
+        "name": "Sawsbuck",
         "stats": {
             "hp": 80,
             "attack": 100,
@@ -253050,7 +253050,7 @@
     },
     {
         "id": 666,
-        "name": "Meadow Vivillon",
+        "name": "Vivillon",
         "stats": {
             "hp": 80,
             "attack": 52,
@@ -253913,7 +253913,7 @@
     },
     {
         "id": 669,
-        "name": "Red Flabébé",
+        "name": "Flabébé",
         "stats": {
             "hp": 44,
             "attack": 38,
@@ -254182,7 +254182,7 @@
     },
     {
         "id": 670,
-        "name": "Red Floette",
+        "name": "Floette",
         "stats": {
             "hp": 54,
             "attack": 45,
@@ -254754,7 +254754,7 @@
     },
     {
         "id": 671,
-        "name": "Red Florges",
+        "name": "Florges",
         "stats": {
             "hp": 78,
             "attack": 65,
@@ -256459,7 +256459,7 @@
     },
     {
         "id": 676,
-        "name": "Natural Furfrou",
+        "name": "Furfrou",
         "stats": {
             "hp": 75,
             "attack": 80,
@@ -272274,7 +272274,7 @@
     },
     {
         "id": 716,
-        "name": "Active Xerneas",
+        "name": "Xerneas",
         "stats": {
             "hp": 126,
             "attack": 131,
@@ -324781,7 +324781,7 @@
     },
     {
         "id": 854,
-        "name": "Phony Sinistea",
+        "name": "Sinistea",
         "stats": {
             "hp": 40,
             "attack": 45,
@@ -325030,7 +325030,7 @@
     },
     {
         "id": 855,
-        "name": "Phony Polteageist",
+        "name": "Polteageist",
         "stats": {
             "hp": 60,
             "attack": 65,
@@ -329676,7 +329676,7 @@
     },
     {
         "id": 869,
-        "name": "Vanilla Cream Strawberry Sweet Alcremie",
+        "name": "Alcremie",
         "stats": {
             "hp": 65,
             "attack": 60,
@@ -379735,7 +379735,7 @@
     },
     {
         "id": 1012,
-        "name": "Counterfeit Form Poltchageist",
+        "name": "Poltchageist",
         "stats": {
             "hp": 40,
             "attack": 45,
@@ -379969,7 +379969,7 @@
     },
     {
         "id": 1013,
-        "name": "Unremarkable Form Sinistcha",
+        "name": "Sinistcha",
         "stats": {
             "hp": 71,
             "attack": 60,

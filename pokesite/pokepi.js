@@ -127,7 +127,7 @@ async function GetFormData(variety) {
     };
 }
 
-async function GetAltFormData(variety) {
+async function GetAltFormData(variety) { //Currently does not differentiate between purely cosmetic forms (e.g. polteageist antique vs phony)
     const versions = await GetVersions(); //Should really only call this once and pass it to this function or something. Will maybe work on that later.
     const response = await fetch(variety.pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
@@ -153,7 +153,10 @@ async function GetAltFormData(variety) {
     const height = feet + '\' ' + inches + '"' ;
     const weight = Math.round((body.weight * 0.220462)*10) / 10;
     const cry_url = body.cries.latest;
-    const form_name = await GetFormName(body.forms[0]);
+    let form_name = "placeholder"
+    if(body.forms.length == 1){ //Currently avoiding multiple forms per one variety
+        form_name = await GetFormName(body.forms[0]);
+    }
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
         bst += stat.base_stat;
