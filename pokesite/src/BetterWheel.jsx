@@ -39,9 +39,9 @@ function BetterWheel({items, pokemon, updateFunc}) {
     //now that position is absolute, probably dont need invisible entry
     return (
         <div className='wheel'>
-            <button className="pulloutButton">
+            <div className="pulloutButton">
                 <div className='leftArrow'></div>
-            </button>
+            </div>
             <div className="directionButtons">
                 <button onClick={handleDown} className="decrementButton">
                     <div className="upArrow" />

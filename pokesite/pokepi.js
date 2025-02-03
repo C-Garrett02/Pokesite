@@ -13,9 +13,9 @@ async function GetPokemon2(dex) {
     let basePokemon;
     for (let form of body.varieties){
         if (form.is_default == true){
-            basePokemon = await GetAltFormData(form);
+            basePokemon = await GetVariationData(form);
             for (let record of body.names){
-                if (record.language.name == "en") {
+                if (record.language.name == "en") { //want to mark species name. name = species name if the form name returns as placeholder.
                     basePokemon.species = record.name;
                     if (basePokemon.name == "placeholder"){
                         basePokemon.name = record.name;
@@ -24,7 +24,7 @@ async function GetPokemon2(dex) {
             }
         }
         else {
-            const other_form = await GetAltFormData(form);
+            const other_form = await GetVariationData(form);
             if(other_form !== null){
                 alternateForms.push(other_form);
             }
@@ -34,7 +34,7 @@ async function GetPokemon2(dex) {
     return basePokemon;
 }
 
-async function GetFormData(variety) {
+/*async function GetFormData(variety) {
     const versions = await GetVersions(); //Should really only call this once and pass it to this function or something. Will maybe work on that later.
     const response = await fetch(variety.pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
@@ -125,9 +125,9 @@ async function GetFormData(variety) {
         moves: move_arrays,
         forms: []
     };
-}
+}*/
 
-async function GetAltFormData(variety) { //Currently does not differentiate between purely cosmetic forms (e.g. polteageist antique vs phony)
+async function GetVariationData(variety) { //Currently does not differentiate between purely cosmetic forms (e.g. polteageist antique vs phony)
     const response = await fetch(variety.pokemon.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
     if(body.sprites.front_default == null){
@@ -152,9 +152,11 @@ async function GetAltFormData(variety) { //Currently does not differentiate betw
     const height = feet + '\' ' + inches + '"' ;
     const weight = Math.round((body.weight * 0.220462)*10) / 10;
     const cry_url = body.cries.latest;
-    let form_name = "placeholder"
+    const form_details = await GetFormDetails(body.forms[0]);
+    let form_name = "placeholder";
+    const form_version = form_details.version;
     if(body.forms.length == 1){ //Currently avoiding multiple forms per one variety
-        form_name = await GetFormName(body.forms[0]);
+        form_name = form_details.name;
     }
     for (let stat of body.stats){ 
         base_stats[stat.stat.name] = stat.base_stat;
@@ -217,21 +219,26 @@ async function GetAltFormData(variety) { //Currently does not differentiate betw
         height: height,
         weight: weight,
         cry: cry_url,
+        version: form_version,
         abilities: ability_list,
         moves: move_arrays,
         forms: []
     };
 }
 
-async function GetFormName(form) {
+async function GetFormDetails(form) {
     const response = await fetch(form.url); //Will need to update this method, or another one, to deal with alternate types. Mega/gmax/regional/gender/etc
     const body = await response.json();
+    let form_details = {
+        name: "placeholder",
+        version: version_group.name
+    }
     for (let record of body.names){
         if (record.language.name == "en") {
-            return record.name;
+            form_details.name = record.name;
         }
     }
-    return "placeholder";
+    return form_details;
 }
 
 async function GetVersions() { //get versions in chronological order
