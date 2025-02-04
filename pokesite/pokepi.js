@@ -212,6 +212,7 @@ async function GetVariationData(variety) { //Currently does not differentiate be
     })
     return {
         id: body.id,
+        key: body.name,
         name: form_name,
         stats: base_stats,
         image: body.sprites.front_default,
@@ -231,7 +232,7 @@ async function GetFormDetails(form) {
     const body = await response.json();
     let form_details = {
         name: "placeholder",
-        version: version_group.name
+        version: body.version_group.name
     }
     for (let record of body.names){
         if (record.language.name == "en") {
