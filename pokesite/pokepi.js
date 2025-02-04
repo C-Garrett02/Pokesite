@@ -30,6 +30,7 @@ async function GetPokemon2(dex) {
             }
         }
     }
+    basePokemon.chain_id = body.evolution_chain.url.replace(/.*\/(\d+)\//g, '$1');
     basePokemon.forms = alternateForms;
     return basePokemon;
 }

@@ -18,7 +18,7 @@ async function GetMoves() { //write to separate file
     const body = await response.json();
     let moves = [];
     for (let move of body.results){
-        const move_response = await fetch(move.url);
+        const move_response = await fetch(move.url); //could make this a series of promises then use promise.all maybe? Would be faster. But not a huge deal.
         const details = await move_response.json();
         let description = "";
         let move_name = "";
