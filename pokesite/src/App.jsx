@@ -12,7 +12,7 @@ import SearchBar from './SearchBar.jsx'
 import Abilities from './Abilities.jsx'
 import Moves from './Moves.jsx'
 import BetterWheel from './BetterWheel.jsx'
-import Chart from 'chart.js/auto';
+import EvoChain from './EvoChain.jsx'
 
 function debounce(callback, wait) {
   let timeout = null;
@@ -318,9 +318,11 @@ function App() {
     height: items[0].height,
     weight: items[0].weight,
     cry: items[0].cry,
-    forms: items[0].forms
+    forms: items[0].forms,
+    chain: items[0].chain_id
   })
-  const [moveList, setMoveList] = useState([]) //the specific data for each move, not the moves of each pokemon
+  const [moveList, setMoveList] = useState([]); //the specific data for each move, not the moves of each pokemon
+  const [chains, setChains] = useState([]);
   //let animationStep = 1;
   //const totalAnimationSteps = 30;
   //const intervalRef = useRef(null);
@@ -419,6 +421,9 @@ function App() {
       const moveFile = await fetch('./moves.json');
       const moveJson = await moveFile.json();
       setMoveList(moveJson);
+      const chainFile = await fetch('./evolutions.json');
+      const chainJson = await chainFile.json();
+      setChains(chainJson);
       const response = await fetch('./pokedex.json');
       const body = await response.json();
       setItems(body);
