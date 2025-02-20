@@ -1,34 +1,41 @@
 import { useState, useEffect } from 'react'
 
-function EvoTile({moveDetails, stage}) {
+function EvoTile({ pokemonName, items }) {
 
-    // What to do here...
-    // I need this tile to know whether it's a "mystery" tile or not. This is based on two factors.
-    // 1) does this evo stage have multiple possibilities
-    // 2) is the viewed/current pokemon this stage?
+  // What to do here...
+  // I need this tile to know whether it's a "mystery" tile or not. This is based on two factors.
+  // 1) does this evo stage have multiple possibilities
+  // 2) is the viewed/current pokemon this stage?
 
-    // If 1 but not 2, mystery tile until clicked
-    // If 1 && 2, then default to current pokemon
-    // This class should probably be passed the next stage
-    // Should probably be built from the first evolution every time
+  // If 1 but not 2, mystery tile until clicked
+  // If 1 && 2, then default to current pokemon
 
-   const [clicked, setClicked] = useState(false);
+  //Mystery tile is... maybe convoluted. 
+  //Maybe just default to a *line* where the selected pokemon appears.
 
-   const handleClick = () => {
-     clicked ? setClicked(false) : setClicked(true);
-   }
+  const [clicked, setClicked] = useState(false);
 
-   if(moveDetails.level >= 0){
-     levelDiv = <div className="level">{moveDetails.level}</div>;
-   }
-   else if(moveDetails.method){
-     levelDiv = <div className="level">{moveDetails.method}</div>;
-   }
+  const handleClick = () => {
+    if (stage.length > 1) {
+      //bring up sub menu?
+    }
+  }
 
-   return (
-     <div className="evoTile" onClick={handleClick}>
-     </div>
-   )
+  let imgsrc = "";
+
+  for (let item of items){
+    //console.log(pokemonName);
+    if (item.species.toLowerCase() == pokemonName){
+      imgsrc = item.image;
+      break;
+    }
+  }
+
+  return (
+    <div className="evoTile" onClick={handleClick}>
+      <img className="tileImage" src={imgsrc} />
+    </div>
+  )
 }
 
 export default EvoTile;

@@ -107,13 +107,11 @@ function Wheel({ pokemon, incrementDex, decrementDex, items }) {
             animationStep = 1;
             clearInterval(intervalRef.current);
             incrementDex();
-            console.log(pokemon.dexnum)
             isScrolling = false;
         }
     }
 
     function useWindowSize() { //custom Hook that listens to window size, though its purpose currently is to rerender certain things on resize.
-        console.log("updating size");
         const windowSizeRef = useRef([0, 0]);
         useLayoutEffect(() => {
             const updateSize = debounce(() => {

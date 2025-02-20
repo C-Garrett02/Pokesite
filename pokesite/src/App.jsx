@@ -12,7 +12,7 @@ import SearchBar from './SearchBar.jsx'
 import Abilities from './Abilities.jsx'
 import Moves from './Moves.jsx'
 import BetterWheel from './BetterWheel.jsx'
-import EvoChain from './EvoChain.jsx'
+import EvoChains from './EvoChains.jsx'
 
 function debounce(callback, wait) {
   let timeout = null;
@@ -305,7 +305,9 @@ function App() {
         "tutor": [],
         "other": []
     },
-    "forms": []
+    "forms": [],
+    "species": "Bulbasaur",
+    "chain_id": "1"
   }));
   const [pokemon, setPokemon] = useState({
     dexnum: 0,
@@ -319,7 +321,7 @@ function App() {
     weight: items[0].weight,
     cry: items[0].cry,
     forms: items[0].forms,
-    chain: items[0].chain_id
+    chainid: items[0].chain_id
   })
   const [moveList, setMoveList] = useState([]); //the specific data for each move, not the moves of each pokemon
   const [chains, setChains] = useState([]);
@@ -329,6 +331,7 @@ function App() {
   //let isScrolling = false;
 
   function updateMon(num) {
+    console.log("updateMon");
     let newMon = {
       dexnum: num,
       name: items[num].name,
@@ -340,7 +343,8 @@ function App() {
       height: items[num].height,
       weight: items[num].weight,
       cry: items[num].cry,
-      forms: items[num].forms
+      forms: items[num].forms,
+      chainid: items[num].chain_id
     };
     setPokemon(newMon);
     //normally try and avoid the below but it was the easiest solution to a bug where selectedIndex would persist between pokemon
@@ -348,6 +352,7 @@ function App() {
   }
 
   function updateForm(num) {
+    console.log("updateForm");
     let newMon = {
       dexnum: pokemon.dexnum,
       name: pokemon.forms[num].name,
@@ -359,7 +364,8 @@ function App() {
       height: pokemon.forms[num].height,
       weight: pokemon.forms[num].weight,
       cry: pokemon.forms[num].cry,
-      forms: pokemon.forms
+      forms: pokemon.forms,
+      chainid: pokemon.chainid
     }
     setPokemon(newMon);
   }
@@ -397,7 +403,6 @@ function App() {
   function Cry(){
     let volume = 0.05;
     const [soundCry] = useSound(pokemon.cry, {volume});
-
     return (
       <button className="cry" onClick={() => soundCry()}>
          Cry
@@ -491,6 +496,7 @@ function App() {
           {pokemon.name}
       </div>
     </div>
+    <EvoChains chains={chains} chainid={pokemon.chainid} items={items}/>
     </>
   )
 }

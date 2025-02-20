@@ -11,13 +11,11 @@ function BetterWheel({items, pokemon, updateFunc}) {
     const handleDown = () => {
         if(down == false && pokemon.dexnum > 0){
             setDown(true);
-            console.log(down);
         }
     }
     const handleUp = () => {
         if(up == false && pokemon.dexnum < items.length-1){
             setUp(true);
-            console.log(up);
         }
     }
 
@@ -33,8 +31,6 @@ function BetterWheel({items, pokemon, updateFunc}) {
             }
         }, 400)
     }, [down, up])
-
-    console.log('test');
 
     //now that position is absolute, probably dont need invisible entry
     return (
