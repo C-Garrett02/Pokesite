@@ -24,7 +24,6 @@ function EvoTile({ pokemonName, items }) {
   let imgsrc = "";
 
   for (let item of items){
-    //console.log(pokemonName);
     if (item.species.toLowerCase() == pokemonName){
       imgsrc = item.image;
       break;

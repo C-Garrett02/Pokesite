@@ -33,10 +33,10 @@ function Abilities({pokemon}) {
                 </div>
                 <div className='directionBtns'>
                     <button className='abilityBtn' onClick={decrementAbility}>
-                        <img id='leftArrow' src='/triangle.svg' />
+                        <div className='leftArrow' />
                     </button>
                     <button className='abilityBtn' onClick={incrementAbility}>
-                        <img id='rightArrow' src='/triangle.svg' />
+                        <div className='rightArrow' />
                     </button>
                 </div>
             </div>

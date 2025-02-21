@@ -7,8 +7,6 @@ function EvoChains({chains, chainid, items}) { //Pass in chain (chains[pokemon.c
     //The topmost entry should be one that includes the pokemon passed in
     //pokemon is based on species by default, will need to do tolower() on pokemon.species to match it up with species.name in a chain
 
-    //console.log(chain)
-
     const chainList = [];
 
     let chain = null;
@@ -29,7 +27,6 @@ function EvoChains({chains, chainid, items}) { //Pass in chain (chains[pokemon.c
         }
         else { //base case
             chainList.push(newCurrent);
-            //console.log(newCurrent);
         }
     }
 
@@ -39,10 +36,10 @@ function EvoChains({chains, chainid, items}) { //Pass in chain (chains[pokemon.c
 
     return (
         <div className="evoChart">
-                {chainList?.map((line) => (
-                    <div className="evoChain">
+                {chainList?.map((line, index) => (
+                    <div className="evoChain" key={index}>
                         {line.map(stage => (
-                            <EvoTile pokemonName={stage} items={items}/>
+                            <EvoTile pokemonName={stage} items={items} key={stage}/>
                         ))}
                     </div>
                 ))}

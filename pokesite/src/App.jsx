@@ -331,7 +331,6 @@ function App() {
   //let isScrolling = false;
 
   function updateMon(num) {
-    console.log("updateMon");
     let newMon = {
       dexnum: num,
       name: items[num].name,
@@ -405,7 +404,7 @@ function App() {
     const [soundCry] = useSound(pokemon.cry, {volume});
     return (
       <button className="cry" onClick={() => soundCry()}>
-         Cry
+         <img src="speaker.svg" id="speakerIcon"/>
       </button>
     )
   }

@@ -176,11 +176,15 @@
 
   .cry {
     display: flex;
-    border: solid 1px;
+    border: 0px;
     width: 1vw;
     justify-content: center;
     align-items: center;
     height: 5vh;
+  }
+  
+  #speakerIcon {
+    height: 4vh;
   }
 
   .test {
@@ -264,6 +268,7 @@
   .directionBtns {
     display: flex;
     height: 100%;
+    width: 5vw;
     justify-content: flex-end;
     align-items: center;
   }
@@ -278,14 +283,14 @@
   }
 
   #leftArrow {
-    width: 2.5vh;
+    width: 2vw;
     height: 2.5vh;
     transform: rotate(-90deg);
     object-fit: contain;
   }
 
   #rightArrow {
-    width: 2.5vh;
+    width: 2vw;
     height: 2.5vh;
     transform: rotate(90deg);
     object-fit: contain;
@@ -444,14 +449,14 @@
     width: 0; 
     height: 0; 
     border-top: 1vh solid transparent;
-    border-right: 1vh solid #5d9d3c;
+    border-right: 2vh solid #000000;
     border-bottom: 1vh solid transparent;
   }
 
   .rightArrow {
     width: 0; 
     height: 0; 
-    border-left: 1vh solid transparent;
-    border-right: 1vh solid transparent;
-    border-bottom: 1vh solid #5d9d3c;
+    border-left: 2vh solid #000000;
+    border-top: 1vh solid transparent;
+    border-bottom: 1vh solid transparent;
   }
