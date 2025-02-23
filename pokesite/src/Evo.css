@@ -1,4 +1,21 @@
+.evoChart {
+    display: flex;
+    height: 20vh;
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
 .evoChain {
     display: flex;
     flex-direction: row;
+    height: 100%;
+}
+
+.evoTile {
+    display: flex;
+    image-rendering: pixelated;
+    height: 20vh;
+    width: 100%;
 }

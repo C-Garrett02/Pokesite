@@ -114,6 +114,28 @@
     position: relative;
   }
 
+  .cry {
+    display: flex;
+    position: absolute;
+    border: 0px;
+    bottom: 1.4vh;
+    left: 1.4vh;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    opacity: 0.5;
+  }
+
+  .cry:hover {
+    background-color: transparent;
+    opacity: 1;
+  }
+  
+  #speakerIcon {
+    height: 120%;
+  }
+
   #formSelection {
     position: absolute;
     bottom: 1.4vh;
@@ -141,6 +163,23 @@
     flex-direction: row;
   }
 
+  .extraInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .heightAndWeight {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    white-space: pre;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+  }
+
   .rightOfImage {
     display: flex;
     flex-direction: column;
@@ -163,35 +202,16 @@
 
   .baseStatTotal {
     display: flex;
-    height: 3vh;
-    color: rgb(102, 102, 102);
-  }
-
-  .heightAndWeight {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    gap: 1vh;
-  }
-
-  .cry {
-    display: flex;
-    border: 0px;
-    width: 1vw;
-    justify-content: center;
+    height: 2vh;
+    font-size: 1.2rem;
     align-items: center;
-    height: 5vh;
-  }
-  
-  #speakerIcon {
-    height: 4vh;
+    color: rgb(102, 102, 102);
   }
 
   .test {
     display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 29.6vh;
   }
 
   .moveList {
