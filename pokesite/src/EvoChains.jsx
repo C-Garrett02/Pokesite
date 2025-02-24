@@ -2,10 +2,8 @@ import { useState, useEffect } from 'react';
 import EvoTile from './EvoTile.jsx'
 import './Evo.css'
 
-function EvoChains({chains, chainid, items}) { //Pass in chain (chains[pokemon.chainid-1]), or the chain where pokemon.chainid == chains[i].id, but I think chains[i].id should be equal to i+1
-    //For now, just create a vertical list of x->y->z
+function EvoChains({chains, chainid, items, name}) {
     //The topmost entry should be one that includes the pokemon passed in
-    //pokemon is based on species by default, will need to do tolower() on pokemon.species to match it up with species.name in a chain
 
     const chainList = [];
 
@@ -32,6 +30,11 @@ function EvoChains({chains, chainid, items}) { //Pass in chain (chains[pokemon.c
 
     if(chain != undefined){
         pushLine(chain.chain);
+    }
+
+    if(chainList.length > 1){
+        chainList.reverse();
+        chainList.sort(function(x,y){ return x.includes(name.toLowerCase()) ? -1 : y.includes(name.toLowerCase()) ? 1 : 0; });
     }
 
     return (

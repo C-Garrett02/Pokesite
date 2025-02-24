@@ -10,6 +10,7 @@
 .evoChain {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: 100%;
 }
 
@@ -17,5 +18,4 @@
     display: flex;
     image-rendering: pixelated;
     height: 20vh;
-    width: 100%;
 }

@@ -1,18 +1,6 @@
 import { useState, useEffect } from 'react'
 
 function EvoTile({ pokemonName, items }) {
-
-  // What to do here...
-  // I need this tile to know whether it's a "mystery" tile or not. This is based on two factors.
-  // 1) does this evo stage have multiple possibilities
-  // 2) is the viewed/current pokemon this stage?
-
-  // If 1 but not 2, mystery tile until clicked
-  // If 1 && 2, then default to current pokemon
-
-  //Mystery tile is... maybe convoluted. 
-  //Maybe just default to a *line* where the selected pokemon appears.
-
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -23,8 +11,9 @@ function EvoTile({ pokemonName, items }) {
 
   let imgsrc = "";
 
-  for (let item of items){
-    if (item.species.toLowerCase() == pokemonName){
+  for (let item of items){ //finds pokemon in items. Really should find a way to pass the index or img in more easily, but this operation takes very little time overall.
+    console.log(item.key);
+    if (item.species.toLowerCase() == pokemonName || item.key == pokemonName){
       imgsrc = item.image;
       break;
     }

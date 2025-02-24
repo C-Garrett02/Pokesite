@@ -321,6 +321,7 @@ function App() {
     weight: items[0].weight,
     cry: items[0].cry,
     forms: items[0].forms,
+    species: items[0].species,
     chainid: items[0].chain_id
   })
   const [moveList, setMoveList] = useState([]); //the specific data for each move, not the moves of each pokemon
@@ -343,6 +344,7 @@ function App() {
       weight: items[num].weight,
       cry: items[num].cry,
       forms: items[num].forms,
+      species: items[num].species,
       chainid: items[num].chain_id
     };
     setPokemon(newMon);
@@ -364,6 +366,7 @@ function App() {
       weight: pokemon.forms[num].weight,
       cry: pokemon.forms[num].cry,
       forms: pokemon.forms,
+      species: pokemon.species,
       chainid: pokemon.chainid
     }
     setPokemon(newMon);
@@ -483,7 +486,7 @@ function App() {
               <div className='baseStatTotal'>
                 <strong>Total: {pokemon.stats.total}</strong>
               </div>
-              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} />
+              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.species}/>
             </div>
           </div>
           <div className="test">
