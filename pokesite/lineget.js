@@ -30,6 +30,10 @@ async function GetEvoLines() { //write to separate file
     return chains;
 }
 
+//code goes here for creating some sort of "evolution string" that notes the conditions. Maybe even an array of strings? ["Level", "Knows Move", "Female"] for ex
+//may have to get/utilize all the types/items/moves to make this thing dynamic/neat. Types I can probably hack and just capitalize the first letter of. Items have a few unique cases that -
+// - would make that less than ideal. Dashes in between words, maybe some apostrophes. We should probably do the same with moves to be safe, but I do have a moves json
+
 const evo_lines = await GetEvoLines();
 
 //Will have to now insert code to merge in some other handwritten json file to account for forms
