@@ -116,7 +116,7 @@ function GetEvoStringArray(details, pokemon = "") {
         strArray.push(RetrieveItemName(details.item.name));
     }
     if (details.known_move != null) {
-        strArray.push(RetrieveMoveName(details.known_move.name));
+        strArray.push("Knows " + RetrieveMoveName(details.known_move.name));
     }
     if (details.known_move_type != null) {
         //Usually avoid the uppercase hack but it will work for types
