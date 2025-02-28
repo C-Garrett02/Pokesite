@@ -51,14 +51,66 @@ function RetrieveMoveName(key) {
     }
 }
 
-//code goes here for creating some sort of "evolution string" that notes the conditions. Maybe even an array of strings? ["Level", "Knows Move", "Female"] for ex
-function GetEvoStringArray(details) {
+//Creates an array of descriptive strings about evo conditions. Many of these values will be hardcoded, possibly will convert some "hardcoded" data into json that merges with evolutions.json at some point.
+function GetEvoStringArray(details, pokemon = "") {
     const strArray = [];
+
+    //specific pokemon under the "other" category
+    if(pokemon == "pawmot" || pokemon == "rabsca" || pokemon == "brambleghast"){
+        strArray.push("1000 steps with your pokemon out");
+    }
+    if(pokemon == "annihilape"){
+        strArray.push("Level after using Rage Fist 20 times");
+    }
+    if(pokemon == "palafin"){
+        strArray.push("Union Circle");
+    }
+    if(pokemon == "kingambit"){
+        strArray.push("Level after defeating 3 Bisharps holding a Leader's Crest");
+    }
+    if(pokemon == "gholdengo"){
+        strArray.push("Level after collecting 999 Gimmighoul Coins");
+    }
+
+    //specific triggers
+    if (details.trigger.name == "trade"){
+        strArray.push("Trade");
+    }
+    if (details.trigger.name == "shed"){
+        strArray.push("Open party slot");
+    }
+    if (details.trigger.name == "spin"){
+        strArray.push("Spin w/ a held sweet");
+    }
+    if (details.trigger.name == "tower-of-darkness"){
+        strArray.push("Evolve in Tower of Darkness or w/ Scroll of Darkness");
+    }
+    if (details.trigger.name == "tower-of-waters"){
+        strArray.push("Evolve in Tower of Waters or w/ Scroll of Waters");
+    }
+    if (details.trigger.name == "three-critical-hits"){
+        strArray.push("Land 3 crits in a battle");
+    }
+    if (details.trigger.name == "take-damage"){
+        strArray.push("Walk under Dusty Bowl arch with at least -49hp");
+    }
+    if (details.trigger.name == "agile-style-move"){
+        strArray.push("Use Agile Style Psyshield Bash in battle 20 times");
+        return; //will capture redundant data if not returned
+    }
+    if (details.trigger.name == "strong-style-move"){
+        strArray.push("Use Strong Style Barb Barrage in battle 20 times");
+        return; //will capture redundant data if not returned
+    }
+    if (details.trigger.name == "recoil-damage"){
+        strArray.push("Receive 294+ recoil damage in battle");
+    }
+
     if (details.gender != null) {
         strArray.push(details.gender == 2 ? "Male" : "Female");
     }
     if (details.held_item != null) {
-        strArray.push("While Holding" + RetrieveItemName(details.held_item.name));
+        strArray.push("Holding " + RetrieveItemName(details.held_item.name));
     }
     if (details.item != null) {
         strArray.push(RetrieveItemName(details.item.name));
@@ -71,11 +123,10 @@ function GetEvoStringArray(details) {
         let type = details.known_move_type.name[0].toUpperCase() +  details.known_move_type.name.slice(1);
         strArray.push("Knows a " + type + " move");
     }
-
-    //skipping location, probably not needed for anyone as of gen 9. Will probably have to handwrite ones like runerigus that involve a location anyways.
-    //skippng affection
-    //skipping beauty
-
+    //skippng affection & beauty
+    if (details.min_happiness != null) {
+        strArray.push("High Happiness/Friendship");
+    }
     if (details.min_level != null) {
         strArray.push("Lvl " + details.min_level);
     }
@@ -92,6 +143,13 @@ function GetEvoStringArray(details) {
         let hitmonArray = ["Attack < Defense", "Attack = Defense", "Attack > Defense"]
         strArray.push(hitmonArray[details.relative_physical_stats + 1]); //hardcoded for hitmon line
     }
+    if (details.trade_species != null) { 
+        //Usually avoid the uppercase hack but it will work for these 2 pokemon
+        strArray.push("Trade with " + details.trade_species.name[0].toUpperCase() +  details.trade_species.name.slice(1)); //hardcoded for escavalier/accelgor
+    }
+    if (details.turn_upside_down == true) {
+        strArray.push("Upside Down");
+    }
 
     //Time of day (TOD) conditions
     if (details.time_of_day == "day") {
@@ -107,12 +165,25 @@ function GetEvoStringArray(details) {
         strArray.push("Full Moon"); 
     }
 
-    if (details.trade_species != null) {
-        //Usually avoid the uppercase hack but it will work for these 2 pokemon
-        strArray.push(details.trade_species.name[0].toUpperCase() +  details.trade_species.name.slice(1)); 
-    }    
-    if (details.turn_upside_down == true) {
-        strArray.push("Upside Down")
+    //specific pokemon with location evolutions. Put down here for more robust logic.
+    if(pokemon == "probopass"){
+        strArray.push("Level near magnetic field");
+    }
+    if(pokemon == "magnezone" && strArray.length > 0){ // > 0 ensures it will only attach it to the array I want to use
+        strArray.push("Or level near magnetic field");
+    }
+    if(pokemon == "leafeon" && strArray.length > 0){
+        strArray.push("Or level near mossy rock");
+    }
+    if(pokemon == "glaceon" && strArray.length > 0){
+        strArray.push("Or level near icy rock");
+    }
+    if(pokemon == "crabominable"){
+        strArray.push("Ice Stone");
+        strArray.push("Or level at Mt. Lanikala");
+    }
+    if(pokemon == "vikavolt" && strArray.length > 0){
+        strArray.push("Or level near magnetic field");
     }
 
     return strArray;
@@ -121,8 +192,8 @@ function GetEvoStringArray(details) {
 function StringifyAllDetails(chain) {
     for (let evo of chain.evolves_to){
         for (let details of evo.evolution_details){
-            const evoStringArr = GetEvoStringArray(details);
-            details.conditionArray = evoStringArr;
+            const evoStringArr = GetEvoStringArray(details, evo.species.name);
+            details.condition_array = evoStringArr;
         }
         StringifyAllDetails(evo);
     }
