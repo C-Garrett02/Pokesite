@@ -103,7 +103,7 @@ function GetEvoStringArray(details, pokemon = "") {
         return; //will capture redundant data if not returned
     }
     if (details.trigger.name == "recoil-damage"){
-        strArray.push("Receive 294+ recoil damage in battle");
+        strArray.push("Receive 294 recoil damage in battle");
     }
 
     if (details.gender != null) {

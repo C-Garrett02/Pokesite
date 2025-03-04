@@ -497,7 +497,7 @@ function App() {
       </div>
       <div className='navBar'>
         <div className='pokeName'>
-          {pokemon.name}
+          {pokemon.species}
         </div>
       </div>
     </>
