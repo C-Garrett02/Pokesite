@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function EvoTile({ pokemonName, items }) {
+function EvoTile({ pokemon, items }) {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -12,10 +12,17 @@ function EvoTile({ pokemonName, items }) {
   let imgsrc = "";
 
   for (let item of items){ //finds pokemon in items. Really should find a way to pass the index or img in more easily, but this operation takes very little time overall.
-    console.log(item.key);
-    if (item.species.toLowerCase() == pokemonName || item.key == pokemonName){
+    if (item.species.toLowerCase() == pokemon.name || item.key == pokemon.name){ 
       imgsrc = item.image;
       break;
+    }
+    else {
+      for (let form of item.forms){
+        if (form.key == pokemon.name){
+          imgsrc = form.image;
+          break;
+        }
+      }
     }
   }
 

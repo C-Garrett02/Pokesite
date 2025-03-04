@@ -353,7 +353,6 @@ function App() {
   }
 
   function updateForm(num) {
-    console.log("updateForm");
     let newMon = {
       dexnum: pokemon.dexnum,
       name: pokemon.forms[num].name,

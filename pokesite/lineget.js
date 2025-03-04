@@ -193,6 +193,7 @@ function StringifyAllDetails(chain) {
     for (let evo of chain.evolves_to){
         for (let details of evo.evolution_details){
             const evoStringArr = GetEvoStringArray(details, evo.species.name);
+            console.log(evoStringArr);
             details.condition_array = evoStringArr;
         }
         StringifyAllDetails(evo);
@@ -205,7 +206,8 @@ async function GetEvoLines() { //write to separate file
     const chains = [];
     for (let obj of body.results){
         const chain = await RawToJSON(obj.url);
-        StringifyAllDetails(chain.chain);
+        chain.chain = [chain.chain];
+        StringifyAllDetails(chain.chain[0]);
         chains.push(chain);
     }
     return chains;

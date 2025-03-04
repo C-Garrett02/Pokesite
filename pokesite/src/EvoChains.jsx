@@ -15,9 +15,22 @@ function EvoChains({chains, chainid, items, name}) {
         }
     }
 
-    function pushLine(remainingChain, currentChain = []){ //to start, pass in chain.chain
+    function pushLine(remainingChain, currentChain = []){ //to start, pass in chain.chain and the a blank conditions array. conditions are what it takes to evolve to this pokemon, not for this pokemon to be evolved. For example meowth has no conditions, persian does.
         const newCurrent = [...currentChain];
-        newCurrent.push(remainingChain.species.name);
+        let conditions = [];
+
+        if (remainingChain.evolution_details.length > 1){
+            remainingChain.evolution_details.sort(function(x,y){ return x.condition_array.length > y.condition_array.length ? -1 : x.condition_array.length < y.condition_array.length ? 1 : 0; });
+            conditions = remainingChain.evolution_details[0].condition_array;
+        }
+        else if (remainingChain.evolution_details.length == 1){
+            conditions = remainingChain.evolution_details[0].condition_array;
+        }
+
+        newCurrent.push({
+            name: remainingChain.species.name,
+            conditions: conditions
+        });
         if(remainingChain.evolves_to.length > 0) {
             for(let evolution of remainingChain.evolves_to){
                 pushLine(evolution, newCurrent);
@@ -29,7 +42,9 @@ function EvoChains({chains, chainid, items, name}) {
     }
 
     if(chain != undefined){
-        pushLine(chain.chain);
+        for (let line of chain.chain){
+            pushLine(line);
+        }
     }
 
     if(chainList.length > 1){
@@ -42,7 +57,7 @@ function EvoChains({chains, chainid, items, name}) {
                 {chainList?.map((line, index) => (
                     <div className="evoChain" key={index}>
                         {line.map(stage => (
-                            <EvoTile pokemonName={stage} items={items} key={stage}/>
+                            <EvoTile pokemon={stage} items={items} key={stage.name}/>
                         ))}
                     </div>
                 ))}
