@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import EvoTile from './EvoTile.jsx'
+import EvoArrow from './EvoArrow.jsx'
 import './Evo.css'
 
 function EvoChains({chains, chainid, items, name}) {
@@ -56,8 +57,11 @@ function EvoChains({chains, chainid, items, name}) {
         <div className="evoChart">
                 {chainList?.map((line, index) => (
                     <div className="evoChain" key={index}>
-                        {line.map(stage => (
-                            <EvoTile pokemon={stage} items={items} key={stage.name}/>
+                        {line.map((stage, index) => (
+                            <Fragment key={index} >
+                                {stage.conditions.length > 0 ? <EvoArrow conditions={stage.conditions} /> : null}
+                                <EvoTile pokemon={stage} items={items}/>
+                            </Fragment>
                         ))}
                     </div>
                 ))}

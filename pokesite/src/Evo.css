@@ -1,9 +1,9 @@
 .evoChart {
     display: flex;
     height: 20vh;
-    width: 80%;
+    max-width: 90%;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
     flex-direction: column;
 }
 
@@ -18,4 +18,50 @@
     display: flex;
     image-rendering: pixelated;
     height: 20vh;
+}
+
+.evoArrow {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-wrap: wrap;
+    min-width: 10vh;
+    max-width: 15vh;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.conditionsArrow {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    opacity: 50%;
+}
+
+.conditionsArrowBox {
+    justify-self: center;
+    align-self: center;
+    background-color: lightblue;
+    height: 4vh;
+    width: 4vw;
+}
+
+.conditionsArrowTip {
+    justify-self: center;
+    align-self: center;
+    width: 0; 
+    height: 0; 
+    border-left: 5vh solid lightblue;
+    border-top: 5vh solid transparent;
+    border-bottom: 5vh solid transparent;
 }

@@ -57,7 +57,7 @@ function GetEvoStringArray(details, pokemon = "") {
 
     //specific pokemon under the "other" category
     if(pokemon == "pawmot" || pokemon == "rabsca" || pokemon == "brambleghast"){
-        strArray.push("1000 steps with your pokemon out");
+        strArray.push("1000 steps with your pokemon out of ball");
     }
     if(pokemon == "annihilape"){
         strArray.push("Level after using Rage Fist 20 times");
@@ -170,20 +170,20 @@ function GetEvoStringArray(details, pokemon = "") {
         strArray.push("Level near magnetic field");
     }
     if(pokemon == "magnezone" && strArray.length > 0){ // > 0 ensures it will only attach it to the array I want to use
-        strArray.push("Or level near magnetic field");
+        strArray.push("or level near magnetic field");
     }
     if(pokemon == "leafeon" && strArray.length > 0){
-        strArray.push("Or level near mossy rock");
+        strArray.push("or level near mossy rock");
     }
     if(pokemon == "glaceon" && strArray.length > 0){
-        strArray.push("Or level near icy rock");
+        strArray.push("or level near icy rock");
     }
     if(pokemon == "crabominable"){
         strArray.push("Ice Stone");
-        strArray.push("Or level at Mt. Lanikala");
+        strArray.push("or level at Mt. Lanikala");
     }
     if(pokemon == "vikavolt" && strArray.length > 0){
-        strArray.push("Or level near magnetic field");
+        strArray.push("or level near magnetic field");
     }
 
     return strArray;
