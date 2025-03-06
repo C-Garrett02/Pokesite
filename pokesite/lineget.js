@@ -51,6 +51,13 @@ function RetrieveMoveName(key) {
     }
 }
 
+async function GetEvoPatches() { //write to separate file
+    let body = JSON.parse(await readFile("./public/evolutionpatches.json", "utf8"));
+    return body;
+}
+
+const patches = await GetEvoPatches();
+
 //Creates an array of descriptive strings about evo conditions. Many of these values will be hardcoded, possibly will convert some "hardcoded" data into json that merges with evolutions.json at some point.
 function GetEvoStringArray(details, pokemon = "") {
     const strArray = [];
@@ -186,6 +193,10 @@ function GetEvoStringArray(details, pokemon = "") {
         strArray.push("or level near magnetic field");
     }
 
+    if(strArray == undefined){
+        console.log(pokemon);
+    }
+
     return strArray;
 }
 
@@ -193,7 +204,6 @@ function StringifyAllDetails(chain) {
     for (let evo of chain.evolves_to){
         for (let details of evo.evolution_details){
             const evoStringArr = GetEvoStringArray(details, evo.species.name);
-            console.log(evoStringArr);
             details.condition_array = evoStringArr;
         }
         StringifyAllDetails(evo);
@@ -214,6 +224,14 @@ async function GetEvoLines() { //write to separate file
 }
 
 const evo_lines = await GetEvoLines();
+
+for (let i = 0; i < evo_lines.length; i++) {
+    for (let patch of patches) {
+        if (evo_lines[i].id === patch.id) {
+            evo_lines[i] = patch;
+        }
+    }
+}
 
 //Will have to now insert code to merge in some other handwritten json file to account for forms
 //Algorithmically treating certain forms like a "species" has too many variables and there's no way I can think of to account for every scenario

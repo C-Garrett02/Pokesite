@@ -3,7 +3,7 @@ import EvoTile from './EvoTile.jsx'
 import EvoArrow from './EvoArrow.jsx'
 import './Evo.css'
 
-function EvoChains({chains, chainid, items, name}) {
+function EvoChains({chains, chainid, items, name, updateFunc}) {
     //The topmost entry should be one that includes the pokemon passed in
 
     const chainList = [];
@@ -20,7 +20,7 @@ function EvoChains({chains, chainid, items, name}) {
         const newCurrent = [...currentChain];
         let conditions = [];
 
-        if (remainingChain.evolution_details.length > 1){
+        if (remainingChain.evolution_details.length > 1){ //Looks for longest string array. Will just pick the topmost or the only one if there isn't a longest
             remainingChain.evolution_details.sort(function(x,y){ return x.condition_array.length > y.condition_array.length ? -1 : x.condition_array.length < y.condition_array.length ? 1 : 0; });
             conditions = remainingChain.evolution_details[0].condition_array;
         }
@@ -30,6 +30,7 @@ function EvoChains({chains, chainid, items, name}) {
 
         newCurrent.push({
             name: remainingChain.species.name,
+            species_id: remainingChain.species.url.replace(/.*\/(\d+)\//g, '$1'),
             conditions: conditions
         });
         if(remainingChain.evolves_to.length > 0) {
@@ -50,7 +51,19 @@ function EvoChains({chains, chainid, items, name}) {
 
     if(chainList.length > 1){
         chainList.reverse();
-        chainList.sort(function(x,y){ return x.includes(name.toLowerCase()) ? -1 : y.includes(name.toLowerCase()) ? 1 : 0; });
+        chainList.sort(function(x,y){ 
+            for (let chain of x){
+                if(chain.name == name){
+                    return -1;
+                }
+            }
+            for (let chain of y){
+                if(chain.name == name){
+                    return 1;
+                }
+            }
+            return 0;
+        });
     }
 
     return (
@@ -60,7 +73,7 @@ function EvoChains({chains, chainid, items, name}) {
                         {line.map((stage, index) => (
                             <Fragment key={index} >
                                 {stage.conditions.length > 0 ? <EvoArrow conditions={stage.conditions} /> : null}
-                                <EvoTile pokemon={stage} items={items}/>
+                                <EvoTile pokemon={stage} items={items} updateFunc={updateFunc} />
                             </Fragment>
                         ))}
                     </div>

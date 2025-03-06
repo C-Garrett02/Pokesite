@@ -170,7 +170,7 @@
   }
 
   .heightAndWeight {
-    font-size: 1rem;
+    font-size: 2vh;
     display: flex;
     flex-direction: column;
     white-space: pre;

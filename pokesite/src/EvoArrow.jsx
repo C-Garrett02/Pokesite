@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 
 function EvoTile({ conditions }) {
 
-  console.log(conditions);
-
   return ( //conditions vs condition. Important distinction, possibly confusing.
     <div className="evoArrow">
       <div className="conditionsArrow">

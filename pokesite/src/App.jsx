@@ -311,6 +311,7 @@ function App() {
   }));
   const [pokemon, setPokemon] = useState({
     dexnum: 0,
+    key: items[0].key,
     name: items[0].name,
     image: items[0].image,
     types: items[0].types,
@@ -331,9 +332,10 @@ function App() {
   //const intervalRef = useRef(null);
   //let isScrolling = false;
 
-  function updateMon(num) {
+  function updateMon(num) { //should maybe consolidate updateForm into here.
     let newMon = {
       dexnum: num,
+      key: items[num].key,
       name: items[num].name,
       image: items[num].image,
       types: items[num].types,
@@ -355,6 +357,7 @@ function App() {
   function updateForm(num) {
     let newMon = {
       dexnum: pokemon.dexnum,
+      key: pokemon.forms[num].key,
       name: pokemon.forms[num].name,
       image: pokemon.forms[num].image,
       types: pokemon.forms[num].types,
@@ -411,8 +414,7 @@ function App() {
     )
   }
 
-  function handleSelect(e) {
-    //updateForm(e.target.getAttribute('key'));
+  function handleSelect(e) { //used to update the form
     const index = e.target.options.selectedIndex;
     if (index == 0) {
       updateMon(pokemon.dexnum);
@@ -485,7 +487,7 @@ function App() {
               <div className='baseStatTotal'>
                 <strong>Total: {pokemon.stats.total}</strong>
               </div>
-              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.species}/>
+              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon}/>
             </div>
           </div>
           <div className="test">

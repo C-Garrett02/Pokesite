@@ -11,12 +11,12 @@ function SearchBar({updateFunc, items}) {
     }
 
     function FilteredDex({input}){ //returns list of divs that provide matches. Does not exist in dom unless there are results to be returned.
-        const jumpToMon = (e) => {
+        const jumpToMon = (e) => { //should find way to make this available to evotile and this class
             const updatedDex = parseInt(e.target.getAttribute('number'))-1;
             updateFunc(updatedDex);
             setInputStr('');
         }
-        let filteredList = <></>
+        let filteredList = <></>;
 
         if (input.length >= 3){
             filteredList = filterByInput(input).map(p => 

@@ -20,6 +20,10 @@
     height: 20vh;
 }
 
+.evoTile:hover {
+    cursor: pointer;
+}
+
 .evoArrow {
     display: flex;
     position: relative;

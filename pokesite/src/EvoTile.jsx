@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 
-function EvoTile({ pokemon, items }) {
-  const [clicked, setClicked] = useState(false);
+function EvoTile({ pokemon, items, updateFunc }) {
+  const jumpToMon = (e) => { 
+    const updatedDex = parseInt(e.target.getAttribute('number'))-1;
+    updateFunc(updatedDex);
+  }
 
   const handleClick = () => {
-    if (stage.length > 1) {
-      //bring up sub menu?
-    }
+    console.log(pokemon.species_id);
+    updateFunc(pokemon.species_id-1);
   }
 
   let imgsrc = "";
