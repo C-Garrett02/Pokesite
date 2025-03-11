@@ -54,10 +54,10 @@ function Moves({pokemon, moveList}) {
                         <div className="moveAccuracy">Accuracy</div>
                     </div>
                 </div>
-                : <div className="levelHeader maxMoves"><strong>MAX MOVES</strong></div>
+                : <div className="levelHeader maxMoves"><strong>STANDARD MOVES CONVERTED TO MAX MOVES</strong></div>
             }
-            {levelArray?.map((move) => (
-                <Move key={move.key} moveDetails={move} />
+            {levelArray?.map((move, index) => (
+                <Move key={move.key} index={index} moveDetails={move} />
             ))}
 
             {machineArray.length > 0 ?
@@ -73,8 +73,8 @@ function Moves({pokemon, moveList}) {
                 </div>
                 : <></>
             }
-            {machineArray?.map((move) => (
-                <Move key={move.key} moveDetails={move} />
+            {machineArray?.map((move, index) => (
+                <Move key={move.key} index={index} moveDetails={move} />
             ))}
 
             {eggArray.length > 0 ?
@@ -90,8 +90,8 @@ function Moves({pokemon, moveList}) {
                 </div>
                 : <></>
             }
-            {eggArray?.map((move) => (
-                <Move key={move.key} moveDetails={move} />
+            {eggArray?.map((move, index) => (
+                <Move key={move.key} index={index} moveDetails={move} />
             ))}
 
             {otherArray.length > 0 ?
@@ -108,8 +108,8 @@ function Moves({pokemon, moveList}) {
                 </div>
                 : <></>
             }
-            {otherArray?.map((move) => (
-                <Move key={move.key} moveDetails={move} />
+            {otherArray?.map((move, index) => (
+                <Move key={move.key} index={index} moveDetails={move} />
             ))}
         </div>
     )

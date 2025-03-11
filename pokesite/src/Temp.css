@@ -28,6 +28,14 @@
     outline: none;  /* Remove the default focus outline */
   }
 
+  #bg {
+    position: absolute;
+    height: 100vh;
+    min-width: 100vw;
+    left: 0;
+    z-index: -512;
+  }
+
   .topBar {
     display: flex;
     justify-content: center;
@@ -86,6 +94,7 @@
     top: 0;
     transition: right .5s;
     z-index: 5;
+    background-clip: content-box; 
   }
 
   .wheel:hover {
@@ -338,17 +347,16 @@
     object-fit: contain;
   }
 
-  .pulloutButton {
+  .pulloutBar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 1.5vw;
     border: 1px solid;
-    border-top-left-radius: 1vh;
-    border-bottom-left-radius: 1vh;
     padding: 0;
     background-color: red;
+    background-clip: content-box; 
   }
 
   .directionButtons {

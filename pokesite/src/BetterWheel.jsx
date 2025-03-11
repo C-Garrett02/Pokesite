@@ -46,7 +46,7 @@ function BetterWheel({items, pokemon, updateFunc}) {
         <Fragment>
         <div className={"shadow " + (hover ? "shadowHover" : "")}/>
         <div className='wheel' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <div className="pulloutButton">
+            <div className="pulloutBar">
                 <div className='leftArrow'></div>
             </div>
             <div className="directionButtons">

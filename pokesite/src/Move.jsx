@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function Move({moveDetails}) {
+function Move({index, moveDetails}) {
    const [clicked, setClicked] = useState(false);
 
    const handleClick = () => {
@@ -18,7 +18,7 @@ function Move({moveDetails}) {
 
    return (
      <>
-     <div className={"move " + (clicked ? "moveClicked" : "")} onClick={handleClick}>
+     <div className={"move " + (clicked ? "moveClicked " : " ") + (index % 2 ? "altMoveColor" : "")} onClick={handleClick}>
        {levelDiv}
        <div className="moveName">{moveDetails.name}</div>
        <div className={moveDetails.type + " moveType"}>{moveDetails.type.toUpperCase()}</div>

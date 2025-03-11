@@ -445,6 +445,7 @@ function App() {
 
   return (
     <>
+      <div id="bg" />
       <div className='topBar'>
         <SearchBar updateFunc={updateMon} items={items} />
       </div>
