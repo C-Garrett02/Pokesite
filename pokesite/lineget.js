@@ -103,11 +103,11 @@ function GetEvoStringArray(details, pokemon = "") {
     }
     if (details.trigger.name == "agile-style-move"){
         strArray.push("Use Agile Style Psyshield Bash in battle 20 times");
-        return; //will capture redundant data if not returned
+        return strArray; //will capture redundant data if not returned
     }
     if (details.trigger.name == "strong-style-move"){
         strArray.push("Use Strong Style Barb Barrage in battle 20 times");
-        return; //will capture redundant data if not returned
+        return strArray; //will capture redundant data if not returned
     }
     if (details.trigger.name == "recoil-damage"){
         strArray.push("Receive 294 recoil damage in battle");

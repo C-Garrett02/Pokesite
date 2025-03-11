@@ -6,6 +6,10 @@ import './Evo.css'
 function EvoChains({chains, chainid, items, name, updateFunc}) {
     //The topmost entry should be one that includes the pokemon passed in
 
+    useEffect(() => { //Resets the scroll position of the chart to 0. Ensures that the right chain is in view on pokemon change.
+        document.getElementById("evoChart").scrollTop = 0;
+    }, [name])
+
     const chainList = [];
 
     let chain = null;
@@ -67,7 +71,7 @@ function EvoChains({chains, chainid, items, name, updateFunc}) {
     }
 
     return (
-        <div className="evoChart">
+        <div id="evoChart">
                 {chainList?.map((line, index) => (
                     <div className="evoChain" key={index}>
                         {line.map((stage, index) => (

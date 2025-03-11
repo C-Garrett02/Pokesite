@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 
 let indexArray = [];
 for (let i = -4; i < 5; i++){
@@ -8,6 +8,8 @@ for (let i = -4; i < 5; i++){
 function BetterWheel({items, pokemon, updateFunc}) {
     const [down, setDown] = useState(false);
     const [up, setUp] = useState(false);
+    const [hover, setHover] = useState(false);
+
     const handleDown = () => {
         if(down == false && pokemon.dexnum > 0){
             setDown(true);
@@ -17,6 +19,13 @@ function BetterWheel({items, pokemon, updateFunc}) {
         if(up == false && pokemon.dexnum < items.length-1){
             setUp(true);
         }
+    }
+
+    const handleMouseEnter = () => {
+        setHover(true);
+    }
+    const handleMouseLeave = () => {
+        setHover(false);
     }
 
     useEffect(() => {
@@ -34,7 +43,9 @@ function BetterWheel({items, pokemon, updateFunc}) {
 
     //now that position is absolute, probably dont need invisible entry
     return (
-        <div className='wheel'>
+        <Fragment>
+        <div className={"shadow " + (hover ? "shadowHover" : "")}/>
+        <div className='wheel' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="pulloutButton">
                 <div className='leftArrow'></div>
             </div>
@@ -61,6 +72,7 @@ function BetterWheel({items, pokemon, updateFunc}) {
                 })}
             </div>
         </div>
+        </Fragment>
     )
 }
 

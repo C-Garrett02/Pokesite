@@ -85,11 +85,32 @@
     position: absolute;
     top: 0;
     transition: right .5s;
-    z-index: 3;
+    z-index: 5;
   }
 
   .wheel:hover {
     right: 0vw;
+  }
+
+  .shadow {
+    display: flex;
+    flex-grow: 1;
+    background-color: #000000;
+    opacity: 0%;
+    position: absolute;
+    transition: opacity .5s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .shadowHover {
+    background-color: #000000;
+    opacity: 30%;
   }
 
   /*wheel component seems to remount every mon update which causes wheel to retract. Thus we need a way to track state.*/
@@ -170,7 +191,7 @@
   }
 
   .heightAndWeight {
-    font-size: 2vh;
+    font-size: 1.8vh;
     display: flex;
     flex-direction: column;
     white-space: pre;
@@ -365,13 +386,14 @@
     flex-shrink: 0;
     align-items: center;
     background-color: lightgrey;
-    border-radius: 9vh;
+    border-radius: 6vh;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     font-size: 2vh;
     padding-left: 0.7vw;
     position: absolute;
     width: 30vw;
+    border: .3vh solid #000000;
   }
 
   .transitionActive {

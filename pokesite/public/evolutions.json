@@ -556,7 +556,7 @@
                                 "party_species": null,
                                 "party_type": null,
                                 "relative_physical_stats": null,
-                                "time_of_day": "night",
+                                "time_of_day": "",
                                 "trade_species": null,
                                 "trigger": {
                                     "name": "level-up",
@@ -564,8 +564,7 @@
                                 },
                                 "turn_upside_down": false,
                                 "condition_array": [
-                                    "Lvl 20",
-                                    "Night"
+                                    "Lvl 20"
                                 ]
                             }
                         ],
@@ -2198,6 +2197,55 @@
                 "is_baby": false,
                 "species": {
                     "name": "growlithe",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/58/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "fire-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/82/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Fire Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "arcanine-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/59/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "growlithe-hisui",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/58/"
                 }
             }
@@ -3910,6 +3958,55 @@
                 "is_baby": false,
                 "species": {
                     "name": "voltorb",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/100/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "leaf-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/85/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Leaf Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "electrode-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/101/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "voltorb-hisui",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/100/"
                 }
             }
@@ -6524,6 +6621,43 @@
                                     "name": "typhlosion",
                                     "url": "https://pokeapi.co/api/v2/pokemon-species/157/"
                                 }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36",
+                                            "In Hisui"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "typhlosion-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/157/"
+                                }
                             }
                         ],
                         "is_baby": false,
@@ -8108,7 +8242,10 @@
                                     "name": "strong-style-move",
                                     "url": "https://pokeapi.co/api/v2/evolution-trigger/12/"
                                 },
-                                "turn_upside_down": false
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Use Strong Style Barb Barrage in battle 20 times"
+                                ]
                             }
                         ],
                         "evolves_to": [],
@@ -8121,7 +8258,7 @@
                 ],
                 "is_baby": false,
                 "species": {
-                    "name": "qwilfish",
+                    "name": "qwilfish-hisui",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/211/"
                 }
             }
@@ -8203,7 +8340,17 @@
                             "name": "weavile",
                             "url": "https://pokeapi.co/api/v2/pokemon-species/461/"
                         }
-                    },
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "sneasel",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/215/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
                     {
                         "evolution_details": [
                             {
@@ -8247,7 +8394,7 @@
                 ],
                 "is_baby": false,
                 "species": {
-                    "name": "sneasel",
+                    "name": "sneasel-hisui",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/215/"
                 }
             }
@@ -8819,7 +8966,10 @@
                                     "name": "agile-style-move",
                                     "url": "https://pokeapi.co/api/v2/evolution-trigger/11/"
                                 },
-                                "turn_upside_down": false
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Use Agile Style Psyshield Bash in battle 20 times"
+                                ]
                             }
                         ],
                         "evolves_to": [],
@@ -15038,6 +15188,43 @@
                                     "name": "samurott",
                                     "url": "https://pokeapi.co/api/v2/pokemon-species/503/"
                                 }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36",
+                                            "In Hisui"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "samurott-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/503/"
+                                }
                             }
                         ],
                         "is_baby": false,
@@ -16303,6 +16490,46 @@
                             "name": "lilligant",
                             "url": "https://pokeapi.co/api/v2/pokemon-species/549/"
                         }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "sun-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/80/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Sun Stone",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "lilligant-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/549/"
+                        }
                     }
                 ],
                 "is_baby": false,
@@ -16990,6 +17217,52 @@
                 "is_baby": false,
                 "species": {
                     "name": "zorua",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/570/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 30,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 30"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "zoroark-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/571/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "zorua-hisui",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/570/"
                 }
             }
@@ -18530,6 +18803,43 @@
                         "is_baby": false,
                         "species": {
                             "name": "braviary",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/628/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 54,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 54",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "braviary-hisui",
                             "url": "https://pokeapi.co/api/v2/pokemon-species/628/"
                         }
                     }
@@ -20460,6 +20770,81 @@
                             "name": "sliggoo",
                             "url": "https://pokeapi.co/api/v2/pokemon-species/705/"
                         }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 40,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 40",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 50,
+                                        "needs_overworld_rain": true,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 50",
+                                            "Rain"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "goodra-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/706/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sliggoo-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/705/"
+                        }
                     }
                 ],
                 "is_baby": false,
@@ -20629,6 +21014,43 @@
                         "is_baby": false,
                         "species": {
                             "name": "avalugg",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/713/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 37,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 37",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "avalugg-hisui",
                             "url": "https://pokeapi.co/api/v2/pokemon-species/713/"
                         }
                     }
@@ -20853,6 +21275,43 @@
                                 "is_baby": false,
                                 "species": {
                                     "name": "decidueye",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/724/"
+                                }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 34,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 34",
+                                            "In Alola"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "decidueye-hisui",
                                     "url": "https://pokeapi.co/api/v2/pokemon-species/724/"
                                 }
                             }
