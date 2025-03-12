@@ -191,7 +191,9 @@ async function GetVersions() { //get versions in chronological order
     const body = await response.json();
     let versions = [];
     for (let group of body.results) {
-        versions.push(group.name);
+        if(group.name != "legends-arceus"){
+            versions.push(group.name);
+        }
     }
     return versions;
 }
