@@ -394,14 +394,13 @@
     flex-shrink: 0;
     align-items: center;
     background-color: lightgrey;
-    border-radius: 6vh;
+    border-radius: 7.5vh;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     font-size: 2vh;
     padding-left: 0.7vw;
     position: absolute;
     width: 30vw;
-    border: .3vh solid #000000;
   }
 
   .transitionActive {
