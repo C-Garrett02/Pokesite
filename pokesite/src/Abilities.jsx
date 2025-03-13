@@ -21,7 +21,8 @@ function Abilities({pokemon}) {
             return "(Hidden)";
         }
         else {
-            return "(Ability " + (index + 1) + ")";
+            //return "(Ability " + (index + 1) + ")";
+            return "";
         }
     }
 

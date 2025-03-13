@@ -33,7 +33,14 @@
     height: 100vh;
     min-width: 100vw;
     left: 0;
-    z-index: -512;
+    background-color: white;
+    transition: opacity 1s 0.5s;
+    pointer-events: none;
+    z-index: 512;
+  }
+
+  .behind {
+    opacity: 0%;
   }
 
   .topBar {
@@ -166,6 +173,22 @@
     height: 120%;
   }
 
+  #shinyIcon {
+    clip-path: polygon( /*technically centered from an x and y perspective but looks one-sided*/
+      77% 50%,
+      42% 100%, 
+      7% 50%,
+      42% 0%,
+      77% 50%,
+      77% 70%,
+      70% 80%,
+      77% 90%,
+      84% 80%,
+      77% 70%
+    );
+    background: gold;
+  }
+
   #formSelection {
     position: absolute;
     bottom: 1.4vh;
@@ -221,7 +244,7 @@
     display: flex;
     flex-direction: column;
     height: 35vh;
-    width: 86%;
+    width: 86%; /* for some reason, width 100% just makes it extend horizontally forever */
   }
 
   .statsChart {
@@ -232,8 +255,8 @@
 
   .baseStatTotal {
     display: flex;
-    height: 2vh;
-    font-size: 1.2rem;
+    height: 2.5vh;
+    font-size: 2.5vh;
     align-items: center;
     color: rgb(102, 102, 102);
   }

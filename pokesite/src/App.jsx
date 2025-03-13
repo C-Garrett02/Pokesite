@@ -324,6 +324,7 @@ function App() {
   })
   const [moveList, setMoveList] = useState([]); //the specific data for each move, not the moves of each pokemon
   const [chains, setChains] = useState([]);
+  const [loaded, setLoaded] = useState(false);
   //let animationStep = 1;
   //const totalAnimationSteps = 30;
   //const intervalRef = useRef(null);
@@ -438,11 +439,12 @@ function App() {
 
   useEffect(() => { //updates the pokemon once that ^ loads
     updateMon(0);
+    setLoaded(true);
   }, [items]);
 
   return (
     <>
-      <div id="bg" />
+      <div id="bg" className={loaded ? "behind" : ""} />
       <div className='topBar'>
         <SearchBar updateFunc={updateMon} items={items} />
       </div>
@@ -463,7 +465,7 @@ function App() {
               <div className="extraInfo">
                 <div className='typeBox'>
                   <Type key={pokemon.types[0]} typeName={pokemon.types[0]} />
-                  {pokemon.types.length > 1 ? //This was previously mapped, but for styling I wanted to define manually
+                  {pokemon.types.length > 1 ? //This was previously mapped, but for potential styling I wanted to define manually
                     <Type key={pokemon.types[1]} typeName={pokemon.types[1]} />
                     : <></>
                   }

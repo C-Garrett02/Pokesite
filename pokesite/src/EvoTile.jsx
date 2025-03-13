@@ -7,7 +7,6 @@ function EvoTile({ pokemon, items, updateFunc }) {
   }
 
   const handleClick = () => {
-    console.log(pokemon.species_id);
     updateFunc(pokemon.species_id-1);
   }
 
