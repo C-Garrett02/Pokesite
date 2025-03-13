@@ -31,8 +31,10 @@
     align-content: center;
     text-align: center;
     text-wrap: wrap;
-    min-width: 10vh;
-    max-width: 15vh;
+    /*min-width: 10vh;
+    max-width: 15vh;*/
+    width: 20vh;
+    height: 20vh;
 }
 
 .conditions {
