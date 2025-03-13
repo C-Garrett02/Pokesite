@@ -359,6 +359,17 @@
     background-clip: content-box; 
   }
 
+  .pulloutArrow {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(
+      20% 50%,
+      80% 48%,
+      80% 52%
+    );
+    background-color: #000000;
+  }
+
   .directionButtons {
     display: flex;
     flex-direction: column;

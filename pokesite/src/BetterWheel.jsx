@@ -47,7 +47,7 @@ function BetterWheel({items, pokemon, updateFunc}) {
         <div className={"shadow " + (hover ? "shadowHover" : "")}/>
         <div className='wheel' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="pulloutBar">
-                <div className='leftArrow'></div>
+                <div className='pulloutArrow'></div>
             </div>
             <div className="directionButtons">
                 <button onClick={handleDown} className="decrementButton">
@@ -66,7 +66,7 @@ function BetterWheel({items, pokemon, updateFunc}) {
                     }
                     else {
                         return(
-                            <div className={"entry " + (down || up ? "transitionActive" : "")} id={'entry' + (ind + (down ? 1 : 0) - (up ? 1 : 0))} key={'entry' + (ind)}>{pokemon.dexnum+ind+1}: {items[pokemon.dexnum+ind].name}</div>
+                            <div className={"entry " + (down || up ? "transitionActive" : "")} id={'entry' + (ind + (down ? 1 : 0) - (up ? 1 : 0))} key={'entry' + (ind)}>{pokemon.dexnum+ind+1}: {items[pokemon.dexnum+ind].species}</div>
                         )
                     }
                 })}

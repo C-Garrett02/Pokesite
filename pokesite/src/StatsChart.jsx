@@ -3,7 +3,7 @@ import Chart from 'chart.js/auto';
  
 function StatsChart({stats}) {
 
-    const fontscaling = window.innerHeight/(100/1.8);
+    let fontscaling = window.innerHeight/(100/1.8);
 
     if(stats){
       const colors = [];
@@ -71,6 +71,9 @@ function StatsChart({stats}) {
                   }
                 }
               }
+            },
+            onResize: function(chart) {
+              chart.options.scales.y.ticks.font.size = window.innerHeight/(100/1.8);
             },
             plugins: {
                 legend: {

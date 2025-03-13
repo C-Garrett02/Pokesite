@@ -55,7 +55,7 @@ async function GetFormDetails(form) {
 async function GetVariationData(variety) { //Currently does not differentiate between purely cosmetic forms (e.g. polteageist antique vs phony, alcremie, etc)
     const response = await fetch(variety.pokemon.url); 
     const body = await response.json();
-    if(body.sprites.front_default == null){
+    if(body.sprites.front_default == null){ //If the form/variation has no image, must not be important enough to put in the dex.
         return null;
     }
     let latestIndex = 0;
@@ -141,6 +141,9 @@ async function GetVariationData(variety) { //Currently does not differentiate be
         name: form_name,
         stats: base_stats,
         image: body.sprites.front_default,
+        shiny_image: body.sprites.front_shiny,
+        female_image: body.sprites.front_female,
+        female_shiny_image: body.sprites.front_shiny_female,
         types: type_array,
         height: height,
         weight: weight,

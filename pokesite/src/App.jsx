@@ -1,7 +1,4 @@
 import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react'
-import bulbasaur from '/Bulbasaur.png'
-import ivysaur from '/Ivysaur.png'
-import venusaur from '/Venusaur.png'
 //import './App.css'
 import './Temp.css'
 import './Types.css'
