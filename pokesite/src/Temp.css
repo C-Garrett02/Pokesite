@@ -174,7 +174,13 @@
   }
 
   #shinyIcon {
-    clip-path: polygon( /*technically centered from an x and y perspective but looks one-sided*/
+    width: 4vh;
+    height: 2.25vw;
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    border: 0vh;
+    /*clip-path: polygon( /*technically centered from an x and y perspective but looks one-sided
       77% 50%,
       42% 100%, 
       7% 50%,
@@ -185,7 +191,7 @@
       77% 90%,
       84% 80%,
       77% 70%
-    );
+    );*/
     background: gold;
   }
 

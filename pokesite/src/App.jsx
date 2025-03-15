@@ -311,6 +311,9 @@ function App() {
     key: items[0].key,
     name: items[0].name,
     image: items[0].image,
+    shiny_image: items[0].shiny_image,
+    female_image: items[0].female_image,
+    female_shiny_image: items[0].female_shiny_image,
     types: items[0].types,
     stats: items[0].stats,
     abilities: items[0].abilities,
@@ -336,6 +339,9 @@ function App() {
       key: items[num].key,
       name: items[num].name,
       image: items[num].image,
+      shiny_image: items[num].shiny_image,
+      female_image: items[num].female_image,
+      female_shiny_image: items[num].female_shiny_image,
       types: items[num].types,
       stats: items[num].stats,
       abilities: items[num].abilities,
@@ -358,6 +364,9 @@ function App() {
       key: pokemon.forms[num].key,
       name: pokemon.forms[num].name,
       image: pokemon.forms[num].image,
+      shiny_image: pokemon.forms[num].shiny_image,
+      female_image: pokemon.forms[num].female_image,
+      female_shiny_image: pokemon.forms[num].female_shiny_image,
       types: pokemon.forms[num].types,
       stats: pokemon.forms[num].stats,
       abilities: pokemon.forms[num].abilities,
@@ -487,7 +496,7 @@ function App() {
               <div className='baseStatTotal'>
                 <strong>Total: {pokemon.stats.total}</strong>
               </div>
-              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon}/>
+              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon} />
             </div>
           </div>
           <div className="test">
