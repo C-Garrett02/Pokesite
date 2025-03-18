@@ -129,7 +129,7 @@
                                 },
                                 "turn_upside_down": false,
                                 "condition_array": [
-                                    "High Happiness/Friendship"
+                                    "High Happiness or Friendship"
                                 ]
                             }
                         ],
@@ -611,7 +611,7 @@
                                 },
                                 "turn_upside_down": false,
                                 "condition_array": [
-                                    "High Happiness/Friendship"
+                                    "High Happiness or Friendship"
                                 ]
                             }
                         ],

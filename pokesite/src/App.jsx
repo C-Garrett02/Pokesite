@@ -1,6 +1,6 @@
-import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react'
-//import './App.css'
-import './Temp.css'
+import { useState, useEffect, Fragment, useRef, useCallback } from 'react'
+import './App.css'
+//import './Temp.css'
 import './Types.css'
 import './Moves.css'
 import useSound from 'use-sound'
@@ -452,66 +452,58 @@ function App() {
   }, [items]);
 
   return (
-    <>
+    <Fragment>
       <div id="bg" className={loaded ? "behind" : ""} />
-      <div className='topBar'>
-        <SearchBar updateFunc={updateMon} items={items} />
-      </div>
-      <div className='leftAndRight'>
-        <div className='left'>
-          <div className='visuals'>
-            <div className='imageAndType'>
-              <div className='imageContainer'>
-                <img className='pokeImage' src={pokemon.image} />
-                <Cry />
-                <select id="formSelection" onChange={handleSelect}>
-                  <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
-                  {pokemon.forms?.map((form, index) => (
-                    <option key={index + 1} place={index + 1}>{form.name}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="extraInfo">
-                <div className='typeBox'>
-                  <Type key={pokemon.types[0]} typeName={pokemon.types[0]} />
-                  {pokemon.types.length > 1 ? //This was previously mapped, but for potential styling I wanted to define manually
-                    <Type key={pokemon.types[1]} typeName={pokemon.types[1]} />
-                    : <></>
-                  }
-                </div>
-                <div className="heightAndWeight">
-                  <div className="height">
-                    {"Height: " + pokemon.height}
-                  </div>
-                  <div className="weight">
-                    {"Weight: " + pokemon.weight + " lbs"}
-                  </div>
-                </div>
-              </div>
+      <BetterWheel items={items} pokemon={pokemon} updateFunc={updateMon} />
+      <div className='mainGrid'>
+        <div className='topBar'>
+          <SearchBar updateFunc={updateMon} items={items} />
+        </div>
+        <div className='imageContainer'>
+          <img className='pokeImage' src={pokemon.image} />
+          <Cry />
+          <select id="formSelection" onChange={handleSelect}>
+            <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
+            {pokemon.forms?.map((form, index) => (
+              <option key={index + 1} place={index + 1}>{form.name}</option>
+            ))}
+          </select>
+        </div>
+        <div className="extraInfo">
+          <div className='typeBox'>
+            <Type key={pokemon.types[0]} typeName={pokemon.types[0]} />
+            {pokemon.types.length > 1 ? //This was previously mapped, but for potential styling I wanted to define manually
+              <Type key={pokemon.types[1]} typeName={pokemon.types[1]} />
+              : <></>
+            }
+          </div>
+          <div className="heightAndWeight">
+            <div className="height">
+              {"Height: " + pokemon.height}
             </div>
-            <div className="rightOfImage">
-              <div className='statsChartBox'>
-                <StatsChart stats={pokemon.stats} />
-              </div>
-              <div className='baseStatTotal'>
-                <strong>Total: {pokemon.stats.total}</strong>
-              </div>
-              <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon} />
+            <div className="weight">
+              {"Weight: " + pokemon.weight + " lbs"}
             </div>
           </div>
-          <div className="test">
-            <Moves pokemon={pokemon} moveList={moveList} />
-            <Abilities key={pokemon.name} pokemon={pokemon} />
+        </div>
+        <div className='statsChartBox'>
+          <div className='barChart'>
+            <StatsChart stats={pokemon.stats} />
+          </div>
+          <div className='baseStatTotal'>
+            <strong>Total: {pokemon.stats.total}</strong>
           </div>
         </div>
-        <BetterWheel items={items} pokemon={pokemon} updateFunc={updateMon} />
-      </div>
-      <div className='navBar'>
-        <div className='pokeName'>
-          {pokemon.species}
+        <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon} />
+        <Moves pokemon={pokemon} moveList={moveList} />
+        <Abilities key={pokemon.name} pokemon={pokemon} />
+        <div className='nameBar'>
+          <div className='pokeName'>
+            {pokemon.species}
+          </div>
         </div>
       </div>
-    </>
+    </Fragment>
   )
 }
 

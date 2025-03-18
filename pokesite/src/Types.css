@@ -1,16 +1,17 @@
 .typeBox {
     display: flex;
     flex-direction: row;
-    height: 4.4vh;
+    height: 50%;
+    width: 100%;
     position: relative;
 }
 
 .type {
+    width: 100%;
     display: flex;
     font-family: sans-serif;
     border-radius: 3vw;
     font-size: 1.2vw;
-    width: 8vw;
     align-items: center;
     justify-content: center;
     color: white;

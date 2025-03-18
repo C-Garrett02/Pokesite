@@ -132,7 +132,7 @@ function GetEvoStringArray(details, pokemon = "") {
     }
     //skippng affection & beauty
     if (details.min_happiness != null) {
-        strArray.push("High Happiness/Friendship");
+        strArray.push("High Happiness or Friendship");
     }
     if (details.min_level != null) {
         strArray.push("Lvl " + details.min_level);
