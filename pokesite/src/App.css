@@ -10,6 +10,9 @@ body, html {
   height: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   overflow-x: hidden;
+  /*background-image: url(assets/BGTile.png);
+  background-position: 100%
+  background-color: #08b57b;*/
 }
 
 button {
@@ -221,6 +224,9 @@ button:focus {
   position: absolute;
   bottom: 1.4vh;
   right: 1.4vh;
+  width: 20%;
+  height: 4%;
+  font-size: 82%;
   opacity: 0.5;
 }
 
@@ -339,6 +345,7 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  min-height: 1%; /* Without this, really long ability descriptions will extend past the grid's allocated space for abilityBox. Don't know why, honestly. */
   max-height: 100%;
   align-self: flex-start;
 }
@@ -363,6 +370,7 @@ button:focus {
 }
 
 .abilityDescription {
+  display: flex;
   padding-left: .5vh;
   padding-right: .5vh;
   overflow-y: auto;
