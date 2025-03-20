@@ -118,6 +118,17 @@ button:focus {
 
 .abilityBox { grid-area: abilityBox; }
 
+/*.evoBanner {
+  height: 12vh;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 3 / span 2;
+  background-color: #353131;
+  border: 3px solid black;
+  z-index: -50;
+}*/
+
 .left {
   width: 100vw;
 }
@@ -224,10 +235,10 @@ button:focus {
   position: absolute;
   bottom: 1.4vh;
   right: 1.4vh;
-  width: 20%;
-  height: 4%;
-  font-size: 82%;
+  width: 30%;
   opacity: 0.5;
+  height: 3vh;
+  font-size: 2vh;
 }
 
 #formSelection:hover {

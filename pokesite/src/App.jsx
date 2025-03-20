@@ -462,12 +462,16 @@ function App() {
         <div className='imageContainer'>
           <img className='pokeImage' src={pokemon.image} />
           <Cry />
-          <select id="formSelection" onChange={handleSelect}>
-            <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
-            {pokemon.forms?.map((form, index) => (
-              <option key={index + 1} place={index + 1}>{form.name}</option>
-            ))}
-          </select>
+          {
+            pokemon.forms.length > 0 ?
+            <select id="formSelection" onChange={handleSelect}>
+              <option key='0' place='0'>{items[pokemon.dexnum].name}</option>
+              {pokemon.forms?.map((form, index) => (
+                <option key={index + 1} place={index + 1}>{form.name}</option>
+              ))}
+            </select>
+            : <div id="formSelection" />
+          } 
         </div>
         <div className="extraInfo">
           <div className='typeBox'>
@@ -502,6 +506,7 @@ function App() {
             {pokemon.species}
           </div>
         </div>
+        <div className='evoBanner'/>
       </div>
     </Fragment>
   )
