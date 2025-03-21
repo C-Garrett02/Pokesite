@@ -1,9 +1,10 @@
 .typeBox {
     display: flex;
     flex-direction: row;
-    height: 50%;
+    height: 5vh;
+    margin-top: auto; /* To get it to center itself*/
+    margin-bottom: auto;
     width: 100%;
-    position: relative;
 }
 
 .type {

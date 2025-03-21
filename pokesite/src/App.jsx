@@ -506,6 +506,7 @@ function App() {
             {pokemon.species}
           </div>
         </div>
+        <div className='imageAndStatsBanner'/>
         <div className='evoBanner'/>
       </div>
     </Fragment>
