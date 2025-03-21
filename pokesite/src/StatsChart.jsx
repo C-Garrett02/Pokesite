@@ -66,6 +66,7 @@ function StatsChart({stats}) {
                   width: 0
                 },
                 ticks : {
+                  color: '#000000',
                   font: {
                     size: fontscaling
                   }
