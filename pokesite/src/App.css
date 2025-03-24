@@ -10,6 +10,7 @@ body, html {
   height: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   overflow-x: hidden;
+  margin-right: 0;
   /*background-image: url(assets/BGTile.png);
   background-position: 100%
   background-color: #08b57b;*/
@@ -88,11 +89,11 @@ button:focus {
 
 .mainGrid {  
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-self: left;
   display: grid;
   grid-template-columns: 40vh 10vh 1.3fr 1fr 1fr 1.5vw;
-  grid-template-rows: auto 40vh 10vh 10vh 5fr 1fr;
+  grid-template-rows: auto 40vh 10vh 10vh 6fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -125,8 +126,8 @@ button:focus {
   grid-column-end: 6;
   grid-row: 3 / span 2;
   background-color: #353131;
-  border: 3px solid black;
-  border-left: none;
+  border: none;
+  border-bottom: 3px solid black;
   z-index: -50;
 }
 
