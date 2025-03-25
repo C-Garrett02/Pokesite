@@ -11,6 +11,7 @@ body, html {
   height: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   overflow-x: hidden;
+  margin-right: 0;
   /*background-image: url(assets/BGTile.png);
   background-position: 100%
   background-color: #08b57b;*/
@@ -89,7 +90,7 @@ button:focus {
 
 .mainGrid {  
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-self: left;
   display: grid;
   grid-template-columns: 40vh 10vh 1.3fr 0.2fr 2fr 1.5vw;
