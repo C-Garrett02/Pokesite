@@ -2,7 +2,7 @@
     grid-area: evoChart;
     display: flex;
     height: 20vh;
-    max-width: 95%;
+    max-width: 100%;
     overflow-y: auto;
     overflow-x: auto;
     flex-direction: column;
@@ -41,6 +41,7 @@
     align-content: center;
     text-align: center;
     text-wrap: wrap;
+    color: white;
     height: 100%;
     max-width: 15%;
     min-width: 7.5%;
