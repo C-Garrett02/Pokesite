@@ -499,7 +499,9 @@ function App() {
           </div>
         </div>
         <EvoChains chains={chains} chainid={pokemon.chainid} items={items} name={pokemon.key} updateFunc={updateMon} />
-        <Moves pokemon={pokemon} moveList={moveList} />
+        <div className="moveBox" >
+          <Moves pokemon={pokemon} moveList={moveList} />
+        </div>
         <Abilities key={pokemon.name} pokemon={pokemon} />
         <div className='nameBar'>
           <div className='pokeName'>

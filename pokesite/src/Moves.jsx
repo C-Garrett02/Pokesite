@@ -44,7 +44,7 @@ function Moves({pokemon, moveList}) {
         <div className="moveList">
             {levelArray.length > 0 ?
                 <div className="levelHeader">
-                    <div className="categoryTitle">Level Moves</div>
+                    <div className="categoryTitle">LEVEL MOVES</div>
                     <div className="levelHeaderDetails">
                         <div className="level">Level</div>
                         <div className="moveName">Move</div>
@@ -62,7 +62,7 @@ function Moves({pokemon, moveList}) {
 
             {machineArray.length > 0 ?
                 <div className="levelHeader">
-                    <div className="categoryTitle">Machine Moves</div>
+                    <div className="categoryTitle">MACHINE MOVES</div>
                     <div className="levelHeaderDetails">
                         <div className="moveName">Move</div>
                         <div className="typeHeader">Type</div>
@@ -79,7 +79,7 @@ function Moves({pokemon, moveList}) {
 
             {eggArray.length > 0 ?
                 <div className="levelHeader">
-                    <div className="categoryTitle">Egg Moves</div>
+                    <div className="categoryTitle">EGG MOVES</div>
                     <div className="levelHeaderDetails">
                         <div className="moveName">Move</div>
                         <div className="typeHeader">Type</div>
@@ -96,7 +96,7 @@ function Moves({pokemon, moveList}) {
 
             {otherArray.length > 0 ?
                 <div className="levelHeader">
-                    <div className="categoryTitle">Other Moves</div>
+                    <div className="categoryTitle">OTHER MOVES</div>
                     <div className="levelHeaderDetails">
                         <div className="level">Method</div>
                         <div className="moveName">Move</div>

@@ -50,6 +50,7 @@ button:focus {
 .topBar {
   display: flex;
   justify-content: center;
+  background-color: rgb(87, 87, 87);
 }
 
 .searchBar {
@@ -63,6 +64,8 @@ button:focus {
   display: flex;
   box-sizing: border-box;
   width: 100%;
+  background-color: #1f1f1f;
+  color: #968e8e;
 }
 
 .listedMon {
@@ -101,7 +104,7 @@ button:focus {
     "imageContainer imageContainer statsChartBox statsChartBox statsChartBox"
     "imageContainer imageContainer evoChart evoChart evoChart"
     "extraInfo extraInfo evoChart evoChart evoChart"
-    "moveList moveList moveList abilityBox abilityBox"
+    "moveBox moveBox moveBox abilityBox abilityBox"
     "nameBar nameBar nameBar nameBar nameBar";
 }
 
@@ -115,7 +118,7 @@ button:focus {
 
 .statsChartBox { grid-area: statsChartBox; }
 
-.moveList { grid-area: moveList; }
+.moveBox { grid-area: moveBox; }
 
 .abilityBox { grid-area: abilityBox; }
 
@@ -347,14 +350,34 @@ button:focus {
   height: 29.6vh;
 }
 
+.moveBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  min-height: 1%;
+  max-height: calc(100% - 2vh);
+  height: 100%;
+  align-self: flex-start;
+  margin-top: 2vh;
+  box-shadow: inset 0px 0px 5px 5px #232121;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 1vh;
+  box-sizing: border-box;
+}
+
 .moveList {
   /*border: 1px solid;*/
+  padding: 5px;
   display: flex;
   flex-direction: column;
   font-size: 2vh;
   overflow-y: auto;
-  max-height: calc(100% - 2vh);
-  margin-top: 2vh;
+  min-height: 1%;
+  max-height: 100%;
+  width: 100%;
   align-self: flex-start;
   box-sizing: border-box;
 }
@@ -441,7 +464,6 @@ button:focus {
 .abilityBtn {
   display: flex;
   border: 0px;
-  border-left: 1px solid;
   height: 100%;
   align-items: center;
   justify-content: center;
