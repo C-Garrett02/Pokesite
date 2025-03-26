@@ -506,11 +506,9 @@ function App() {
             {pokemon.species}
           </div>
         </div>
-        <div className='moveListBehind' />
-        <div className='betweenMoveAbility' />
-        <div className='abilityBoxBehind' />
         <div className='imageAndStatsBanner'/>
         <div className='evoBanner'/>
+        <div className='belowChainBanner' />
       </div>
     </Fragment>
   )

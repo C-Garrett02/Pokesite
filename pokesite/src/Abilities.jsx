@@ -30,7 +30,7 @@ function Abilities({pokemon}) {
         <div className='abilityBox'>
             <div className='abilityHeader'>
                 <div className='abilityName'>
-                    <strong>{pokemon.abilities[abilityIndex].name}</strong> <span id="abilityTextEnd">{textEnd}</span>
+                    <strong>{pokemon.abilities[abilityIndex].name.toUpperCase()}</strong> <span id="abilityTextEnd">{textEnd}</span>
                 </div>
                 <div className='directionBtns'>
                     <button className='abilityBtn' onClick={decrementAbility}>

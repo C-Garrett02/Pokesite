@@ -5,13 +5,12 @@
 }
 
 body, html {
-  padding-top: 0;
-  margin-top: 0;
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
   height: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   overflow-x: hidden;
-  margin-right: 0;
+  overflow-y: hidden;
   /*background-image: url(assets/BGTile.png);
   background-position: 100%
   background-color: #08b57b;*/
@@ -26,7 +25,7 @@ button {
 }
 
 button:hover {
-  background-color: #ddd; /* Add hover effect */
+  background-color: #1f1f1f; /* Add hover effect */
 }
 
 button:focus {
@@ -90,11 +89,11 @@ button:focus {
 
 .mainGrid {  
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   justify-self: left;
   display: grid;
-  grid-template-columns: 40vh 10vh 1.3fr 0.2fr 2fr 1.5vw;
-  grid-template-rows: auto 40vh 10vh 10vh 9fr 1fr;
+  grid-template-columns: 40vh 10vh 1.5fr 0.5fr 1.5fr 1.5vw;
+  grid-template-rows: auto 40vh 10vh 10vh 8fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -102,7 +101,7 @@ button:focus {
     "imageContainer imageContainer statsChartBox statsChartBox statsChartBox"
     "imageContainer imageContainer evoChart evoChart evoChart"
     "extraInfo extraInfo evoChart evoChart evoChart"
-    "moveList moveList moveList betweenMoveAbility abilityBox"
+    "moveList moveList moveList abilityBox abilityBox"
     "nameBar nameBar nameBar nameBar nameBar";
 }
 
@@ -149,40 +148,15 @@ button:focus {
   );
 }
 
-.moveListBehind {
+.belowChainBanner {
   height: 100%;
   align-self: center;
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row: 5 / span 1;
-  background-color: rgb(87, 87, 87);
-  z-index: -49;
-}
-
-.betweenMoveAbility {
-  height: 100%;
-  align-self: center;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row: 5 / span 1;
-  background-color: white;
-  z-index: -40;
-  clip-path: polygon(
-    30% 0%,
-    90% 100%,
-    70% 100%,
-    10% 0%
-  );
-}
-
-.abilityBoxBehind {
-  height: 100%;
-  align-self: center;
-  grid-column-start: 4;
   grid-column-end: 6;
-  grid-row: 5 / span 1;
-  background-color: rgb(87, 87, 87);
-  z-index: -49;
+  grid-row: 4 / span 3;
+  background-color: #353131;
+  border-top: 3px solid #353131;
+  z-index: -50;
 }
 
 .left {
@@ -346,7 +320,7 @@ button:focus {
   flex-direction: column;
   max-height: 100%;
   margin-left: 1%;
-  width: 85%; /* for some reason, width 100% may make it extend horizontally forever */
+  width: 92%; /* for some reason, width 100% may make it extend horizontally forever */
 }
 
 .statsChart {
@@ -374,18 +348,18 @@ button:focus {
 }
 
 .moveList {
-  border: 1px solid;
+  /*border: 1px solid;*/
   display: flex;
   flex-direction: column;
   font-size: 2vh;
   overflow-y: auto;
-  max-height: calc(95% - 2vh);
+  max-height: calc(100% - 2vh);
   margin-top: 2vh;
   align-self: flex-start;
+  box-sizing: border-box;
 }
 
 .nameBar {
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -396,7 +370,7 @@ button:focus {
   font-weight: bold;
   font-size: 3vh;
   display: flex;
-  align-self: flex-start;
+  color: white;
 }
 
 .monBtn {
@@ -410,13 +384,21 @@ button:focus {
 .abilityBox {
   display: flex;
   flex-direction: column;
-  border: solid 1px;
+  /*border: solid 1px;*/
   margin-left: auto;
-  width: 100%;
+  margin-right: auto;
+  width: 80%;
   min-height: 1%;
-  max-height: calc(95% - 2vh);
+  max-height: calc(100% - 2vh);
+  height: 100%;
   align-self: flex-start;
   margin-top: 2vh;
+  box-shadow: inset 0px 0px 5px 5px #232121;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 1vh;
+  color: green;
+  box-sizing: border-box;
 }
 
 .abilityHeader {
@@ -444,7 +426,8 @@ button:focus {
   padding-right: .5vh;
   overflow-y: auto;
   white-space: pre-wrap;
-  font-size: 2vh;
+  font-size: 1rem;
+  margin-top: 1vh;
 }
 
 .directionBtns {
@@ -640,14 +623,14 @@ button:focus {
   width: 0; 
   height: 0; 
   border-top: 1vh solid transparent;
-  border-right: 2vh solid #000000;
+  border-right: 2vh solid green;
   border-bottom: 1vh solid transparent;
 }
 
 .rightArrow {
   width: 0; 
   height: 0; 
-  border-left: 2vh solid #000000;
+  border-left: 2vh solid green;
   border-top: 1vh solid transparent;
   border-bottom: 1vh solid transparent;
 }

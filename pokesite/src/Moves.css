@@ -1,11 +1,12 @@
   .levelHeader {
     display: flex;
     flex-direction: column;
-    background-color: rgb(139, 211, 211);
+    background-color: black;
     /*border-bottom: 1px solid;*/
     padding-top: 0.3vh;
     padding-bottom: 0.3vh;
     /*box-shadow: inset 0 0 3px #00000067;*/
+    color: white;
   }
 
   .maxMoves {
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: center;
     font-weight: bolder;
-    color:rgb(228, 3, 3);
+    color:green;
     margin-bottom: 0.2vh;
   }
 
@@ -48,6 +49,14 @@
     height: 3vh;
     justify-content: space-around;
     background-color: white;
+    margin-top: 0.5vh;
+    clip-path: polygon(
+      0% 50%,
+      1% 0%,
+      100% 0%,
+      97% 100%,
+      1% 100%
+    );
   }
 
   .altMoveColor {
@@ -66,7 +75,6 @@
   .movePanel {
     display: flex;
     flex-direction: column;
-    border-bottom: solid 1px;
     white-space: pre-wrap;
     padding: .5vh;
   }
