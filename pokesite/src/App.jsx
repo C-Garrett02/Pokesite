@@ -507,6 +507,12 @@ function App() {
           <div className='pokeName'>
             {pokemon.species}
           </div>
+          <button className='maleButton'>
+            <span>♂</span>
+          </button>
+          <button className='femaleButton'>
+            <span>♀</span>
+          </button>
         </div>
         <div className='imageAndStatsBanner'/>
         <div className='evoBanner'/>

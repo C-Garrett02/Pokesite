@@ -66,9 +66,11 @@ function StatsChart({stats}) {
                   width: 0
                 },
                 ticks : {
-                  color: '#000000',
+                  color: '#ffffff',
+                  crossAlign: "far",
                   font: {
-                    size: fontscaling
+                    size: fontscaling,
+                    weight: "bold"
                   }
                 }
               }
