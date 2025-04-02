@@ -20,6 +20,7 @@ function debounce(callback, wait) {
 }
 
 function App() {
+  const null_sprite = 'https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/0.png';
   const [items, setItems] = useState(new Array(10).fill({
     "id": 1,
     "name": "Bulbasaur",
@@ -430,15 +431,15 @@ function App() {
   function determineImage(){
     if(isFemale){
       if(isShiny){
-        return pokemon.female_shiny_image;
+        return pokemon.female_shiny_image ?? null_sprite;
       }
-      return pokemon.female_image;
+      return pokemon.female_image ?? null_sprite;
     }
     else {
       if(isShiny){
-        return pokemon.shiny_image;
+        return pokemon.shiny_image ?? null_sprite;
       }
-      return pokemon.image;
+      return pokemon.image ?? null_sprite;
     }
   }
 
