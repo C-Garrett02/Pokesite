@@ -328,6 +328,10 @@ function App() {
   const [moveList, setMoveList] = useState([]); //the specific data for each move, not the moves of each pokemon
   const [chains, setChains] = useState([]);
   const [loaded, setLoaded] = useState(false);
+  const [image, setImage] = useState(pokemon.image);
+  const [isFemale, setIsFemale] = useState(false);
+  const [isShiny, setIsShiny] = useState(false);
+
   //let animationStep = 1;
   //const totalAnimationSteps = 30;
   //const intervalRef = useRef(null);
@@ -354,6 +358,7 @@ function App() {
       chainid: items[num].chain_id
     };
     setPokemon(newMon);
+    setIsFemale(false);
     //normally try and avoid the below but it was the easiest solution to a bug where selectedIndex would persist between pokemon
     document.getElementById("formSelection").selectedIndex = 0;
   }
@@ -379,6 +384,7 @@ function App() {
       chainid: pokemon.chainid
     }
     setPokemon(newMon);
+    setIsFemale(false);
   }
 
   function incrementDex() {
@@ -400,6 +406,39 @@ function App() {
     }
     else {
       updateMon(items.length - 1);
+    }
+  }
+
+  function toggleGender() {
+    if(isFemale){
+      setIsFemale(false);
+    }
+    else {
+      setIsFemale(true);
+    }
+  }
+
+  function toggleShiny() {
+    if(isShiny){
+      setIsShiny(false);
+    }
+    else {
+      setIsShiny(true);
+    }
+  }
+
+  function determineImage(){
+    if(isFemale){
+      if(isShiny){
+        return pokemon.female_shiny_image;
+      }
+      return pokemon.female_image;
+    }
+    else {
+      if(isShiny){
+        return pokemon.shiny_image;
+      }
+      return pokemon.image;
     }
   }
 
@@ -459,8 +498,26 @@ function App() {
         <div className='topBar'>
           <SearchBar updateFunc={updateMon} items={items} />
         </div>
+        <div className='nameBar'>
+          <div className='pokeName'>
+            {pokemon.species}
+          </div>
+          <button className={'shinyButton ' + (!isShiny ? 'lowlighted' : "")} onClick={toggleShiny} >
+            <div className='shinyIcon' />
+          </button>
+          {pokemon.female_image != null ? (
+            <Fragment>
+              <button className={'maleButton ' + (isFemale ? 'lowlighted' : "")} onClick={isFemale ? toggleGender : null}>
+                <img src="male.svg" />
+              </button>
+              <button className={'femaleButton ' + (!isFemale ? 'lowlighted' : "")} onClick={!isFemale ? toggleGender : null}>
+                <img src="female.svg" />
+              </button>
+            </Fragment>
+          ) : null}
+        </div>
         <div className='imageContainer'>
-          <img className='pokeImage' src={pokemon.image} />
+          <img className='pokeImage' src={determineImage()} />
           <Cry />
           {
             pokemon.forms.length > 0 ?
@@ -503,17 +560,6 @@ function App() {
           <Moves pokemon={pokemon} moveList={moveList} />
         </div>
         <Abilities key={pokemon.name} pokemon={pokemon} />
-        <div className='nameBar'>
-          <div className='pokeName'>
-            {pokemon.species}
-          </div>
-          <button className='maleButton'>
-            <span>♂</span>
-          </button>
-          <button className='femaleButton'>
-            <span>♀</span>
-          </button>
-        </div>
         <div className='imageAndStatsBanner'/>
         <div className='evoBanner'/>
         <div className='belowChainBanner' />

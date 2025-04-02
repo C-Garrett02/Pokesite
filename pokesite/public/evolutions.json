@@ -14861,7 +14861,13 @@
                 "evolution_details": [],
                 "evolves_to": [
                     {
-                        "evolution_details": [],
+                        "evolution_details": [
+                            {
+                                "condition_array": [
+                                    "Is bred from"
+                                ]
+                            }
+                        ],
                         "evolves_to": [],
                         "is_baby": false,
                         "species": {
@@ -16586,7 +16592,7 @@
                 ],
                 "is_baby": false,
                 "species": {
-                    "name": "basculin",
+                    "name": "basculin-white-striped",
                     "url": "https://pokeapi.co/api/v2/pokemon-species/550/"
                 }
             }
@@ -24293,10 +24299,22 @@
                         }
                     },
                     {
-                        "evolution_details": [],
+                        "evolution_details": [
+                            {
+                                "condition_array": [
+                                    "Syrupy Apple"
+                                ]
+                            }
+                        ],
                         "evolves_to": [
                             {
-                                "evolution_details": [],
+                                "evolution_details": [
+                                    {
+                                        "condition_array": [
+                                            "Knows Dragon Cheer"
+                                        ]
+                                    }
+                                ],
                                 "evolves_to": [],
                                 "is_baby": false,
                                 "species": {
@@ -25146,7 +25164,13 @@
                 "evolution_details": [],
                 "evolves_to": [
                     {
-                        "evolution_details": [],
+                        "evolution_details": [
+                            {
+                                "condition_array": [
+                                    "Metal Alloy"
+                                ]
+                            }
+                        ],
                         "evolves_to": [],
                         "is_baby": false,
                         "species": {

@@ -27,7 +27,7 @@ function Move({index, moveDetails}) {
        <div className="moveAccuracy">{moveDetails.accuracy ?? "--"}</div>
      </div>
      <div className={"movePanel " + (clicked ? "" : "hidden")}>
-       <span className="topOfPanel"><strong>Targets: </strong>{moveDetails.target + "\t"}<strong>PP: </strong>{moveDetails.pp + "\t"}<strong>Priority: </strong>{moveDetails.pp + "\n\n"}</span>
+       <span className="topOfPanel"><strong>Targets: </strong>{moveDetails.target + "\t"}<strong>PP: </strong>{moveDetails.pp + "\t"}<strong>Priority: </strong>{moveDetails.priority + "\n\n"}</span>
        <span className="bodyOfPanel"><strong>Effect: </strong>{moveDetails.effect}</span>
      </div>
      </>

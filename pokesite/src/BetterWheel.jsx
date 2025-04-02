@@ -51,10 +51,8 @@ function BetterWheel({items, pokemon, updateFunc}) {
             </div>
             <div className="directionButtons">
                 <button onClick={handleDown} className="decrementButton">
-                    <div className="upArrow" />
                 </button>
                 <button onClick={handleUp} className="incrementButton">
-                    <div className="downArrow" />
                 </button>
             </div>
             <div className="entries">

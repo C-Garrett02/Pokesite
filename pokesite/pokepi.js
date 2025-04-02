@@ -96,10 +96,13 @@ async function GetVariationData(variety) { //Currently does not differentiate be
         currentAbilityDescription.hidden = ability.is_hidden;
         ability_list.push(currentAbilityDescription);
     }
-    for (let move of body.moves){ //iterates through moves an extra time up front to determine which generation has the latest moveset
+    for (let move of body.moves){ //iterates through moves an extra time up front to determine which generation has the latest moveset.
         let arrayLength = move.version_group_details.length;
         let moveIndex = versions.indexOf(move.version_group_details[arrayLength - 1].version_group.name);
-        if (moveIndex > latestIndex){
+        if(moveIndex == -1){ //This is statement is just for unown, who has a single move and it's from PLA. This causes its single move to not register.
+            moveIndex = versions.indexOf(move.version_group_details[0].version_group.name);
+        }
+        if (moveIndex > latestIndex){ 
             latestIndex = moveIndex;
         }
     }

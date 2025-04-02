@@ -36762,7 +36762,7 @@
                     },
                     {
                         "name": "Pastel Veil",
-                        "effect": "Protects the Pokémon and its ally Pokémon from\nbeing poisoned.",
+                        "effect": "Prevents the Pokémon and its teammates from being poisoned. It also cures teammates of poisoning when it enters the battlefield.",
                         "hidden": false
                     },
                     {
@@ -37277,7 +37277,7 @@
                     },
                     {
                         "name": "Pastel Veil",
-                        "effect": "Protects the Pokémon and its ally Pokémon from\nbeing poisoned.",
+                        "effect": "Prevents the Pokémon and its teammates from being poisoned. It also cures teammates of poisoning when it enters the battlefield.",
                         "hidden": false
                     },
                     {
@@ -39046,7 +39046,7 @@
                 "abilities": [
                     {
                         "name": "Quick Draw",
-                        "effect": "Enables the Pokémon to move first occasionally.",
+                        "effect": "If a Pokémon with this Ability selects a damaging move, it has a 30% chance of going first in its priority bracket.",
                         "hidden": false
                     },
                     {
@@ -52192,7 +52192,7 @@
             },
             {
                 "name": "Neutralizing Gas",
-                "effect": "If the Pokémon with Neutralizing Gas is in the battle,\nthe effects of all Pokémon’s Abilities will be nullified\nor will not be triggered.",
+                "effect": "While the Pokémon is in the battle, the effects of all other Pokémon’s Abilities will be nullified or will not be triggered.",
                 "hidden": false
             },
             {
@@ -52492,7 +52492,7 @@
             },
             {
                 "name": "Neutralizing Gas",
-                "effect": "If the Pokémon with Neutralizing Gas is in the battle,\nthe effects of all Pokémon’s Abilities will be nullified\nor will not be triggered.",
+                "effect": "While the Pokémon is in the battle, the effects of all other Pokémon’s Abilities will be nullified or will not be triggered.",
                 "hidden": false
             },
             {
@@ -52794,7 +52794,7 @@
                     },
                     {
                         "name": "Neutralizing Gas",
-                        "effect": "If the Pokémon with Neutralizing Gas is in the battle,\nthe effects of all Pokémon’s Abilities will be nullified\nor will not be triggered.",
+                        "effect": "While the Pokémon is in the battle, the effects of all other Pokémon’s Abilities will be nullified or will not be triggered.",
                         "hidden": false
                     },
                     {
@@ -57322,7 +57322,7 @@
                     },
                     {
                         "name": "Screen Cleaner",
-                        "effect": "When the Pokémon enters a battle, the effects of\nLight Screen, Reflect, and Aurora Veil are nullified for\nboth opposing and ally Pokémon.",
+                        "effect": "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.",
                         "hidden": false
                     },
                     {
@@ -88350,7 +88350,7 @@
                 "abilities": [
                     {
                         "name": "Curious Medicine",
-                        "effect": "When the Pokémon enters a battle, it scatters medicine\nfrom its shell, which removes all stat changes\nfrom allies.",
+                        "effect": "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies.",
                         "hidden": false
                     },
                     {
@@ -89257,7 +89257,13 @@
             }
         ],
         "moves": {
-            "level-up": [],
+            "level-up": [
+                {
+                    "key": "hidden-power",
+                    "level": 1,
+                    "method": "level-up"
+                }
+            ],
             "machine": [],
             "egg": [],
             "tutor": [],
@@ -118577,7 +118583,7 @@
             },
             {
                 "name": "Wind Rider",
-                "effect": "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
+                "effect": "Boosts the Pokémon’s Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
                 "hidden": false
             },
             {
@@ -195749,7 +195755,7 @@
             },
             {
                 "name": "Sharpness",
-                "effect": "Powers up slicing moves.",
+                "effect": "Increases the power of all 'slicing' moves by 50%.",
                 "hidden": false
             },
             {
@@ -209497,7 +209503,7 @@
                     },
                     {
                         "name": "Sharpness",
-                        "effect": "Powers up slicing moves.",
+                        "effect": "Increases the power of all 'slicing' moves by 50%.",
                         "hidden": true
                     }
                 ],
@@ -228132,7 +228138,7 @@
                 "abilities": [
                     {
                         "name": "Gorilla Tactics",
-                        "effect": "Boosts the Pokémon’s Attack stat but only allows\nthe use of the first selected move.",
+                        "effect": "Boosts the Pokémon’s Attack stat but only allows the use of the first selected move.",
                         "hidden": false
                     },
                     {
@@ -228511,7 +228517,7 @@
                 "abilities": [
                     {
                         "name": "Gorilla Tactics",
-                        "effect": "Boosts the Pokémon’s Attack stat but only allows\nthe use of the first selected move.",
+                        "effect": "Boosts the Pokémon’s Attack stat but only allows the use of the first selected move.",
                         "hidden": false
                     },
                     {
@@ -231260,7 +231266,7 @@
                 "abilities": [
                     {
                         "name": "Wandering Spirit",
-                        "effect": "The Pokémon exchanges Abilities with a Pokémon\nthat hits it with a move that makes direct contact.",
+                        "effect": "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact.",
                         "hidden": false
                     }
                 ],
@@ -329545,7 +329551,7 @@
             },
             {
                 "name": "Libero",
-                "effect": "Changes the Pokémon’s type to the type of the\nmove it’s about to use.",
+                "effect": "Changes the Pokémon’s type to the type of the move it’s about to use. This works only once each time the Pokémon enters battle.",
                 "hidden": true
             }
         ],
@@ -329825,7 +329831,7 @@
             },
             {
                 "name": "Libero",
-                "effect": "Changes the Pokémon’s type to the type of the\nmove it’s about to use.",
+                "effect": "Changes the Pokémon’s type to the type of the move it’s about to use. This works only once each time the Pokémon enters battle.",
                 "hidden": true
             }
         ],
@@ -330125,7 +330131,7 @@
             },
             {
                 "name": "Libero",
-                "effect": "Changes the Pokémon’s type to the type of the\nmove it’s about to use.",
+                "effect": "Changes the Pokémon’s type to the type of the move it’s about to use. This works only once each time the Pokémon enters battle.",
                 "hidden": true
             }
         ],
@@ -330512,7 +330518,7 @@
                     },
                     {
                         "name": "Libero",
-                        "effect": "Changes the Pokémon’s type to the type of the\nmove it’s about to use.",
+                        "effect": "Changes the Pokémon’s type to the type of the move it’s about to use. This works only once each time the Pokémon enters battle.",
                         "hidden": true
                     }
                 ],
@@ -332491,7 +332497,7 @@
             },
             {
                 "name": "Mirror Armor",
-                "effect": "Bounces back only the stat-lowering effects that\nthe Pokémon receives.",
+                "effect": "Bounces back only the stat-lowering effects that the Pokémon receives.",
                 "hidden": true
             }
         ],
@@ -332813,7 +332819,7 @@
                     },
                     {
                         "name": "Mirror Armor",
-                        "effect": "Bounces back only the stat-lowering effects that\nthe Pokémon receives.",
+                        "effect": "Bounces back only the stat-lowering effects that the Pokémon receives.",
                         "hidden": true
                     }
                 ],
@@ -334081,7 +334087,7 @@
         "abilities": [
             {
                 "name": "Cotton Down",
-                "effect": "When the Pokémon is hit by an attack, it scatters\ncotton fluff around and lowers the Speed stat of\nall Pokémon except itself.",
+                "effect": "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stats of all Pokémon except itself.",
                 "hidden": false
             },
             {
@@ -334327,7 +334333,7 @@
         "abilities": [
             {
                 "name": "Cotton Down",
-                "effect": "When the Pokémon is hit by an attack, it scatters\ncotton fluff around and lowers the Speed stat of\nall Pokémon except itself.",
+                "effect": "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stats of all Pokémon except itself.",
                 "hidden": false
             },
             {
@@ -335655,7 +335661,7 @@
         "abilities": [
             {
                 "name": "Ball Fetch",
-                "effect": "If the Pokémon is not holding an item, it will fetch\nthe Poké Ball from the first failed throw\nof the battle.",
+                "effect": "At any time after the first Poké Ball is thrown and fails to catch a Pokémon, at the end of a turn, if a Pokémon with Ball Fetch is on the field and not holding another item, it will pick up the same type of ball as the first one thrown.",
                 "hidden": false
             },
             {
@@ -336161,7 +336167,7 @@
         "abilities": [
             {
                 "name": "Steam Engine",
-                "effect": "Boosts the Pokémon’s Speed stat drastically if hit by a\nFire- or Water-type move.",
+                "effect": "Raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack. The attack still deals damage.",
                 "hidden": false
             },
             {
@@ -336412,7 +336418,7 @@
         "abilities": [
             {
                 "name": "Steam Engine",
-                "effect": "Boosts the Pokémon’s Speed stat drastically if hit by a\nFire- or Water-type move.",
+                "effect": "Raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack. The attack still deals damage.",
                 "hidden": false
             },
             {
@@ -336712,7 +336718,7 @@
         "abilities": [
             {
                 "name": "Steam Engine",
-                "effect": "Boosts the Pokémon’s Speed stat drastically if hit by a\nFire- or Water-type move.",
+                "effect": "Raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack. The attack still deals damage.",
                 "hidden": false
             },
             {
@@ -337044,7 +337050,7 @@
                 "abilities": [
                     {
                         "name": "Steam Engine",
-                        "effect": "Boosts the Pokémon’s Speed stat drastically if hit by a\nFire- or Water-type move.",
+                        "effect": "Raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack. The attack still deals damage.",
                         "hidden": false
                     },
                     {
@@ -337918,7 +337924,7 @@
         "abilities": [
             {
                 "name": "Sand Spit",
-                "effect": "The Pokémon creates a sandstorm when it’s hit by\nan attack.",
+                "effect": "The Pokémon creates a sandstorm when it’s hit by an attack.",
                 "hidden": false
             },
             {
@@ -338168,7 +338174,7 @@
         "abilities": [
             {
                 "name": "Sand Spit",
-                "effect": "The Pokémon creates a sandstorm when it’s hit by\nan attack.",
+                "effect": "The Pokémon creates a sandstorm when it’s hit by an attack.",
                 "hidden": false
             },
             {
@@ -338459,7 +338465,7 @@
                 "abilities": [
                     {
                         "name": "Sand Spit",
-                        "effect": "The Pokémon creates a sandstorm when it’s hit by\nan attack.",
+                        "effect": "The Pokémon creates a sandstorm when it’s hit by an attack.",
                         "hidden": false
                     },
                     {
@@ -338514,7 +338520,7 @@
         "abilities": [
             {
                 "name": "Gulp Missile",
-                "effect": "When the Pokémon uses Surf or Dive, it will come back\nwith prey. When it takes damage, it will spit out the prey\nto attack.",
+                "effect": "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack.",
                 "hidden": false
             }
         ],
@@ -338834,7 +338840,7 @@
             },
             {
                 "name": "Propeller Tail",
-                "effect": "Ignores the effects of opposing Pokémon’s Abilities and\nmoves that draw in moves.",
+                "effect": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.",
                 "hidden": true
             }
         ],
@@ -339074,7 +339080,7 @@
             },
             {
                 "name": "Propeller Tail",
-                "effect": "Ignores the effects of opposing Pokémon’s Abilities and\nmoves that draw in moves.",
+                "effect": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.",
                 "hidden": true
             }
         ],
@@ -339460,7 +339466,7 @@
         "abilities": [
             {
                 "name": "Punk Rock",
-                "effect": "Boosts the power of sound-based moves.\nThe Pokémon also takes half the damage from\nthese kinds of moves.",
+                "effect": "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves.",
                 "hidden": false
             },
             {
@@ -339877,7 +339883,7 @@
                 "abilities": [
                     {
                         "name": "Punk Rock",
-                        "effect": "Boosts the power of sound-based moves.\nThe Pokémon also takes half the damage from\nthese kinds of moves.",
+                        "effect": "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves.",
                         "hidden": false
                     },
                     {
@@ -340295,7 +340301,7 @@
                 "abilities": [
                     {
                         "name": "Punk Rock",
-                        "effect": "Boosts the power of sound-based moves.\nThe Pokémon also takes half the damage from\nthese kinds of moves.",
+                        "effect": "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves.",
                         "hidden": false
                     },
                     {
@@ -340346,7 +340352,7 @@
                 "abilities": [
                     {
                         "name": "Punk Rock",
-                        "effect": "Boosts the power of sound-based moves.\nThe Pokémon also takes half the damage from\nthese kinds of moves.",
+                        "effect": "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves.",
                         "hidden": false
                     },
                     {
@@ -344435,7 +344441,7 @@
             },
             {
                 "name": "Steely Spirit",
-                "effect": "Powers up ally Pokémon’s Steel-type moves.",
+                "effect": "Powers up the Steel-type moves of the Pokémon and its allies.",
                 "hidden": true
             }
         ],
@@ -344829,7 +344835,7 @@
             },
             {
                 "name": "Perish Body",
-                "effect": "When hit by a move that makes direct contact,\nthe Pokémon and the attacker will faint after three turns\nunless they switch out of battle.",
+                "effect": "When the Pokémon with Perish Body is hit with a contact move, both the attacker and the Pokémon with Perish Body will faint in three turns.",
                 "hidden": true
             }
         ],
@@ -345495,7 +345501,7 @@
             },
             {
                 "name": "Screen Cleaner",
-                "effect": "When the Pokémon enters a battle, the effects of\nLight Screen, Reflect, and Aurora Veil are nullified for\nboth opposing and ally Pokémon.",
+                "effect": "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.",
                 "hidden": false
             },
             {
@@ -345991,7 +345997,7 @@
         "abilities": [
             {
                 "name": "Wandering Spirit",
-                "effect": "The Pokémon exchanges Abilities with a Pokémon\nthat hits it with a move that makes direct contact.",
+                "effect": "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact.",
                 "hidden": false
             }
         ],
@@ -347462,7 +347468,7 @@
             },
             {
                 "name": "Ice Scales",
-                "effect": "The Pokémon is protected by ice scales, which halve\nthe damage taken from special moves.",
+                "effect": "The Pokémon is protected by ice scales, which halve the damage taken from special moves.",
                 "hidden": true
             }
         ],
@@ -347598,7 +347604,7 @@
             },
             {
                 "name": "Ice Scales",
-                "effect": "The Pokémon is protected by ice scales, which halve\nthe damage taken from special moves.",
+                "effect": "The Pokémon is protected by ice scales, which halve the damage taken from special moves.",
                 "hidden": true
             }
         ],
@@ -347897,7 +347903,7 @@
         "abilities": [
             {
                 "name": "Power Spot",
-                "effect": "Just being next to the Pokémon powers up moves.",
+                "effect": " \"The power of moves used by the allies of the Pokémon with Power Spot is increased by 30%.\"",
                 "hidden": false
             }
         ],
@@ -348172,7 +348178,7 @@
         "abilities": [
             {
                 "name": "Ice Face",
-                "effect": "The Pokémon’s ice head can take a physical attack as\na substitute, but the attack also changes the Pokémon’s\nappearance. The ice will be restored when it hails.",
+                "effect": "When an Eiscue that's in its Ice Face form is hit by a physical move, it takes no damage and changes into its Noice Face form. If a hailstorm or snowstorm begins while Eiscue is in its Noice Face form, or if it is sent out in its Noice Face form during hail, it will immediately revert to its Ice Face form.",
                 "hidden": false
             }
         ],
@@ -348459,7 +348465,7 @@
                 "abilities": [
                     {
                         "name": "Ice Face",
-                        "effect": "The Pokémon’s ice head can take a physical attack as\na substitute, but the attack also changes the Pokémon’s\nappearance. The ice will be restored when it hails.",
+                        "effect": "When an Eiscue that's in its Ice Face form is hit by a physical move, it takes no damage and changes into its Noice Face form. If a hailstorm or snowstorm begins while Eiscue is in its Noice Face form, or if it is sent out in its Noice Face form during hail, it will immediately revert to its Ice Face form.",
                         "hidden": false
                     }
                 ],
@@ -349313,7 +349319,7 @@
         "abilities": [
             {
                 "name": "Hunger Switch",
-                "effect": "The Pokémon changes its form, alternating between\nits Full Belly Mode and Hangry Mode after the end of\neach turn.",
+                "effect": "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn.",
                 "hidden": false
             }
         ],
@@ -349691,7 +349697,7 @@
                 "abilities": [
                     {
                         "name": "Hunger Switch",
-                        "effect": "The Pokémon changes its form, alternating between\nits Full Belly Mode and Hangry Mode after the end of\neach turn.",
+                        "effect": "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn.",
                         "hidden": false
                     }
                 ],
@@ -351988,7 +351994,7 @@
             },
             {
                 "name": "Stalwart",
-                "effect": "Ignores the effects of opposing Pokémon’s Abilities and\nmoves that draw in moves.",
+                "effect": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.",
                 "hidden": true
             }
         ],
@@ -352306,7 +352312,7 @@
                     },
                     {
                         "name": "Stalwart",
-                        "effect": "Ignores the effects of opposing Pokémon’s Abilities and\nmoves that draw in moves.",
+                        "effect": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.",
                         "hidden": true
                     }
                 ],
@@ -353166,7 +353172,7 @@
         "abilities": [
             {
                 "name": "Intrepid Sword",
-                "effect": "Boosts the Pokémon’s Attack stat when the Pokémon\nenters a battle.",
+                "effect": "Boosts the Pokémon’s Attack stat the first time the Pokémon enters a battle.",
                 "hidden": false
             }
         ],
@@ -353463,7 +353469,7 @@
                 "abilities": [
                     {
                         "name": "Intrepid Sword",
-                        "effect": "Boosts the Pokémon’s Attack stat when the Pokémon\nenters a battle.",
+                        "effect": "Boosts the Pokémon’s Attack stat the first time the Pokémon enters a battle.",
                         "hidden": false
                     }
                 ],
@@ -353764,7 +353770,7 @@
         "abilities": [
             {
                 "name": "Dauntless Shield",
-                "effect": "Boosts the Pokémon’s Defense stat when the Pokémon\nenters a battle.",
+                "effect": "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle.",
                 "hidden": false
             }
         ],
@@ -354081,7 +354087,7 @@
                 "abilities": [
                     {
                         "name": "Dauntless Shield",
-                        "effect": "Boosts the Pokémon’s Defense stat when the Pokémon\nenters a battle.",
+                        "effect": "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle.",
                         "hidden": false
                     }
                 ],
@@ -355157,7 +355163,7 @@
         "abilities": [
             {
                 "name": "Unseen Fist",
-                "effect": "If the Pokémon uses moves that make direct contact,\nit can attack the target even if the target protects itself.",
+                "effect": "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself.",
                 "hidden": false
             }
         ],
@@ -355509,7 +355515,7 @@
                 "abilities": [
                     {
                         "name": "Unseen Fist",
-                        "effect": "If the Pokémon uses moves that make direct contact,\nit can attack the target even if the target protects itself.",
+                        "effect": "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself.",
                         "hidden": false
                     }
                 ],
@@ -355852,7 +355858,7 @@
                 "abilities": [
                     {
                         "name": "Unseen Fist",
-                        "effect": "If the Pokémon uses moves that make direct contact,\nit can attack the target even if the target protects itself.",
+                        "effect": "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself.",
                         "hidden": false
                     }
                 ],
@@ -355893,7 +355899,7 @@
                 "abilities": [
                     {
                         "name": "Unseen Fist",
-                        "effect": "If the Pokémon uses moves that make direct contact,\nit can attack the target even if the target protects itself.",
+                        "effect": "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself.",
                         "hidden": false
                     }
                 ],
@@ -356721,7 +356727,7 @@
         "abilities": [
             {
                 "name": "Transistor",
-                "effect": "Powers up Electric-type moves.",
+                "effect": "Increases the power of Electric-type moves used by this Pokémon by 50%.",
                 "hidden": false
             }
         ],
@@ -356965,7 +356971,7 @@
         "abilities": [
             {
                 "name": "Dragon’s Maw",
-                "effect": "Powers up Dragon-type moves.",
+                "effect": "Increases the power of Dragon-type moves used by this Pokémon by 50%.",
                 "hidden": false
             }
         ],
@@ -357199,7 +357205,7 @@
         "abilities": [
             {
                 "name": "Chilling Neigh",
-                "effect": "When the Pokémon knocks out a target, it utters a\nchilling neigh, which boosts its Attack stat.",
+                "effect": "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat.",
                 "hidden": false
             }
         ],
@@ -357473,7 +357479,7 @@
         "abilities": [
             {
                 "name": "Grim Neigh",
-                "effect": "When the Pokémon knocks out a target, it utters a\nterrifying neigh, which boosts its Sp. Atk stat.",
+                "effect": "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat.",
                 "hidden": false
             }
         ],
@@ -359330,7 +359336,7 @@
             },
             {
                 "name": "Sharpness",
-                "effect": "Powers up slicing moves.",
+                "effect": "Increases the power of all 'slicing' moves by 50%.",
                 "hidden": true
             }
         ],
@@ -360077,7 +360083,7 @@
                 "abilities": [
                     {
                         "name": "Mind’s Eye",
-                        "effect": "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal-type and Fighting-type moves",
+                        "effect": "Mind's Eye enables the Pokémon with this Ability to hit Ghost-type Pokémon with damage-dealing Normal- and Fighting-type moves. It also prevents other Pokémon from lowering the Pokémon's accuracy and ignores changes to the opponents' evasion.",
                         "hidden": false
                     }
                 ],
@@ -365494,7 +365500,7 @@
         "abilities": [
             {
                 "name": "Lingering Aroma",
-                "effect": "Contact with the Pokémon changes the attacker's Ability to Lingering Aroma.",
+                "effect": "Contact with the Pokémon changes the attacker’s Ability to Lingering Aroma.",
                 "hidden": false
             },
             {
@@ -371576,7 +371582,7 @@
         "abilities": [
             {
                 "name": "Purifying Salt",
-                "effect": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
+                "effect": "The Pokémon’s pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
                 "hidden": false
             },
             {
@@ -371826,7 +371832,7 @@
         "abilities": [
             {
                 "name": "Purifying Salt",
-                "effect": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
+                "effect": "The Pokémon’s pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
                 "hidden": false
             },
             {
@@ -372090,7 +372096,7 @@
         "abilities": [
             {
                 "name": "Purifying Salt",
-                "effect": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
+                "effect": "The Pokémon’s pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.",
                 "hidden": false
             },
             {
@@ -375631,7 +375637,7 @@
         "abilities": [
             {
                 "name": "Wind Rider",
-                "effect": "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
+                "effect": "Boosts the Pokémon’s Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
                 "hidden": false
             },
             {
@@ -375902,7 +375908,7 @@
         "abilities": [
             {
                 "name": "Wind Rider",
-                "effect": "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
+                "effect": "Boosts the Pokémon’s Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.",
                 "hidden": false
             },
             {
@@ -378604,7 +378610,7 @@
         "abilities": [
             {
                 "name": "Opportunist",
-                "effect": "If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself.",
+                "effect": "If an opponent’s stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself.",
                 "hidden": false
             },
             {
@@ -380349,7 +380355,7 @@
             },
             {
                 "name": "Rocky Payload",
-                "effect": "Powers up Rock-type moves.",
+                "effect": "Increases the power of Rock-type moves used by this Pokémon by 50%.",
                 "hidden": true
             }
         ],
@@ -384049,7 +384055,7 @@
             },
             {
                 "name": "Costar",
-                "effect": "When the Pokémon enters a battle, it copies an ally's stat changes.",
+                "effect": "When the Pokémon enters a battle, it copies an ally’s stat changes.",
                 "hidden": true
             }
         ],
@@ -384949,7 +384955,7 @@
             },
             {
                 "name": "Sharpness",
-                "effect": "Powers up slicing moves.",
+                "effect": "Increases the power of all 'slicing' moves by 50%.",
                 "hidden": true
             }
         ],
@@ -387000,7 +387006,7 @@
             },
             {
                 "name": "Armor Tail",
-                "effect": "The mysterious tail covering the Pokémon's head makes opponents unable to use priority moves against the Pokémon or its allies.",
+                "effect": "The mysterious tail covering the Pokémon’s head makes opponents unable to use priority moves against the Pokémon or its allies.",
                 "hidden": false
             },
             {
@@ -388732,7 +388738,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -389067,7 +389073,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -389513,7 +389519,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -389814,7 +389820,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -390105,7 +390111,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -390436,7 +390442,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -390752,7 +390758,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -391052,7 +391058,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -391303,7 +391309,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -391629,7 +391635,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -391954,7 +391960,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -392260,7 +392266,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -393724,7 +393730,7 @@
         "abilities": [
             {
                 "name": "Good as Gold",
-                "effect": "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves.",
+                "effect": "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon’s status moves.",
                 "hidden": false
             }
         ],
@@ -393994,7 +394000,7 @@
         "abilities": [
             {
                 "name": "Tablets of Ruin",
-                "effect": "The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself.",
+                "effect": "The power of the Pokémon’s ruinous wooden tablets lowers the Attack stats of all Pokémon except itself.",
                 "hidden": false
             }
         ],
@@ -394299,7 +394305,7 @@
         "abilities": [
             {
                 "name": "Sword of Ruin",
-                "effect": "The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself.",
+                "effect": "The power of the Pokémon’s ruinous sword lowers the Defense stats of all Pokémon except itself.",
                 "hidden": false
             }
         ],
@@ -394569,7 +394575,7 @@
         "abilities": [
             {
                 "name": "Vessel of Ruin",
-                "effect": "The power of the Pokémon's ruinous vessel lowers the Sp. Atk stats of all Pokémon except itself.",
+                "effect": "The power of the Pokémon’s ruinous vessel lowers the Sp. Atk stats of all Pokémon except itself.",
                 "hidden": false
             }
         ],
@@ -394844,7 +394850,7 @@
         "abilities": [
             {
                 "name": "Beads of Ruin",
-                "effect": "The power of the Pokémon's ruinous beads lowers the Sp. Def stats of all Pokémon except itself.",
+                "effect": "The power of the Pokémon’s ruinous beads lowers the Sp. Def stats of all Pokémon except itself.",
                 "hidden": false
             }
         ],
@@ -395119,7 +395125,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -395505,7 +395511,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -396681,7 +396687,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -396987,7 +396993,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -397318,7 +397324,7 @@
         "abilities": [
             {
                 "name": "Supersweet Syrup",
-                "effect": "Lowers the evasion of opposing Pokémon by 1 stage when first sent into battle",
+                "effect": "A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon.",
                 "hidden": false
             },
             {
@@ -397594,7 +397600,7 @@
         "abilities": [
             {
                 "name": "Hospitality",
-                "effect": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP",
+                "effect": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP.",
                 "hidden": false
             },
             {
@@ -397834,7 +397840,7 @@
         "abilities": [
             {
                 "name": "Hospitality",
-                "effect": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP",
+                "effect": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP.",
                 "hidden": false
             },
             {
@@ -398089,7 +398095,7 @@
         "abilities": [
             {
                 "name": "Toxic Chain",
-                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move",
+                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move.",
                 "hidden": false
             },
             {
@@ -398464,7 +398470,7 @@
         "abilities": [
             {
                 "name": "Toxic Chain",
-                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move",
+                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move.",
                 "hidden": false
             },
             {
@@ -398794,7 +398800,7 @@
         "abilities": [
             {
                 "name": "Toxic Chain",
-                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move",
+                "effect": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move.",
                 "hidden": false
             },
             {
@@ -400587,7 +400593,7 @@
             },
             {
                 "name": "Stalwart",
-                "effect": "Ignores the effects of opposing Pokémon’s Abilities and\nmoves that draw in moves.",
+                "effect": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.",
                 "hidden": true
             }
         ],
@@ -400928,7 +400934,7 @@
         "abilities": [
             {
                 "name": "Supersweet Syrup",
-                "effect": "Lowers the evasion of opposing Pokémon by 1 stage when first sent into battle",
+                "effect": "A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon.",
                 "hidden": false
             },
             {
@@ -401279,7 +401285,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -401630,7 +401636,7 @@
         "abilities": [
             {
                 "name": "Protosynthesis",
-                "effect": "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -401951,7 +401957,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -402241,7 +402247,7 @@
         "abilities": [
             {
                 "name": "Quark Drive",
-                "effect": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
+                "effect": "Boosts the Pokémon’s most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.",
                 "hidden": false
             }
         ],
@@ -402866,7 +402872,7 @@
                 "abilities": [
                     {
                         "name": "Tera Shell",
-                        "effect": "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.",
+                        "effect": "The Pokémon’s shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.",
                         "hidden": false
                     }
                 ],
@@ -403545,7 +403551,7 @@
         "abilities": [
             {
                 "name": "Poison Puppeteer",
-                "effect": "Pokémon poisoned by Pecharunt's moves will also become confused.",
+                "effect": "When a Pokémon is poisoned by any of Pecharunt's moves, it will also become confused.",
                 "hidden": false
             }
         ],
