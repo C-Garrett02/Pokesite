@@ -1,0 +1,3690 @@
+[
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "raticate",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/20/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "rattata",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/19/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "night",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20",
+                                    "Night"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "raticate-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/20/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "rattata-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/19/"
+                }
+            }
+        ],
+        "id": 7
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": 220,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "High Happiness or Friendship"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": {
+                                            "name": "thunder-stone",
+                                            "url": "https://pokeapi.co/api/v2/item/83/"
+                                        },
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": null,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "use-item",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Thunder Stone"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "raichu",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/26/"
+                                }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": {
+                                            "name": "thunder-stone",
+                                            "url": "https://pokeapi.co/api/v2/item/83/"
+                                        },
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": null,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "use-item",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Thunder Stone",
+                                            "In Alola"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "raichu-alola",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/26/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "pikachu",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/25/"
+                        }
+                    }
+                ],
+                "is_baby": true,
+                "species": {
+                    "name": "pichu",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/172/"
+                }
+            }
+        ],
+        "id": 10
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 22,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 22"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sandslash",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/28/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "sandshrew",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/27/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "ice-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/885/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Ice Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sandslash-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/28/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "sandshrew-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/27/"
+                }
+            }
+        ],
+        "id": 11
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "fire-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/82/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Fire Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "ninetales",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/38/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "vulpix",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/37/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "ice-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/885/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Ice Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "ninetales-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/38/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "vulpix-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/37/"
+                }
+            }
+        ],
+        "id": 15
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 26,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 26"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "dugtrio",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/51/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "diglett",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/50/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 26,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 26"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "dugtrio-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/51/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "diglett-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/50/"
+                }
+            }
+        ],
+        "id": 21
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 28,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 28"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "persian",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/53/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "meowth",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/52/"
+                }
+                
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": 160,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "High Happiness or Friendship"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "persian-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/53/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "meowth-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/52/"
+                }
+                
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 28,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 28"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "perrserker",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/863/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "meowth-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/52/"
+                }
+                
+            }
+        ],
+        "id": 22
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "fire-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/82/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Fire Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "arcanine",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/59/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "growlithe",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/58/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "fire-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/82/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Fire Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "arcanine-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/59/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "growlithe-hisui",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/58/"
+                }
+            }
+        ],
+        "id": 25
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 25,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 25"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": null,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "trade",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Trade"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "golem",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/76/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "graveler",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/75/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "geodude",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/74/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 25,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 25"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": null,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "trade",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Trade"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "golem-alola",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/76/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "graveler-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/75/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "geodude-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/74/"
+                }
+            }
+        ],
+        "id": 31
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 40,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 40"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "rapidash",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/78/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "ponyta",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/77/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 40,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 40"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "rapidash-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/78/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "ponyta-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/77/"
+                }
+            }
+        ],
+        "id": 32
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 37,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 37"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "slowbro",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/80/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": {
+                                    "name": "kings-rock",
+                                    "url": "https://pokeapi.co/api/v2/item/198/"
+                                },
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "trade",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Trade",
+                                    "Holding King’s Rock"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "slowking",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/199/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "slowpoke",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/79/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "galarica-cuff",
+                                    "url": "https://pokeapi.co/api/v2/item/1633/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Galarica Cuff"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "slowbro-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/80/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "galarica-wreath",
+                                    "url": "https://pokeapi.co/api/v2/item/1643/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Galarica Wreath"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "slowking-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/199/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "slowpoke-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/79/"
+                }
+            }
+        ],
+        "id": 33
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "three-critical-hits",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/8/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Land 3 crits in a battle"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sirfetchd",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/865/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "farfetchd-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/83/"
+                }
+            }
+        ],
+        "id": 35
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 38,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 38"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "muk",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/89/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "grimer",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/88/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 38,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 38"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "muk-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/89/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "grimer-alola",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/88/"
+                }
+            }
+        ],
+        "id": 38
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 30,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 30"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "electrode",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/101/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "voltorb",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/100/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "leaf-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/85/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Leaf Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "electrode-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/101/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "voltorb-hisui",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/100/"
+                }
+            }
+        ],
+        "id": 44
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "leaf-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/85/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Leaf Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "exeggutor",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/103/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "leaf-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/85/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Leaf Stone",
+                                    "In Alola"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "exeggutor-alola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/103/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "exeggcute",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/102/"
+                }
+            }
+        ],
+        "id": 45
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 28,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 28"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "marowak",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/105/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 28,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "night",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 28",
+                                    "Night",
+                                    "In Alola"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "marowak",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/105/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "cubone",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/104/"
+                }
+            }
+        ],
+        "id": 46
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 35,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 35"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "weezing",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/110/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 35,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 35",
+                                    "In Galar"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "weezing-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/110/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "koffing",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/109/"
+                }
+            }
+        ],
+        "id": 49
+    },
+    {
+        "baby_trigger_item": {
+            "name": "odd-incense",
+            "url": "https://pokeapi.co/api/v2/item/291/"
+        },
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": {
+                                    "name": "mimic",
+                                    "url": "https://pokeapi.co/api/v2/move/102/"
+                                },
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Knows Mimic"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "mr-mime",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/122/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": {
+                                    "name": "mimic",
+                                    "url": "https://pokeapi.co/api/v2/move/102/"
+                                },
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Knows Mimic",
+                                    "In Galar"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 42,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 42"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "mr-rime",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/866/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "mr-mime-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/122/"
+                        }
+                    }
+                ],
+                "is_baby": true,
+                "species": {
+                    "name": "mime-jr",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/439/"
+                }
+            }
+        ],
+        "id": 57
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 14,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 14"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "typhlosion",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/157/"
+                                }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36",
+                                            "In Hisui"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "typhlosion-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/157/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "quilava",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/156/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "cyndaquil",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/155/"
+                }
+            }
+        ],
+        "id": 80
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "quagsire",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/195/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "wooper",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/194/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "clodsire",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/980/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "wooper-paldea",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/194/"
+                }
+            }
+        ],
+        "id": 96
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 38,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 38"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "cursola",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/864/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "corsola-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/222/"
+                }
+            }
+        ],
+        "id": 113
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": {
+                                    "name": "barb-barrage",
+                                    "url": "https://pokeapi.co/api/v2/move/839/"
+                                },
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "strong-style-move",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/12/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Use Strong Style Barb Barrage in battle 20 times"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "overqwil",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/904/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "qwilfish-hisui",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/211/"
+                }
+            }
+        ],
+        "id": 106
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": {
+                                    "name": "razor-claw",
+                                    "url": "https://pokeapi.co/api/v2/item/303/"
+                                },
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "night",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Holding Razor Claw",
+                                    "Night"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "weavile",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/461/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "sneasel",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/215/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": {
+                                    "name": "razor-claw",
+                                    "url": "https://pokeapi.co/api/v2/item/303/"
+                                },
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "day",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Holding Razor Claw",
+                                    "Day"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sneasler",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/903/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "sneasel-hisui",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/215/"
+                }
+            }
+        ],
+        "id": 109
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "linoone",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/264/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "zigzagoon",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/263/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 20,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 20"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 35,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "night",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 35",
+                                            "Night"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "obstagoon",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/862/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "linoone-galar",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/264/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "zigzagoon-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/263/"
+                }
+            }
+        ],
+        "id": 134
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 17,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 17"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "samurott",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/503/"
+                                }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 36,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 36",
+                                            "In Hisui"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "samurott-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/503/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "dewott",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/502/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "oshawott",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/501/"
+                }
+            }
+        ],
+        "id": 258
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 35,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 35"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "darmanitan",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/555/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "darumaka",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/554/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "ice-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/885/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Ice Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "darmanitan-galar-standard",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/555/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "darumaka-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/554/"
+                }
+            }
+        ],
+        "id": 282
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 34,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 34"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "cofagrigus",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/563/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "yamask",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/562/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "take-damage",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/9/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Walk under Dusty Bowl arch with at least 49hp missing"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "runerigus",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/867/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "yamask-galar",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/562/"
+                }
+            }
+        ],
+        "id": 287
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "sun-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/80/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Sun Stone"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "lilligant",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/549/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "sun-stone",
+                                    "url": "https://pokeapi.co/api/v2/item/80/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Sun Stone",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "lilligant-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/549/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "petilil",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/548/"
+                }
+            }
+        ],
+        "id": 279
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "recoil-damage",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/13/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Receive 294 recoil damage in battle"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "basculegion",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/902/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "basculin-white-striped",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/550/"
+                }
+            }
+        ],
+        "id": 280
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 30,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 30"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "zoroark",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/571/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "zorua",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/570/"
+                }
+            },
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 30,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 30"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "zoroark-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/571/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "zorua-hisui",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/570/"
+                }
+            }
+        ],
+        "id": 291
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 54,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 54"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "braviary",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/628/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 54,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 54",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "braviary-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/628/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "rufflet",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/627/"
+                }
+            }
+        ],
+        "id": 319
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 40,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 40"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 50,
+                                        "needs_overworld_rain": true,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 50",
+                                            "Rain"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "goodra",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/706/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sliggoo",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/705/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 40,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 40",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 50,
+                                        "needs_overworld_rain": true,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 50",
+                                            "Rain"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "goodra-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/706/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sliggoo-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/705/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "goomy",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/704/"
+                }
+            }
+        ],
+        "id": 362
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 37,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 37"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "avalugg",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/713/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 37,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 37",
+                                    "In Hisui"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "avalugg-hisui",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/713/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "bergmite",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/712/"
+                }
+            }
+        ],
+        "id": 366
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": null,
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": 17,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "level-up",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Lvl 17"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 34,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 34"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "decidueye",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/724/"
+                                }
+                            },
+                            {
+                                "evolution_details": [
+                                    {
+                                        "gender": null,
+                                        "held_item": null,
+                                        "item": null,
+                                        "known_move": null,
+                                        "known_move_type": null,
+                                        "location": null,
+                                        "min_affection": null,
+                                        "min_beauty": null,
+                                        "min_happiness": null,
+                                        "min_level": 34,
+                                        "needs_overworld_rain": false,
+                                        "party_species": null,
+                                        "party_type": null,
+                                        "relative_physical_stats": null,
+                                        "time_of_day": "",
+                                        "trade_species": null,
+                                        "trigger": {
+                                            "name": "level-up",
+                                            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+                                        },
+                                        "turn_upside_down": false,
+                                        "condition_array": [
+                                            "Lvl 34",
+                                            "In Alola"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "decidueye-hisui",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/724/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "dartrix",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/723/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "rowlet",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/722/"
+                }
+            }
+        ],
+        "id": 374
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "tart-apple",
+                                    "url": "https://pokeapi.co/api/v2/item/1175/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Tart Apple"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "flapple",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/841/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "gender": null,
+                                "held_item": null,
+                                "item": {
+                                    "name": "sweet-apple",
+                                    "url": "https://pokeapi.co/api/v2/item/1174/"
+                                },
+                                "known_move": null,
+                                "known_move_type": null,
+                                "location": null,
+                                "min_affection": null,
+                                "min_beauty": null,
+                                "min_happiness": null,
+                                "min_level": null,
+                                "needs_overworld_rain": false,
+                                "party_species": null,
+                                "party_type": null,
+                                "relative_physical_stats": null,
+                                "time_of_day": "",
+                                "trade_species": null,
+                                "trigger": {
+                                    "name": "use-item",
+                                    "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+                                },
+                                "turn_upside_down": false,
+                                "condition_array": [
+                                    "Sweet Apple"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "appletun",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/842/"
+                        }
+                    },
+                    {
+                        "evolution_details": [
+                            {
+                                "condition_array": [
+                                    "Syrupy Apple"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [
+                            {
+                                "evolution_details": [
+                                    {
+                                        "condition_array": [
+                                            "Knows Dragon Cheer"
+                                        ]
+                                    }
+                                ],
+                                "evolves_to": [],
+                                "is_baby": false,
+                                "species": {
+                                    "name": "hydrapple",
+                                    "url": "https://pokeapi.co/api/v2/pokemon-species/1019/"
+                                }
+                            }
+                        ],
+                        "is_baby": false,
+                        "species": {
+                            "name": "dipplin",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/1011/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "applin",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/840/"
+                }
+            }
+        ],
+        "id": 442
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [
+                            {
+                                "condition_array": [
+                                    "Metal Alloy"
+                                ]
+                            }
+                        ],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "archaludon",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/1018/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "duraludon",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/884/"
+                }
+            }
+        ],
+        "id": 465
+    },
+    {
+        "baby_trigger_item": null,
+        "chain": [
+            {
+                "evolution_details": [],
+                "evolves_to": [
+                    {
+                        "evolution_details": [],
+                        "evolves_to": [],
+                        "is_baby": false,
+                        "species": {
+                            "name": "sinistcha",
+                            "url": "https://pokeapi.co/api/v2/pokemon-species/1013/"
+                        }
+                    }
+                ],
+                "is_baby": false,
+                "species": {
+                    "name": "poltchageist",
+                    "url": "https://pokeapi.co/api/v2/pokemon-species/1012/"
+                }
+            }
+        ],
+        "id": 539
+    }
+]
