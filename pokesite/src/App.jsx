@@ -10,6 +10,7 @@ import Abilities from './Abilities.jsx'
 import Moves from './Moves.jsx'
 import BetterWheel from './BetterWheel.jsx'
 import EvoChains from './EvoChains.jsx'
+import MobilePopup from './MobilePopup.jsx'
 
 function debounce(callback, wait) {
   let timeout = null;
@@ -493,6 +494,7 @@ function App() {
 
   return (
     <Fragment>
+      <MobilePopup />
       <div id="bg" className={loaded ? "behind" : ""} />
       <BetterWheel items={items} pokemon={pokemon} updateFunc={updateMon} />
       <div className='mainGrid'>
